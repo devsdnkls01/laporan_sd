@@ -16,7 +16,7 @@ class OfflineStorage {
   }
 
   async init() {
-    return new Promise((resolve, reject) => {
+    return new Promise(async (resolve, reject) => {
       const request = indexedDB.open(DB_NAME, DB_VERSION);
 
       request.onupgradeneeded = (e) => {
@@ -34,15 +34,16 @@ class OfflineStorage {
       request.onsuccess = async (e) => {
         this.db = e.target.result;
         this.isReady = true;
+        // Prioritaskan Cloudflare D1 Database sebagai Single Source of Truth
+        await this.initD1Sync();
         await this.ensureInitialSeed();
-        this.initD1Sync();
         resolve(this);
       };
 
-      request.onerror = (e) => {
+      request.onerror = async (e) => {
         console.error('IndexedDB error, falling back to localStorage', e);
         this.fallbackToLocalStorage();
-        this.initD1Sync();
+        await this.initD1Sync();
         resolve(this);
       };
     });
@@ -54,7 +55,7 @@ class OfflineStorage {
       if (res.ok) {
         this.d1Status = await res.json();
         if (this.d1Status.connected) {
-          console.log('[D1] Terhubung ke database Cloudflare D1:', this.d1Status.databaseId);
+          console.log('[D1] Terhubung ke Cloudflare D1 Database:', this.d1Status.databaseId);
           await this.syncFromD1();
         } else {
           console.log('[D1] Status D1:', this.d1Status.message);
@@ -67,13 +68,44 @@ class OfflineStorage {
 
   async syncFromD1() {
     try {
+      // 1. Sinkronkan seluruh 44 laporan dari D1
       const res = await fetch('/api/d1/reports');
       if (res.ok) {
         const data = await res.json();
         if (data.success && Array.isArray(data.reports) && data.reports.length > 0) {
-          console.log(`[D1] Menyinkronkan ${data.reports.length} laporan dari Cloudflare D1 ke penyimpanan lokal...`);
+          console.log(`[D1] Memuat ${data.reports.length} laporan resmi langsung dari Cloudflare D1...`);
           for (const rep of data.reports) {
             await this.saveReportLocalOnly(rep);
+          }
+          this.hasD1Data = true;
+        }
+      }
+
+      // 2. Sinkronkan pengaturan pejabat & sekolah dari D1
+      const setRes = await fetch('/api/d1/settings');
+      if (setRes.ok) {
+        const setData = await setRes.json();
+        if (setData.success && setData.settings) {
+          const s = setData.settings;
+          const mappedSettings = {
+            pengawasNama: s.pengawas_nama || s.pengawasNama,
+            pengawasNip: s.pengawas_nip || s.pengawasNip,
+            pengawasJabatan: s.pengawas_jabatan || s.pengawasJabatan,
+            kepalaNama: s.kepala_nama || s.kepalaNama,
+            kepalaNip: s.kepala_nip || s.kepalaNip,
+            kepalaJabatan: s.kepala_jabatan || s.kepalaJabatan,
+            sekolahNama: s.sekolah_nama || s.sekolahNama,
+            sekolahNpsn: s.sekolah_npsn || s.sekolahNpsn,
+            sekolahAlamat: s.sekolah_alamat || s.sekolahAlamat,
+            titimangsaTempat: s.titimangsa_tempat || s.titimangsaTempat,
+            titimangsaTanggal: s.titimangsa_tanggal || s.titimangsaTanggal,
+            tahunAjaran: s.tahun_ajaran || s.tahunAjaran
+          };
+          if (this.useLocalStorage) {
+            localStorage.setItem('simlapor_settings', JSON.stringify(mappedSettings));
+          } else if (this.db) {
+            const tx = this.db.transaction(STORE_SETTINGS, 'readwrite');
+            tx.objectStore(STORE_SETTINGS).put({ key: 'main_settings', value: mappedSettings });
           }
         }
       }
@@ -85,7 +117,7 @@ class OfflineStorage {
   async ensureInitialSeed() {
     const existing = await this.getAllReports();
     if (!existing || existing.length === 0) {
-      console.log('Seeding initial 44 reports into IndexedDB...');
+      console.log('Seeding initial reports into local storage...');
       const tx = this.db.transaction([STORE_REPORTS, STORE_SETTINGS], 'readwrite');
       const repStore = tx.objectStore(STORE_REPORTS);
       const setStore = tx.objectStore(STORE_SETTINGS);
@@ -105,21 +137,6 @@ class OfflineStorage {
       return new Promise((resolve) => {
         tx.oncomplete = () => resolve(true);
       });
-    } else if (window.INITIAL_REPORTS && Array.isArray(window.INITIAL_REPORTS)) {
-      // Synchronize photoGuide to ensure guidance matches each program's points
-      try {
-        const tx = this.db.transaction([STORE_REPORTS], 'readwrite');
-        const repStore = tx.objectStore(STORE_REPORTS);
-        for (const rep of existing) {
-          const initMatch = window.INITIAL_REPORTS.find(r => r.id === rep.id);
-          if (initMatch && initMatch.photoGuide) {
-            rep.photoGuide = initMatch.photoGuide;
-            repStore.put(rep);
-          }
-        }
-      } catch (e) {
-        console.warn('Sync photoGuide warning:', e);
-      }
     }
   }
 
@@ -197,14 +214,18 @@ class OfflineStorage {
     // 1. Simpan ke database lokal
     await this.saveReportLocalOnly(report);
 
-    // 2. Sinkronkan ke Cloudflare D1 jika aktif
-    if (this.d1Status && this.d1Status.connected) {
+    // 2. Sinkronkan secara real-time ke Cloudflare D1
+    try {
       fetch('/api/d1/reports', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(report)
+      }).then(r => r.json()).then(res => {
+        if (res.success) {
+          console.log(`[D1 Realtime] Laporan #${report.id} tersimpan di Cloudflare D1`);
+        }
       }).catch(err => console.warn('[D1] Sinkronisasi laporan ke D1 gagal:', err.message));
-    }
+    } catch (_) {}
 
     return report;
   }
@@ -238,17 +259,49 @@ class OfflineStorage {
       });
     }
 
-    // Sinkronkan ke Cloudflare D1 jika aktif
-    if (this.d1Status && this.d1Status.connected) {
+    // Sinkronkan secara real-time ke Cloudflare D1
+    try {
       fetch('/api/d1/settings', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ settings })
+      }).then(r => r.json()).then(res => {
+        if (res.success) {
+          console.log('[D1 Realtime] Pengaturan berhasil disimpan di Cloudflare D1');
+        }
       }).catch(err => console.warn('[D1] Sinkronisasi settings ke D1 gagal:', err.message));
-    }
+    } catch (_) {}
 
     return settings;
   }
+
+  async saveState(key, value) {
+    try {
+      localStorage.setItem('state_' + key, JSON.stringify(value));
+      fetch('/api/d1/state/' + encodeURIComponent(key), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ value })
+      }).catch(() => {});
+    } catch (_) {}
+  }
+
+  async getState(key) {
+    try {
+      const res = await fetch('/api/d1/state/' + encodeURIComponent(key));
+      if (res.ok) {
+        const json = await res.json();
+        if (json.success && json.state) return json.state;
+      }
+    } catch (_) {}
+    try {
+      const local = localStorage.getItem('state_' + key);
+      return local ? JSON.parse(local) : null;
+    } catch (_) {
+      return null;
+    }
+  }
+
 
   /**
    * Kirim seluruh data 44 laporan & Pengaturan ke Cloudflare D1

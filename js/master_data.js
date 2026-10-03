@@ -188,7 +188,7 @@
 
     init() {
       try {
-        const saved = localStorage.getItem(STORAGE_KEY);
+        const saved = (typeof localStorage !== 'undefined') ? localStorage.getItem(STORAGE_KEY) : null;
         if (saved) {
           this.data = JSON.parse(saved);
         } else {
@@ -198,12 +198,35 @@
         this.ensureSchemaIntegrity();
         this.saveSilently();
         this.isInitialized = true;
+        this.syncFromD1State();
       } catch (err) {
         console.error('Failed to init MasterData from localStorage, using defaults:', err);
         this.data = JSON.parse(JSON.stringify(DEFAULT_MASTER_DATA));
         this.isInitialized = true;
+        this.syncFromD1State();
       }
     }
+
+
+    async syncFromD1State() {
+      try {
+        const res = await fetch('/api/d1/state/master_data');
+        if (res.ok) {
+          const json = await res.json();
+          if (json.success && json.state && typeof json.state === 'object') {
+            console.log('[D1] Master Data terverifikasi & sinkron dari Cloudflare D1.');
+            this.data = json.state;
+            this.ensureSchemaIntegrity();
+            this.saveSilently();
+            this.syncToExternalModules();
+            if (typeof window !== 'undefined' && typeof window.dispatchEvent === 'function') {
+              window.dispatchEvent(new CustomEvent('master-data-updated', { detail: this.data }));
+            }
+          }
+        }
+      } catch (_) {}
+    }
+
 
     ensureSchemaIntegrity() {
       if (!this.data) this.data = {};
@@ -276,11 +299,14 @@
 
     saveSilently() {
       try {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(this.data));
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(this.data));
+        }
       } catch (e) {
         console.error('MasterData save error:', e);
       }
     }
+
 
     save() {
       this.recalculateTotals();
@@ -292,9 +318,21 @@
         window.dispatchEvent(ev);
       }
 
+      // Sinkronkan ke Cloudflare D1 secara real-time
+      try {
+        fetch('/api/d1/state/master_data', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ value: this.data })
+        }).then(r => r.json()).then(res => {
+          if (res.success) console.log('[D1 Realtime] Data Master (PTK, Siswa, Sarpras) tersimpan di Cloudflare D1');
+        }).catch(() => {});
+      } catch (_) {}
+
       // Sinkronisasi otomatis ke SIM-LAPOR (app.js) dan SIM-RKT (rkt_app.js)
       this.syncToExternalModules();
     }
+
 
     syncToExternalModules() {
       // 1. Sync ke SIM-LAPOR app.js

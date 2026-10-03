@@ -627,6 +627,53 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
+  // 10. Ambil & Simpan Data Rapor PBD dari D1
+  if (reqPath === '/api/d1/pbd' && req.method === 'GET') {
+    try {
+      const pbd = await d1Service.getPbdData();
+      sendJsonResponse(res, 200, { success: true, pbd });
+    } catch (err) {
+      sendJsonResponse(res, 500, { success: false, error: err.message });
+    }
+    return;
+  }
+  if (reqPath === '/api/d1/pbd' && req.method === 'POST') {
+    try {
+      const body = await readJsonBody(req);
+      const pbdPayload = body.pbdData || body;
+      const result = await d1Service.savePbdData(pbdPayload);
+      sendJsonResponse(res, 200, result);
+    } catch (err) {
+      sendJsonResponse(res, 500, { success: false, error: err.message });
+    }
+    return;
+  }
+
+  // 11. Ambil & Simpan System State (Master Data, PTK, Siswa, Sarpras, dsb) di D1
+  if (reqPath.startsWith('/api/d1/state/') && req.method === 'GET') {
+    try {
+      const key = decodeURIComponent(reqPath.replace('/api/d1/state/', ''));
+      const state = await d1Service.getSystemState(key);
+      sendJsonResponse(res, 200, { success: true, key, state });
+    } catch (err) {
+      sendJsonResponse(res, 500, { success: false, error: err.message });
+    }
+    return;
+  }
+  if (reqPath.startsWith('/api/d1/state/') && req.method === 'POST') {
+    try {
+      const key = decodeURIComponent(reqPath.replace('/api/d1/state/', ''));
+      const body = await readJsonBody(req);
+      const value = body.value !== undefined ? body.value : body;
+      const result = await d1Service.saveSystemState(key, value);
+      sendJsonResponse(res, 200, result);
+    } catch (err) {
+      sendJsonResponse(res, 500, { success: false, error: err.message });
+    }
+    return;
+  }
+
+
   // =========================================================================
   // API CLOUDINARY ENDPOINTS (SECURE PROXY)
   // =========================================================================

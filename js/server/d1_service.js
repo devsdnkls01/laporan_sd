@@ -356,6 +356,75 @@ async function saveSettings(settings) {
   return { success: true };
 }
 
+/**
+ * Ambil data Rapor PBD dari D1
+ */
+async function getPbdData() {
+  const rows = await queryD1('SELECT data_json, updated_at FROM pbd_data WHERE id = 1');
+  if (rows && rows.length > 0 && rows[0].data_json) {
+    try {
+      return JSON.parse(rows[0].data_json);
+    } catch (e) {
+      return null;
+    }
+  }
+  return null;
+}
+
+/**
+ * Simpan data Rapor PBD ke D1
+ */
+async function savePbdData(pbdData) {
+  if (!pbdData) throw new Error('Data PBD tidak boleh kosong');
+
+  const sql = `
+    INSERT INTO pbd_data (id, tahun, data_json, updated_at)
+    VALUES (1, '2026', ?, CURRENT_TIMESTAMP)
+    ON CONFLICT(id) DO UPDATE SET
+      data_json = excluded.data_json,
+      updated_at = CURRENT_TIMESTAMP
+  `;
+
+  const jsonStr = JSON.stringify(pbdData);
+  await queryD1(sql, [jsonStr]);
+  return { success: true, updated_at: new Date().toISOString() };
+}
+
+/**
+ * Ambil State Sistem Arbitrer dari D1 (Key-Value)
+ */
+async function getSystemState(key) {
+  if (!key) return null;
+  const rows = await queryD1('SELECT value_json, updated_at FROM system_state WHERE key = ?', [key]);
+  if (rows && rows.length > 0 && rows[0].value_json) {
+    try {
+      return JSON.parse(rows[0].value_json);
+    } catch (e) {
+      return null;
+    }
+  }
+  return null;
+}
+
+/**
+ * Simpan State Sistem Arbitrer ke D1 (Key-Value)
+ */
+async function saveSystemState(key, value) {
+  if (!key) throw new Error('Key tidak boleh kosong');
+
+  const sql = `
+    INSERT INTO system_state (key, value_json, updated_at)
+    VALUES (?, ?, CURRENT_TIMESTAMP)
+    ON CONFLICT(key) DO UPDATE SET
+      value_json = excluded.value_json,
+      updated_at = CURRENT_TIMESTAMP
+  `;
+
+  const jsonStr = JSON.stringify(value);
+  await queryD1(sql, [key, jsonStr]);
+  return { success: true, updated_at: new Date().toISOString() };
+}
+
 module.exports = {
   loadEnv,
   getD1Config,
@@ -370,5 +439,10 @@ module.exports = {
   getRktData,
   saveRktData,
   getSettings,
-  saveSettings
+  saveSettings,
+  getPbdData,
+  savePbdData,
+  getSystemState,
+  saveSystemState
 };
+

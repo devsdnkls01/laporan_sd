@@ -254,47 +254,8 @@ class SimLaporApp {
 
     if (!this.reports || this.reports.length === 0) {
       this.reports = window.INITIAL_REPORTS || [];
-    } else {
-      // Sinkronisasi otomatis data terstruktur resmi SDN Kalisalak 01
-      for (const off of (window.INITIAL_REPORTS || [])) {
-        const existing = this.reports.find(r => r.id === off.id);
-        if (existing) {
-          let modified = false;
-          if (!existing.bab2) existing.bab2 = {};
-          if (!existing.bab3) existing.bab3 = {};
-          if (!existing.bab4) existing.bab4 = {};
-
-          // Pastikan penugasan guru selaras
-          if (existing.pjName !== off.pjName) {
-            existing.pjName = off.pjName;
-            existing.pjNip = off.pjNip;
-            modified = true;
-          }
-
-          // Pastikan semua tabel terisi jika kosong di draf lama
-          if ((!existing.bab2.timTable || existing.bab2.timTable.length === 0) && off.bab2?.timTable) {
-            existing.bab2.timTable = JSON.parse(JSON.stringify(off.bab2.timTable));
-            modified = true;
-          }
-          if ((!existing.bab2.jadwalTable || existing.bab2.jadwalTable.length === 0) && off.bab2?.jadwalTable) {
-            existing.bab2.jadwalTable = JSON.parse(JSON.stringify(off.bab2.jadwalTable));
-            modified = true;
-          }
-          if ((!existing.bab3.indikatorTable || existing.bab3.indikatorTable.length === 0) && off.bab3?.indikatorTable) {
-            existing.bab3.indikatorTable = JSON.parse(JSON.stringify(off.bab3.indikatorTable));
-            modified = true;
-          }
-          if ((!existing.bab4.rtlTable || existing.bab4.rtlTable.length === 0) && off.bab4?.rtlTable) {
-            existing.bab4.rtlTable = JSON.parse(JSON.stringify(off.bab4.rtlTable));
-            modified = true;
-          }
-
-          if (modified) {
-            await window.appStorage.saveReport(existing);
-          }
-        }
-      }
     }
+
 
     this.bindEvents();
     this.renderCategoryFilter();
