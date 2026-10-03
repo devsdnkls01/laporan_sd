@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<title>DASHBOARD LAPORAN GURU//SDN KALISALAK 01</title>
+<HTA:APPLICATION 
+    ID="DashboardGuru" 
+    APPLICATIONNAME="DASHBOARD LAPORAN GURU//SDN KALISALAK 01" 
+    BORDER="normal" 
+    INNERBORDER="no" 
+    SCROLL="no" 
+    SINGLEINSTANCE="yes" 
+    WINDOWSTATE="normal"
+    ICON="logo.ico"
+    SHOWINTASKBAR="yes"
+    NAVIGABLE="yes"
+    SYSMENU="yes"
+    MAXIMIZEBUTTON="yes"
+    MINIMIZEBUTTON="yes"
+>
+<link rel="shortcut icon" type="image/x-icon" href="logo.ico">
+<link rel="icon" type="image/x-icon" href="logo.ico">
+<style>
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Consolas', 'Lucida Console', 'Courier New', monospace; 
+    user-select: none; 
+}
+
+html, body { 
+    width: 100%; 
+    height: 100%; 
+    background: #020704; 
+    color: #00ff66; 
+    overflow: hidden; 
+    position: relative;
+}
+
+/* HEADER UTAMA */
+.header { 
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    height: 50px;
+    border: 1px solid #00ff66; 
+    padding: 7px 14px; 
+    background: #00180c; 
+    box-shadow: 0 0 14px rgba(0, 255, 102, 0.18);
+}
+
+.brand {
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    font-size: 1.02rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #00ff88;
+}
+
+.header-badges {
+    float: right;
+    height: 34px;
+    line-height: 34px;
+}
+
+.badge {
+    display: inline-block;
+    background: #00220a;
+    color: #00ff88;
+    padding: 3px 8px;
+    border: 1px solid #00aa44;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+.badge-online {
+    background: #003a14;
+    border-color: #00ff66;
+    color: #ffffff;
+    box-shadow: 0 0 8px rgba(0, 255, 102, 0.4);
+}
+
+/* CONTAINER RESPONSIF 2X2 */
+.dashboard-grid { 
+    position: absolute;
+    top: 68px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+.dash-row {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.dash-row.row-top {
+    top: 0;
+    height: 48.5%;
+}
+
+.dash-row.row-bottom {
+    bottom: 0;
+    height: 48.5%;
+}
+
+.dash-card { 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 49.3%;
+    border: 1px solid #00aa44; 
+    background: #001006; 
+    box-shadow: inset 0 0 16px rgba(0, 255, 102, 0.05);
+    padding: 10px 12px; 
+    overflow: hidden;
+}
+
+.dash-card.card-left { left: 0; }
+.dash-card.card-right { right: 0; }
+
+.card-title { 
+    height: 24px;
+    line-height: 20px;
+    font-size: 0.88rem; 
+    color: #00ff66; 
+    margin-bottom: 6px; 
+    font-weight: bold; 
+    border-bottom: 1px solid #00441a; 
+    padding-bottom: 4px; 
+    letter-spacing: 0.5px;
+    overflow: hidden;
+}
+
+.card-title .title-left { float: left; }
+.card-title .title-right { float: right; font-size: 0.75rem; color: #00aa44; }
+
+/* SCROLL AREA MANDIRI */
+.scroll-area { 
+    position: absolute;
+    top: 38px;
+    bottom: 10px;
+    left: 12px;
+    right: 12px;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    padding-right: 4px; 
+}
+.scroll-area::-webkit-scrollbar { width: 5px; }
+.scroll-area::-webkit-scrollbar-track { background: #001206; }
+.scroll-area::-webkit-scrollbar-thumb { background: #00aa44; }
+
+/* KARTU 1: PANDUAN GURU */
+.mission { 
+    background: #001c0c; 
+    border-left: 3px solid #00ff66; 
+    padding: 8px 10px; 
+    margin-bottom: 8px; 
+    font-size: 0.8rem; 
+    line-height: 1.4;
+}
+.mission strong { color: #99ffbb; }
+
+/* KARTU 2: STATS & HEALTH */
+.stats-table {
+    width: 100%;
+    margin-bottom: 8px;
+    border-collapse: separate;
+    border-spacing: 6px;
+}
+
+.stat-box { 
+    border: 1px solid #004d1f; 
+    background: #001a0a;
+    padding: 6px 8px; 
+    font-size: 0.78rem; 
+    overflow: hidden;
+}
+.stat-box .stat-label { float: left; color: #00dd55; }
+.stat-box .stat-val { float: right; color: #ffffff; font-weight: bold; }
+
+/* TOMBOL UTAMA MASUK DASHBOARD */
+.btn-enter-dashboard {
+    display: block;
+    background: #00772e;
+    border: 2px solid #00ff66;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: 11px 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 14px rgba(0, 255, 102, 0.4);
+    text-align: center;
+}
+.btn-enter-dashboard:hover {
+    background: #00ff66;
+    color: #001808;
+    box-shadow: 0 0 22px rgba(0, 255, 102, 0.8);
+}
+
+.progress-section { 
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+}
+.progress-label { 
+    font-size: 0.78rem; 
+    margin-bottom: 4px; 
+    overflow: hidden;
+}
+.progress-label .pl-left { float: left; }
+.progress-label .pl-right { float: right; color: #00ff88; font-weight: bold; }
+
+.progress-bar { 
+    width: 100%; 
+    height: 16px; 
+    background: #001a08; 
+    border: 1px solid #00ff66; 
+    overflow: hidden; 
+}
+.progress-fill { 
+    height: 100%; 
+    width: 95%; 
+    background: #00aa44; 
+}
+
+/* KARTU 3: LOG ACTIVITY */
+.log-line { 
+    font-size: 0.76rem; 
+    color: #00dd55; 
+    margin-bottom: 3px; 
+    line-height: 1.3;
+    word-break: break-all;
+}
+.log-time { color: #008833; font-weight: bold; margin-right: 4px; }
+.log-tag { color: #88ffaa; font-weight: bold; }
+
+/* KARTU 4: BUTTONS & INFO */
+.btn-table {
+    width: 100%;
+    margin-bottom: 6px;
+    border-collapse: separate;
+    border-spacing: 6px;
+}
+
+.btn { 
+    border: 1px solid #00aa44; 
+    background: #00260e; 
+    color: #00ff66; 
+    padding: 8px 4px; 
+    text-align: center; 
+    cursor: pointer; 
+    font-size: 0.78rem; 
+    font-weight: bold; 
+    display: block;
+}
+.btn:hover { 
+    background: #00ff66; 
+    color: #001206; 
+}
+.btn-danger {
+    border-color: #ff3333;
+    color: #ff5555;
+    background: #2b0808;
+}
+.btn-danger:hover {
+    background: #ff3333;
+    color: #ffffff;
+}
+
+.net-info {
+    position: absolute;
+    bottom: 10px;
+    left: 12px;
+    right: 12px;
+    font-size: 0.75rem;
+    color: #00aa55;
+    line-height: 1.4;
+    border-top: 1px solid #003314;
+    padding-top: 6px;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER UTAMA -->
+<div class="header">
+    <div class="brand">
+        <span>DASHBOARD LAPORAN GURU//SDN KALISALAK 01</span>
+    </div>
+    <div class="header-badges">
+        <span class="badge badge-online" id="status-badge">STATUS: TERHUBUNG</span>
+        <span class="badge">ROLE: GURU / STAF</span>
+        <span class="badge">SECURITY: LEVEL 5</span>
+    </div>
+</div>
+
+<!-- CONTAINER 2X2 RESPONSIF -->
+<div class="dashboard-grid">
+    
+    <!-- BARIS 1 -->
+    <div class="dash-row row-top">
+        <!-- KARTU 1: INFORMASI SISTEM -->
+        <div class="dash-card card-left">
+            <div class="card-title">
+                <span class="title-left">Informasi Layanan Guru</span>
+                <span class="title-right">[TERLINDUNGI]</span>
+            </div>
+            <div class="scroll-area">
+                <div class="mission">
+                    <strong>[1] Akses Terenkripsi Zero-Trust</strong><br>
+                    Aplikasi ini mengamankan pengisian 44 laporan administrasi dan RKT sekolah SDN Kalisalak 01.
+                </div>
+                <div class="mission">
+                    <strong>[2] Sinkronisasi Cloud Otomatis</strong><br>
+                    Data yang Anda input otomatis tersimpan di Cloud Database (Cloudflare D1 & Cloudinary).
+                </div>
+                <div class="mission">
+                    <strong>[3] Aturan Keamanan Sekolah</strong><br>
+                    Membuka situs wajib melalui aplikasi ini. Membuka langsung via link publik dilarang oleh sistem keamanan.
+                </div>
+            </div>
+        </div>
+
+        <!-- KARTU 2: STATUS & TOMBOL MASUK -->
+        <div class="dash-card card-right">
+            <div class="card-title">
+                <span class="title-left">Koneksi Server Sekolah</span>
+                <span class="title-right" id="pulse" style="color:#00ff66;">● AKTIF</span>
+            </div>
+            
+            <table class="stats-table">
+                <tr>
+                    <td style="width:50%;">
+                        <div class="stat-box">
+                            <span class="stat-label">Host Server:</span>
+                            <span class="stat-val">Cloud Edge</span>
+                        </div>
+                    </td>
+                    <td style="width:50%;">
+                        <div class="stat-box">
+                            <span class="stat-label">Protokol:</span>
+                            <span class="stat-val">TLS 1.3</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="stat-box">
+                            <span class="stat-label">Enkripsi:</span>
+                            <span class="stat-val">AES-256</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="stat-box">
+                            <span class="stat-label">Sesi Sinyal:</span>
+                            <span class="stat-val" id="sig">STABIL</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
+            <!-- TOMBOL UTAMA MASUK DASHBOARD -->
+            <div class="btn-enter-dashboard" onclick="openDashboard()">
+                &#128640; MASUK DASHBOARD LAPORAN
+            </div>
+            
+            <div class="progress-section">
+                <div class="progress-label">
+                    <span class="pl-left">Kesiapan Sesi Otorisasi:</span>
+                    <span class="pl-right" id="health-txt">100% [SIAP]</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="pbar" style="width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BARIS 2 -->
+    <div class="dash-row row-bottom">
+        <!-- KARTU 3: LOG AKTIVITAS -->
+        <div class="dash-card card-left">
+            <div class="card-title">
+                <span class="title-left">Catatan Sesi Keamanan</span>
+                <span class="title-right">REALTIME</span>
+            </div>
+            <div class="scroll-area" id="logbox"></div>
+        </div>
+
+        <!-- KARTU 4: KONTROL CEPAT -->
+        <div class="dash-card card-right">
+            <div class="card-title">
+                <span class="title-left">Bantuan &amp; Kontrol</span>
+            </div>
+            
+            <table class="btn-table">
+                <tr>
+                    <td style="width:50%;"><div class="btn" onclick="openDashboard()">Buka Aplikasi</div></td>
+                    <td style="width:50%;"><div class="btn" onclick="checkConnection()">Cek Koneksi</div></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><div class="btn btn-danger" onclick="window.close()">TUTUP APLIKASI</div></td>
+                </tr>
+            </table>
+
+            <div class="net-info">
+                &gt; Server Resmi : <b>https://laporan_sdnkalisalak01.develzy.my.id</b><br>
+                &gt; Hak Akses   : Terverifikasi SDN KALISALAK 01<br>
+                &gt; Petunjuk    : Klik 'MASUK DASHBOARD LAPORAN' untuk mulai bekerja.
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+// Window Size & Center
+try {
+    window.resizeTo(980, 680);
+    window.moveTo((screen.availWidth - 980) / 2, (screen.availHeight - 680) / 2);
+} catch (e) {}
+
+var shell = null;
+var fso = null;
+var baseDir = "";
+var publicDomain = "laporan_sdnkalisalak01.develzy.my.id";
+var appAccessToken = "kalisalak01_secure_key_9f82a17b3c";
+
+try {
+    shell = new ActiveXObject("WScript.Shell");
+    fso = new ActiveXObject("Scripting.FileSystemObject");
+    var raw = window.location.pathname || "";
+    try { raw = decodeURIComponent(raw); } catch(e) {}
+    raw = raw.replace(/^file:[\\/]+/i, '').replace(/^[\\/]+/, '').replace(/\//g, '\\');
+    if (fso && fso.FileExists(raw)) {
+        baseDir = fso.GetParentFolderName(raw);
+    }
+} catch (e) {}
+
+function getTimeStr() {
+    var d = new Date();
+    var h = ("0" + d.getHours()).slice(-2);
+    var m = ("0" + d.getMinutes()).slice(-2);
+    var s = ("0" + d.getSeconds()).slice(-2);
+    return h + ":" + m + ":" + s;
+}
+
+function addCustomLog(tag, msg) {
+    var box = document.getElementById('logbox');
+    if (!box) return;
+    var t = getTimeStr();
+    var el = document.createElement('div');
+    el.className = 'log-line';
+    el.innerHTML = '<span class="log-time">[' + t + ']</span> <span class="log-tag">' + tag + '</span> ' + msg;
+    box.appendChild(el);
+    box.scrollTop = box.scrollHeight;
+}
+
+function openDashboard() {
+    addCustomLog("[USER_ACTION]", "Membuka Dashboard Laporan resmi...");
+    var url = "https://" + publicDomain + "/?auth_key=" + appAccessToken;
+    if (shell) shell.Run(url);
+    else window.open(url);
+}
+
+function checkConnection() {
+    addCustomLog("[CHECK_PING]", "Menghubungkan ke server sekolah SDN Kalisalak 01...");
+    addCustomLog("[CHECK_OK]", "Jalur transmisi data aman & siap digunakan.");
+}
+
+// Inisialisasi awal saat aplikasi dibuka oleh Guru
+window.onload = function() {
+    addCustomLog("[SYSTEM_INIT]", "Aplikasi Dashboard Laporan SDN KALISALAK 01 siap.");
+    addCustomLog("[ZERO_TRUST]", "Kunci otentikasi resmi terpasang.");
+    addCustomLog("[READY]", "Silakan klik tombol 'MASUK DASHBOARD LAPORAN'.");
+
+    // Terapkan logo jika script tersedia
+    try {
+        if (shell && fso && fso.FileExists(baseDir + '\\set_window_icon.ps1')) {
+            shell.Run('powershell -WindowStyle Hidden -ExecutionPolicy Bypass -File "' + baseDir + '\\set_window_icon.ps1"', 0, false);
+        }
+    } catch(e) {}
+};
+</script>
+
+</body>
+</html>

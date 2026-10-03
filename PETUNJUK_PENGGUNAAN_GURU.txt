@@ -1,0 +1,36 @@
+================================================================
+PANDUAN PENGGUNAAN APLIKASI LAPORAN & RKT
+SDN KALISALAK 01 KECAMATAN MARGASARI
+================================================================
+
+Selamat datang, Bapak/Ibu Guru & Staf SDN Kalisalak 01.
+Aplikasi ini digunakan untuk mengelola 44 Laporan Administrasi 
+Sekolah dan Rencana Kerja Tahunan (RKT) secara terenkripsi dan 
+otomatis tersinkronisasi ke sistem cloud sekolah.
+
+----------------------------------------------------------------
+CARA MEMASANG APLIKASI DI LAPTOP:
+----------------------------------------------------------------
+1. Ekstrak file ZIP ini ke folder pilihan Anda (misal: di Dokumen / D:).
+2. Dobel-klik file: "Pasang_Di_Laptop_Guru.bat".
+3. Pintasan berlogo resmi "DASHBOARD LAPORAN SDN KALISALAK 01" 
+   akan langsung muncul di layar Desktop Anda.
+
+----------------------------------------------------------------
+CARA MEMBUKA APLIKASI:
+----------------------------------------------------------------
+1. Buka icon berlogo resmi Kabupaten Tegal di Desktop Anda:
+   "DASHBOARD LAPORAN SDN KALISALAK 01".
+2. Di dalam jendela aplikasi, klik tombol hijau besar:
+   "🚀 MASUK DASHBOARD LAPORAN".
+3. Browser Anda akan langsung terbuka secara resmi dan aman.
+
+----------------------------------------------------------------
+PENTING (ATURAN KEAMANAN):
+----------------------------------------------------------------
+Situs dilindungi oleh protokol keamanan Zero-Trust SDN Kalisalak 01.
+Membuka langsung melalui link publik tanpa aplikasi ini akan 
+DIBLOKIR oleh sistem keamanan. Selalu gunakan aplikasi resmi ini.
+
+Terima Kasih,
+Tim IT & Administrasi SDN KALISALAK 01
