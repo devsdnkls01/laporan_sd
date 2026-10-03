@@ -456,20 +456,28 @@ try {
 
 var shell = null;
 var fso = null;
-var baseDir = "";
+var baseDir = "b:\\WEBSITE\\.administrasi_sd";
 var appPort = "2025";
 var publicDomain = "laporan_sdnkalisalak01.develzy.my.id";
-var tunnelToken = "";
+var tunnelToken = "eyJhIjoiOGZiZWM5Mjk1YmI5YTk1ODBjYjc1NmE4NjBlMTljOWUiLCJ0IjoiMjljOWU2YjctYzYxZS00MzNiLWIzY2YtYjA2ZDQ4ZTlkZTkwIiwicyI6IllXUm1PV016T0dVdE5ERTFOQzAwTldOaExXSTROR010T0ROaE1HWXdPR0kyWVdRMyJ9";
 var appAccessToken = "kalisalak01_secure_key_9f82a17b3c";
 
 try {
     shell = new ActiveXObject("WScript.Shell");
     fso = new ActiveXObject("Scripting.FileSystemObject");
-    // Dapatkan folder lokasi file .hta ini berada
-    baseDir = fso.GetParentFolderName(window.location.pathname.replace(/^file:\/\/\//i, '').replace(/\//g, '\\'));
+    
+    // Dapatkan folder lokasi file .hta ini berada dengan path Windows yang valid
+    var raw = window.location.pathname || "";
+    try { raw = decodeURIComponent(raw); } catch(e) {}
+    raw = raw.replace(/^file:[\\/]+/i, '');
+    raw = raw.replace(/^[\\/]+/, '');
+    raw = raw.replace(/\//g, '\\');
+    if (fso && fso.FileExists(raw)) {
+        baseDir = fso.GetParentFolderName(raw);
+    }
 } catch (e) {}
 
-// Baca .env langsung dari HTA
+// Baca .env langsung dari HTA (jika ada nilai baru)
 function loadEnv() {
     try {
         var envPath = baseDir + "\\.env";
@@ -508,15 +516,16 @@ function bootstrapServices() {
     
     addCustomLog("[KERNEL_BOOT]", "Menginisialisasi layanan server latar belakang...");
 
-    // 1. Bersihkan socket lama pada port yang sama
+    // 1. Bersihkan socket lama pada port yang sama & proses tunnel lama
     try {
         shell.Run('cmd /c for /f "tokens=5" %a in (\'netstat -ano ^| findstr ":' + appPort + '" ^| findstr "LISTENING"\') do taskkill /F /PID %a >nul 2>&1', 0, true);
+        shell.Run('taskkill /F /IM cloudflared-windows-amd64.exe >nul 2>&1', 0, true);
     } catch(e) {}
 
-    // 2. Jalankan Node.js server secara hidden (0 = hidden, false = async)
+    // 2. Jalankan Node.js server secara hidden
     try {
-        shell.CurrentDirectory = baseDir;
-        shell.Run('cmd /c node server.js >nul 2>&1', 0, false);
+        var nodeCmd = 'cmd /c cd /d "' + baseDir + '" && node server.js';
+        shell.Run(nodeCmd, 0, false);
         addCustomLog("[NODE_ENGINE]", "Node.js V8 runtime berhasil dijalankan pada port " + appPort);
     } catch(e) {
         addCustomLog("[ERROR]", "Gagal memulai Node.js: " + e.message);
@@ -524,19 +533,22 @@ function bootstrapServices() {
 
     // 3. Jalankan Cloudflare Tunnel secara hidden
     try {
-        if (tunnelToken) {
-            var exePath = baseDir + '\\cloudflared-windows-amd64.exe';
-            if (fso && fso.FileExists(exePath)) {
-                shell.Run('cmd /c "' + exePath + '" tunnel run --token ' + tunnelToken + ' >nul 2>&1', 0, false);
-                addCustomLog("[ZERO_TRUST]", "Cloudflare Tunnel aktif menghubungkan https://" + publicDomain);
-            }
+        var exePath = baseDir + '\\cloudflared-windows-amd64.exe';
+        if (fso && fso.FileExists(exePath)) {
+            var cfCmd = 'cmd /c cd /d "' + baseDir + '" && "' + exePath + '" tunnel run --token ' + tunnelToken;
+            shell.Run(cfCmd, 0, false);
+            addCustomLog("[ZERO_TRUST]", "Cloudflare Tunnel aktif menghubungkan https://" + publicDomain);
+        } else {
+            addCustomLog("[WARN]", "File cloudflared-windows-amd64.exe tidak ditemukan di: " + exePath);
         }
     } catch(e) {
         addCustomLog("[ERROR]", "Gagal memulai Cloudflare Tunnel: " + e.message);
     }
 
-    // Siap dan menunggu pengguna mengklik tombol "MASUK DASHBOARD"
-    addCustomLog("[SYSTEM_READY]", "Layanan aktif! Silakan klik tombol 'MASUK DASHBOARD'.");
+    // 4. Siap dan menunggu pengguna mengklik tombol "MASUK DASHBOARD"
+    setTimeout(function() {
+        addCustomLog("[SYSTEM_READY]", "Layanan aktif! Silakan klik tombol 'MASUK DASHBOARD'.");
+    }, 2000);
 }
 
 function openPortal() {
