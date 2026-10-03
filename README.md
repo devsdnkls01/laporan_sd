@@ -1,5 +1,6 @@
 # SISTEM INFORMASI MANAJEMEN LAPORAN & RKT
-### SD NEGERI KALISALAK 01 — KECAMATAN MARGASARI, KABUPATEN TEGAL
+
+## SD NEGERI KALISALAK 01 — KECAMATAN MARGASARI, KABUPATEN TEGAL
 
 Sistem administrasi pelaporan program kerja kedinasan, Rencana Kerja Tahunan (RKT 2027), dan Perencanaan Berbasis Data (PBD) dengan integrasi penuh ke **Cloudflare D1 Database (Serverless SQLite)**, **Cloudflare Zero-Trust Tunnel**, dan **Cloudinary Cloud Storage**.
 
@@ -41,14 +42,19 @@ Sistem administrasi pelaporan program kerja kedinasan, Rencana Kerja Tahunan (RK
 ## 🚀 Perintah Utama (NPM Scripts)
 
 * **Menjalankan Server Host:**
+
   ```bash
   npm start
   ```
+
 * **Sinkronisasi Ulang Data ke Cloudflare D1:**
+
   ```bash
   npm run seed:d1
   ```
+
 * **Menerbitkan Rilis Paket Guru ke GitHub:**
+
   ```bash
   npm run publish:release
   ```
@@ -56,6 +62,7 @@ Sistem administrasi pelaporan program kerja kedinasan, Rencana Kerja Tahunan (RK
 ---
 
 ## 🔒 Protokol Keamanan & Database
+
 1. **Zero-Trust Lockdown:** Akses web publik diproteksi oleh token otentikasi sesi.
 2. **Cloudflare D1 Serverless:** Seluruh perubahan teks, nilai tabel, dan status tersimpan permanen secara real-time.
 3. **Auto-Termination:** Server dan tunnel otomatis berhenti instan saat aplikasi ditutup melalui tombol (X).
