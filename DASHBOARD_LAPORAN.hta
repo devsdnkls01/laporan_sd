@@ -517,8 +517,13 @@ function bootstrapServices() {
     
     // Terapkan Logo 3D ke Titlebar dan Taskbar Windows
     try {
-        var iconCmd = 'powershell -WindowStyle Hidden -ExecutionPolicy Bypass -File "' + baseDir + '\\set_window_icon.ps1"';
-        shell.Run(iconCmd, 0, false);
+        var iconScript = (fso && fso.FileExists(baseDir + '\\scripts\\set_window_icon.ps1'))
+            ? (baseDir + '\\scripts\\set_window_icon.ps1')
+            : (baseDir + '\\set_window_icon.ps1');
+        if (fso && fso.FileExists(iconScript)) {
+            var iconCmd = 'powershell -WindowStyle Hidden -ExecutionPolicy Bypass -File "' + iconScript + '"';
+            shell.Run(iconCmd, 0, false);
+        }
     } catch(e) {}
 
     addCustomLog("[KERNEL_BOOT]", "Menginisialisasi layanan server latar belakang...");
@@ -540,7 +545,9 @@ function bootstrapServices() {
 
     // 3. Jalankan Cloudflare Tunnel secara hidden
     try {
-        var exePath = baseDir + '\\cloudflared-windows-amd64.exe';
+        var exePath = (fso && fso.FileExists(baseDir + '\\bin\\cloudflared-windows-amd64.exe'))
+            ? (baseDir + '\\bin\\cloudflared-windows-amd64.exe')
+            : (baseDir + '\\cloudflared-windows-amd64.exe');
         if (fso && fso.FileExists(exePath)) {
             var cfCmd = 'cmd /c cd /d "' + baseDir + '" && "' + exePath + '" tunnel run --token ' + tunnelToken;
             shell.Run(cfCmd, 0, false);
@@ -551,6 +558,7 @@ function bootstrapServices() {
     } catch(e) {
         addCustomLog("[ERROR]", "Gagal memulai Cloudflare Tunnel: " + e.message);
     }
+
 
     // 4. Siap dan menunggu pengguna mengklik tombol "MASUK DASHBOARD"
     setTimeout(function() {

@@ -100,11 +100,12 @@ async function run() {
   }
 
   // 2. Unggah file zip sebagai Asset
-  const zipPath = path.join(__dirname, 'Aplikasi_Guru_SDN_Kalisalak_01.zip');
+  const zipPath = path.join(__dirname, '..', 'distribusi_guru', 'Aplikasi_Guru_SDN_Kalisalak_01.zip');
   if (!fs.existsSync(zipPath)) {
     console.error('File zip tidak ditemukan:', zipPath);
     process.exit(1);
   }
+
 
   const zipBuffer = fs.readFileSync(zipPath);
   console.log(`Mengunggah Aplikasi_Guru_SDN_Kalisalak_01.zip (${zipBuffer.length} bytes) ke GitHub Release...`);

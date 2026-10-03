@@ -1,7 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
-const d1 = require('./js/server/d1_service');
+const d1 = require('../js/server/d1_service');
+
+const rootDir = path.resolve(__dirname, '..');
 
 async function seedAll() {
   console.log('=== MEMULAI SINKRONISASI MASTER KE CLOUDFLARE D1 ===');
@@ -109,7 +111,7 @@ async function seedAll() {
 
   // 3. Seed 44 Laporan Lengkap
   console.log('[3/5] Memindahkan Seluruh 44 Laporan Program Kerja ke D1...');
-  const reportsPath = path.join(__dirname, 'database', 'reports_complete_db.json');
+  const reportsPath = path.join(rootDir, 'database', 'reports_complete_db.json');
   if (!fs.existsSync(reportsPath)) {
     throw new Error('File database/reports_complete_db.json tidak ditemukan!');
   }
@@ -126,7 +128,7 @@ async function seedAll() {
 
   // 4. Seed RKT 2027
   console.log('[4/5] Memindahkan RKT 2027 Lengkap ke D1...');
-  const rktFilePath = path.join(__dirname, 'js', 'rkt_data.js');
+  const rktFilePath = path.join(rootDir, 'js', 'rkt_data.js');
   const rktContent = fs.readFileSync(rktFilePath, 'utf8');
   const rktSandbox = { window: {} };
   vm.createContext(rktSandbox);
@@ -141,7 +143,8 @@ async function seedAll() {
 
   // 5. Seed PBD (Rapor Pendidikan)
   console.log('[5/5] Memindahkan Rapor PBD ke D1...');
-  const pbdPath = path.join(__dirname, 'database', 'rapor_pbd_kalisalak01.json');
+  const pbdPath = path.join(rootDir, 'database', 'rapor_pbd_kalisalak01.json');
+
   if (fs.existsSync(pbdPath)) {
     const pbdContent = fs.readFileSync(pbdPath, 'utf8');
     const pbdJson = JSON.parse(pbdContent);

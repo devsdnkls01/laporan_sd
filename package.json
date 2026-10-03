@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "seed:d1": "node scripts/seed_d1.js",
+    "publish:release": "node scripts/publish_release.js"
   },
   "keywords": [
     "school-management",
