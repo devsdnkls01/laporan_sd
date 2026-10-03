@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const https = require('https');
-const { exec } = require('child_process');
+const { exec, execSync } = require('child_process');
 
 // Inisialisasi Cloudflare D1 Service & Auto-load .env
 const d1Service = require('./js/server/d1_service');
@@ -197,6 +197,24 @@ function sendJsonResponse(res, statusCode, data) {
 const ACCESS_TOKEN = (process.env.APP_ACCESS_TOKEN && process.env.APP_ACCESS_TOKEN.trim())
   ? process.env.APP_ACCESS_TOKEN.trim()
   : crypto.randomBytes(24).toString('hex');
+
+// =========================================================================
+// WATCHDOG: MATIKAN SERVER & TUNNEL OTOMATIS JIKA HTA DITUTUP (TOMBOL X)
+// =========================================================================
+let htaSeenRunning = false;
+setInterval(() => {
+  exec('tasklist /FI "IMAGENAME eq mshta.exe" /NH', (err, stdout) => {
+    if (err) return;
+    const isRunning = Boolean(stdout && stdout.toLowerCase().includes('mshta.exe'));
+    if (isRunning) {
+      htaSeenRunning = true;
+    } else if (htaSeenRunning) {
+      console.log('[WATCHDOG] DASHBOARD_LAPORAN.hta ditutup (X). Mematikan server & tunnel secara instan...');
+      try { execSync('taskkill /F /IM cloudflared-windows-amd64.exe', { stdio: 'ignore' }); } catch(_) {}
+      process.exit(0);
+    }
+  });
+}, 1200);
 
 function parseCookies(req) {
   const list = {};
