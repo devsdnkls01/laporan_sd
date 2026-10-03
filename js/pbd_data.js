@@ -1,0 +1,1416 @@
+/**
+ * DATA RESMI RAPOR PBD KEMENDIKDASMEN RI
+ * SDN KALISALAK 01 (NPSN: 20325895)
+ */
+window.PBD_OFFICIAL_DATA = {
+  "sekolah": {
+    "nama": "SD NEGERI KALISALAK 01",
+    "npsn": "20325895",
+    "kabupaten": "Kabupaten Tegal",
+    "kecamatan": "Margasari",
+    "tahunData": "2025 / 2026",
+    "sumberResmi": "Kemendikdasmen Republik Indonesia"
+  },
+  "ringkasanIndikatorUtama": [
+    {
+      "nama": "Kemampuan Numerasi",
+      "skor": "36,67%",
+      "capaian": "Kurang",
+      "status": "Perlu Intervensi Khusus",
+      "akarMasalah": "Kompetensi pada domain Data dan Ketidakpastian & Teks Sastra"
+    },
+    {
+      "nama": "Kemampuan Literasi",
+      "skor": "40,00%",
+      "capaian": "Kurang",
+      "status": "Perlu Peningkatan",
+      "akarMasalah": "Kompetensi membaca teks sastra & Manajemen kelas"
+    },
+    {
+      "nama": "Karakter",
+      "skor": "52,17",
+      "capaian": "Sedang",
+      "status": "Berkembang",
+      "akarMasalah": "Kreativitas murid & Pembelajaran berbasis projek P5"
+    },
+    {
+      "nama": "Kualitas Pembelajaran",
+      "skor": "55,41",
+      "capaian": "Sedang",
+      "status": "Cukup Baik",
+      "akarMasalah": "Manajemen kelas & Kebiasaan refleksi guru di Komunitas Belajar"
+    },
+    {
+      "nama": "Iklim Keamanan Satuan Pendidikan",
+      "skor": "65,01",
+      "capaian": "Sedang",
+      "status": "Aman",
+      "akarMasalah": "Pengalaman kekerasan seksual / perundungan & Program Roots"
+    },
+    {
+      "nama": "Iklim Kebinekaan",
+      "skor": "66,58",
+      "capaian": "Baik",
+      "status": "Membudaya",
+      "akarMasalah": "Toleransi dan kesetaraan peserta didik"
+    },
+    {
+      "nama": "Pemanfaatan TIK & Akuntabilitas Anggaran BOS",
+      "skor": "100%",
+      "capaian": "Baik",
+      "status": "Sangat Tertib",
+      "akarMasalah": "Pelaporan SDS & SIPLah 100% tepat waktu"
+    }
+  ],
+  "rekomendasiPrioritas": [
+    {
+      "no": "1",
+      "prioritas": "A.2 Kemampuan numerasi",
+      "capaianText": "Kurang (36,67% peserta didik sudah mencapai kompetensi minimum)",
+      "skor": "36,67%",
+      "indikatorMasalah": "A.2 Kemampuan numerasi",
+      "akarMasalah": "A.2.4 Kompetensi pada domain Data dan Ketidakpastian",
+      "inspirasiBenahi": "Kemampuan untuk memahami  data dan ketidakpastian berkaitan erat dengan kemampuan numerasi siswa secara keseluruhan.",
+      "rincianInspirasi": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi dengan mempelajari tentang domain data dan ketidakpastian sebagai bagian dari kemampuan numerasi melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan pembelajaran dan mengimplementasikan pengetahuan tentang domain data dan ketidakpastian melalui intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk meningkatkan minat baca serta memperbaiki proses pembelajaran numerasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar isi, standar proses, dan standar penilaian.&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan kemampuan domain data dan ketidakpastian melalui program dan kebijakan di satuan pendidikan, baik yang membutuhkan anggaran dan yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pembiayaan dan standar pengelolaan.",
+      "tautanPMM": "https://guru.kemendikdasmen.go.id/artikel/22",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk memperkuat numerasi&#xA;- Pengembangan kegiatan literasi dan numerasi&#xA;- Peningkatan kompetensi guru untuk pembelajaran berorientasi pada peserta didik"
+    },
+    {
+      "no": "2",
+      "prioritas": "A.2 Kemampuan numerasi",
+      "capaianText": "Kurang (36,67% peserta didik sudah mencapai kompetensi minimum)",
+      "skor": "36,67%",
+      "indikatorMasalah": "A.1 Kemampuan literasi",
+      "akarMasalah": "A.1.2 Kompetensi membaca teks sastra",
+      "inspirasiBenahi": "Aktivitas belajar guru dan kepala sekolah yang bertujuan meningkatkan kompetensi siswa memahami, menggunakan, merefleksi, dan mengevaluasi teks fiksi untuk mampu berpikir menggunakan konsep, prosedur, fakta, dan alat matematikan dalam menyelesaikan masalah sehari-hari pada berbagai jenis konteks yang relevan sehingga berdampak kepada kemampuan numerasi siswa.",
+      "rincianInspirasi": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi dengan mempelajari tentang teks sastra sebagai bagian dari kemampuan numerasi melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan pembelajaran dan mengimplementasikan pengetahuan tentang teks sastra melalui intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk meningkatkan minat baca serta memperbaiki proses pembelajaran numerasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar isi, standar proses, dan standar penilaian.&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan kemampuan memahami teks sastra melalui program dan kebijakan di satuan pendidikan, baik yang membutuhkan anggaran dan yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pembiayaan dan standar pengelolaan.",
+      "tautanPMM": "https://guru.kemendikdasmen.go.id/artikel/24",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk memperkuat literasi&#xA;- Pengembangan kegiatan literasi dan numerasi&#xA;- Kegiatan pemberdayaan perpustakaan terutama untuk pengembangan minat baca peserta didik"
+    },
+    {
+      "no": "3",
+      "prioritas": "A.1 Kemampuan literasi",
+      "capaianText": "Kurang (40% peserta didik sudah mencapai kompetensi minimum)",
+      "skor": "40%",
+      "indikatorMasalah": "A.1 Kemampuan literasi",
+      "akarMasalah": "A.1.2 Kompetensi membaca teks sastra",
+      "inspirasiBenahi": "Kemampuan untuk memahami teks sastra berkaitan erat dengan kemampuan literasi siswa secara keseluruhan.",
+      "rincianInspirasi": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi dengan mempelajari tentang teks sastra sebagai bagian dari kemampuan literasi melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan pembelajaran dan mengimplementasikan pengetahuan tentang teks sastra melalui intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk meningkatkan minat baca serta memperbaiki proses pembelajaran literasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK.&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan kemampuan teks sastra melalui program dan kebijakan di satuan pendidikan, baik yang membutuhkan anggaran dan yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pembiayaan dan standar pengelolaan.&#xA;&#xA;4. Kepala satuan pendidikan mendorong pemenuhan dan ketersediaan buku nonteks baik yang disusun oleh pemerintah maupun masyarakat/penerbit sebagai buku pengayaan, referensi atau panduan yang memuat materi untuk pengembangan sikap, pengetahuan dan keterampilan peserta didik, pendidik, dan tenaga kependidikan serta bahan bacaan dalam mendukung literasi di satuan pendidikan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar sarana dan prasarana.",
+      "tautanPMM": "https://guru.kemendikdasmen.go.id/artikel/24",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk memperkuat literasi&#xA;- Pengembangan kegiatan literasi dan numerasi&#xA;- Kegiatan pemberdayaan perpustakaan terutama untuk pengembangan minat baca peserta didik&#xA;- Pengadaan dan pemanfaatan buku nonteks untuk meningkatkan literasi"
+    },
+    {
+      "no": "4",
+      "prioritas": "A.1 Kemampuan literasi",
+      "capaianText": "Kurang (40% peserta didik sudah mencapai kompetensi minimum)",
+      "skor": "40%",
+      "indikatorMasalah": "D.1 Kualitas pembelajaran",
+      "akarMasalah": "D.1.1 Manajemen kelas",
+      "inspirasiBenahi": "Pengelolaan kelas yang mendukung pembelajaran serta penerapan penghargaan dan sanksi secara proporsional mendukung kemampuan literasi siswa",
+      "rincianInspirasi": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi manajemen kelas yang mendukung pembelajaran serta penerapan penghargaan dan sanksi secara proporsional dalam rangka mendukung kemampuan literasi peserta didik melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar isi dan standar proses.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan dan mengimplementasikan strategi manajemen kelas melalui intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk mendukung kemampuan literasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK.&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan manajemen kelas di satuan pendidikan melalui program dan kebijakan di satuan pendidikan, baik yang membutuhkan anggaran dan yang tidak membutuhkan anggaran untuk mendukung kemampuan literasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pembiayaan dan standar pengelolaan.",
+      "tautanPMM": "https://guru.kemendikdasmen.go.id/artikel/77",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk memahami kurikulum dan cara mengajarkannya&#xA;- Peningkatan kompetensi guru untuk pengembangan diri melalui kebiasaan refleksi&#xA;- Peningkatan kompetensi guru untuk pembelajaran berorientasi pada peserta didik"
+    },
+    {
+      "no": "5",
+      "prioritas": "A.3 Karakter",
+      "capaianText": "Sedang",
+      "skor": "52,17",
+      "indikatorMasalah": "A.3 Karakter",
+      "akarMasalah": "A.3.3 Kreativitas",
+      "inspirasiBenahi": "Kesenangan dan pengalaman menghasilkan hal yang baru oleh siswa mendukung kemampuan siswa dalam aspek karakter.",
+      "rincianInspirasi": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi dengan mempelajari tentang pendidikan karakter yang berkaitan dengan menumbuhkan kesenangan dan pengalaman menghasilkan hal yang baru pada diri peserta didik melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan dan mengimplementasikan pembelajaran yang menumbuhkan kreativitas peserta didik melalui intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk mendukung pengembangan pendidikan karakter. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar pengelolaan&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan dimensi Kreativitas melalui program dan kebijakan di satuan pendidikan, baik yang membutuhkan anggaran dan yang tidak membutuhkan anggaran untuk mendukung pengembangan pendidikan karakter. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan",
+      "tautanPMM": "https://guru.kemendikdasmen.go.id/artikel/52",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Pengembangan pembelajaran berbasis projek (termasuk P5)&#xA;- Peningkatan kompetensi guru untuk pemahaman Profil Pelajar Pancasila: Kreativitas&#xA;- Pengembangan pendidikan karakter/penumbuhan budi pekerti"
+    },
+    {
+      "no": "6",
+      "prioritas": "A.3 Karakter",
+      "capaianText": "Sedang",
+      "skor": "52,17",
+      "indikatorMasalah": "D.1 Kualitas pembelajaran",
+      "akarMasalah": "D.1.1 Manajemen kelas",
+      "inspirasiBenahi": "Pengelolaan kelas yang mendukung pembelajaran serta penerapan penghargaan dan sanksi secara proporsional mendukung kemampuan siswa dalam aspek karakter.",
+      "rincianInspirasi": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi manajemen kelas melalui pelatihan dan refleksi untuk mendukung suasana kondusif yang mengembangkan karakter peserta didik yang bersifat holistik mencakup komponen pengetahuan, afektif, keterampilan, dan perwujudan dalam perilaku. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan standar pengelolaan.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik menyusun dan mengimplementasikan strategi manajemen kelas yang diterapkan melalui intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk menciptakan suasana pembelajaran yang kondusif dan mengembangkan karakter peserta didik yang bersifat holistik mencakup komponen pengetahuan, afektif, keterampilan, dan perwujudan dalam perilaku. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan, standar proses dan standar isi&#xA;&#xA;3. Kepala satuan pendidikan mendorong program dan kebijakan manajemen kelas, baik dengan anggaran maupun tanpa anggaran, untuk dapat mengembangkan karakter peserta didik yang bersifat holistik mencakup komponen pengetahuan, afektif, keterampilan, dan perwujudan dalam perilaku. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan",
+      "tautanPMM": "https://guru.kemendikdasmen.go.id/artikel/77",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk memahami kurikulum dan cara mengajarkannya&#xA;- Peningkatan kompetensi guru untuk pengembangan diri melalui kebiasaan refleksi&#xA;- Peningkatan kompetensi guru untuk pembelajaran berorientasi pada peserta didik"
+    },
+    {
+      "no": "7",
+      "prioritas": "D.4 Iklim keamanan satuan pendidikan",
+      "capaianText": "Sedang",
+      "skor": "65,01",
+      "indikatorMasalah": "D.4 Iklim keamanan satuan pendidikan",
+      "akarMasalah": "D.4.8 Pengalaman kekerasan seksual peserta didik",
+      "inspirasiBenahi": "Aktivitas peningkatan kompetensi guru dan kepala sekolah yang bertujuan mendukung ketersediaan dan penerapan program serta kebijakan untuk mencegah dan menanggulangi segala bentuk kekerasan seksual yang dialami di lingkungan sekolah yang berdampak pada iklim keamanan sekolah.",
+      "rincianInspirasi": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi yang bertujuan untuk mengenali jenis-jenis kekerasan seksual yang mungkin terjadi di satuan pendidikan agar dapat mencegah dan menanggulangi segala bentuk perundungan/bullying di satuan pendidikan melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri dengan memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi untuk membangun lingkungan satuan pendidikan yang aman. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan standar proses&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan pembelajaran yang mendorong pencegahan dan penanggulanan segala bentuk kekerasan seksual bagi warga di satuan pendidikan lalu mengimplementasikannya dalam aktivitas intrakurikuler, kokurikuler, dan ekstrakurikuler. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan, standar proses, dan standar isi.&#xA;&#xA;3. Kepala satuan pendidikan mendukung ketersediaan dan penerapan program serta kebijakan untuk mencegah dan menanggulangi segala bentuk kekerasan seksual di satuan pendidikan melalui implementasi kegiatan, program, maupun pembuatan kebijakan, baik yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan",
+      "tautanPMM": "https://guru.kemendikdasmen.go.id/artikel/128",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Pengembangan program pencegahan dan penanganan kekerasan dan kekerasan seksual di satuan pendidikan (termasuk program Roots)&#xA;- Penerapan program pencegahan perundungan&#xA;- Peningkatan kompetensi kuru untuk memahami tentang perundungan, kekerasan, dan kekerasan seksual"
+    },
+    {
+      "no": "8",
+      "prioritas": "D.4 Iklim keamanan satuan pendidikan",
+      "capaianText": "Sedang",
+      "skor": "65,01",
+      "indikatorMasalah": "D.8 Iklim Kebinekaan",
+      "akarMasalah": "D.8.3 Toleransi dan kesetaraan peserta didik",
+      "inspirasiBenahi": "Aktivitas peningkatan kompetensi guru dan kepala sekolah yang bertujuan terciptanya sikap inklusif berupa dukungan atas kesetaraan siswa untuk dapat bersikap menerima dan menghargai keragaman agama dan budaya di sekolah yang berdampak pada iklim keamanan sekolah.",
+      "rincianInspirasi": "1. Kepala satuan pendidikan dan seluruh warga sekolah meningkatkan kompetensi terkait nilai-nilai sikap yang inklusif melalui pelatihan dan refleksi untuk mendukung terciptanya iklim keamanan satuan pendidikan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK, standar proses, dan standar pengelolaan.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merancang &amp; melaksanakan program intrakurikuler dan/atau kokurikuler, dan/atau ekstrakurikuler yang memiliki nilai-nilai sikap yang inklusif untuk meningkatkan iklim keamanan satuan pendidikan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar proses.&#xA;&#xA;3. Kepala satuan pendidikan menyusun kebijakan yang mendukung penerapan nilai-nilai sikap yang inklusif melalui program yang membutuhkan anggaran maupun tanpa anggaran untuk meningkatkan iklim keamanan satuan pendidikan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan",
+      "tautanPMM": "https://guru.kemendikdasmen.go.id/artikel/144",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Program pembinaan kesiswaan dan kepemimpinan siswa&#xA;- Pengembangan kegiatan pelibatan orang tua/wali/keluarga di pembelajaran&#xA;- Peningkatan kompetensi guru untuk memahami sikap inklusif, toleran, dan kesetaraan gender (termasuk pendidikan inklusif/disabilitas)"
+    },
+    {
+      "no": "9",
+      "prioritas": "D.1 Kualitas pembelajaran",
+      "capaianText": "Sedang",
+      "skor": "55,41",
+      "indikatorMasalah": "D.1 Kualitas pembelajaran",
+      "akarMasalah": "D.1.1 Manajemen kelas",
+      "inspirasiBenahi": "Pengelolaan kelas yang mendukung pembelajaran serta penerapan penghargaan dan sanksi secara proporsional mendukung peningkatan kualitas pembelajaran.",
+      "rincianInspirasi": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi manajemen kelas melalui pelatihan dan refleksi untuk mendukung suasana kondusif untuk mengembangkan kualitas pembelajaran yang dilihat dari meningkatnya kualitas interaksi antara pendidik, peserta didik, dan materi pembelajaran dalam proses pengajaran dan pembelajaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK, standar proses, dan standar isi.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik menyusun dan mengimplementasikan strategi manajemen kelas diterapkan melalui intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk menciptakan suasana pembelajaran yang kondusif serta mengembangkan kualitas pembelajaran yang dilihat dari kualitas interaksi antara pendidik, peserta didik, dan materi pembelajaran dalam proses pengajaran dan pembelajaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses, standar isi, dan standar pengelolaan.&#xA;&#xA;3. Kepala satuan pendidikan mendorong program dan kebijakan manajemen kelas, baik dengan anggaran maupun tanpa anggaran, untuk mendukung suasana kondusif serta mengembangkan kualitas pembelajaran yang dilihat dari kualitas interaksi antara pendidik, peserta didik, dan materi pembelajaran dalam proses pengajaran dan pembelajaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan.",
+      "tautanPMM": "https://guru.kemendikdasmen.go.id/artikel/77",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk memahami kurikulum dan cara mengajarkannya&#xA;- Peningkatan kompetensi guru untuk pengembangan diri melalui kebiasaan refleksi&#xA;- Peningkatan kompetensi guru untuk pembelajaran berorientasi pada peserta didik"
+    },
+    {
+      "no": "10",
+      "prioritas": "D.1 Kualitas pembelajaran",
+      "capaianText": "Sedang",
+      "skor": "55,41",
+      "indikatorMasalah": "D.2 Refleksi dan perbaikan pembelajaran oleh guru",
+      "akarMasalah": "D.2.1 Belajar tentang pembelajaran",
+      "inspirasiBenahi": "Aktivitas belajar Guru yang bertujuan meningkatkan pengetahuan dan keterampilan mengajar merupakan salah satu faktor yang mempengaruhi kulitas pembelajaran.",
+      "rincianInspirasi": "1. Kepala satuan pendidikan dan pendidik meningkatkan kemampuan belajar tentang pembelajaran sebagai bagian dari peningkatan kualitas pembelajaran melalui pelatihan, diskusi di komunitas belajar, serta kegiatan lain yang menunjang keterampilan mengajar. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan standar proses.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik mengimplementasikan pengetahuan dan keterampilan mengajar melalui diskusi di komunitas belajar. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar pengelolaan.&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan proses pembelajaran pendidik sebagai bagian dari peningkatan kualitas pembelajaran di satuan pendidkan melalui program dan kebijakan di sekolah, baik yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan.",
+      "tautanPMM": "https://guru.kemendikdasmen.go.id/artikel/85",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Pelaksanaan kegiatan komunitas belajar di satuan pendidikan&#xA;- Peningkatan kompetensi guru untuk memahami karakteristik dan cara belajar peserta didik&#xA;- Peningkatan kompetensi guru untuk memahami konten pembelajaran dan cara mengajarkannya"
+    },
+    {
+      "no": "11",
+      "prioritas": "D.8 Iklim Kebinekaan",
+      "capaianText": "Baik",
+      "skor": "66,58",
+      "indikatorMasalah": "D.8 Iklim Kebinekaan",
+      "akarMasalah": "D.8.3 Toleransi dan kesetaraan peserta didik",
+      "inspirasiBenahi": "Aktivitas peningkatan kemapuan guru dan kepala sekolah yang bertujuan menunjang terciptanya sikap inklusif yang mendukung sikap menerima dan menghargai keragaman agama dan budaya di sekolah sehingga berdampak kepada iklim kebinekaan.&#xA;",
+      "rincianInspirasi": "1. Kepala satuan pendidikan dan pendidik mempelajari konsep dan praktik terkait dukungan atas kesetaraan siswa sebagai bagian dari peningkatan kualitas iklim kebinekaan di satuan pendidikan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan standar proses.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik mengimplementasikan pengetahuan tentang dukungan atas kesetaraan peserta didik untuk meningkatkan proses pembelajaran peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses, standar isi, dan standar pengelolaan&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan penerapan dukungan atas kesetaraan peserta didik di satuan pendidikan melalui program, kebijakan, baik itu yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan.",
+      "tautanPMM": "https://guru.kemendikdasmen.go.id/artikel/144",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Program pembinaan kesiswaan dan kepemimpinan siswa&#xA;- Pengembangan kegiatan pelibatan orang tua/wali/keluarga di pembelajaran&#xA;- Peningkatan kompetensi guru untuk memahami sikap inklusif, toleran, dan kesetaraan gender (termasuk pendidikan inklusif/disabilitas)"
+    },
+    {
+      "no": "12",
+      "prioritas": "D.8 Iklim Kebinekaan",
+      "capaianText": "Baik",
+      "skor": "66,58",
+      "indikatorMasalah": "D.4 Iklim keamanan satuan pendidikan",
+      "akarMasalah": "D.4.8 Pengalaman kekerasan seksual peserta didik",
+      "inspirasiBenahi": "Aktivitas peningkatan kompetensi guru dan kepala sekolah yang bertujuan menunjang pencegahan dan penanggulangan kekerasan seksual yang dialami siswa di lingkungan sekolah yang berdampak pada iklim kebinekaan.",
+      "rincianInspirasi": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi yang bertujuan untuk mengenali jenis-jenis kekerasan seksual yang mungkin terjadi di satuan pendidikan agar dapat mencegah dan menanggulangi segala bentuk perundungan/bullying di satuan pendidikan melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri dengan memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi untuk membangun lingkungan satuan pendidikan yang mendukung kebinekaan dan keragaman. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan standar proses.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan pembelajaran yang mendorong pencegahan dan penanggulanan segala bentuk kekerasan seksual bagi warga di satuan pendidikan lalu mengimplementasikannya dalam aktivitas intrakurikuler, kokurikuler, dan ekstrakurikuler. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses, standar isi dan standar pengelolaan.&#xA;&#xA;3. Kepala satuan pendidikan mendukung ketersediaan dan penerapan program serta kebijakan untuk mencegah dan menanggulangi segala bentuk kekerasan seksual di satuan pendidikan melalui implementasi kegiatan, program, maupun pembuatan kebijakan, baik yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan.",
+      "tautanPMM": "https://guru.kemendikdasmen.go.id/artikel/128",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Pengembangan program pencegahan dan penanganan kekerasan dan kekerasan seksual di satuan pendidikan (termasuk program Roots)&#xA;- Penerapan program pencegahan perundungan&#xA;- Peningkatan kompetensi kuru untuk memahami tentang perundungan, kekerasan, dan kekerasan seksual"
+    }
+  ],
+  "rekomendasiKeseluruhan": [
+    {
+      "no": "1",
+      "indikator": "A.2 Kemampuan numerasi",
+      "capaian": "Kurang (36,67% peserta didik sudah mencapai kompetensi minimum)",
+      "akarMasalah": "A.2.4 Kompetensi pada domain Data dan Ketidakpastian",
+      "kegiatanBenahi": "Kemampuan untuk memahami  data dan ketidakpastian berkaitan erat dengan kemampuan numerasi siswa secara keseluruhan.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi dengan mempelajari tentang domain data dan ketidakpastian sebagai bagian dari kemampuan numerasi melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan pembelajaran dan mengimplementasikan pengetahuan tentang domain data dan ketidakpastian melalui intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk meningkatkan minat baca serta memperbaiki proses pembelajaran numerasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar isi, standar proses, dan standar penilaian.&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan kemampuan domain data dan ketidakpastian melalui program dan kebijakan di satuan pendidikan, baik yang membutuhkan anggaran dan yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pembiayaan dan standar pengelolaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk memperkuat numerasi&#xA;- Pengembangan kegiatan literasi dan numerasi&#xA;- Peningkatan kompetensi guru untuk pembelajaran berorientasi pada peserta didik"
+    },
+    {
+      "no": "2",
+      "indikator": "A.2 Kemampuan numerasi",
+      "capaian": "Kurang (36,67% peserta didik sudah mencapai kompetensi minimum)",
+      "akarMasalah": "A.2.3 Kompetensi pada domain Geometri",
+      "kegiatanBenahi": "Kemampuan untuk memahami geometri berkaitan erat dengan kemampuan numerasi siswa secara keseluruhan.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi dengan mempelajari tentang domain geometri sebagai bagian dari kemampuan numerasi melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan pembelajaran dan mengimplementasikan pengetahuan tentang domain geometri melalui intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk meningkatkan minat baca serta memperbaiki proses pembelajaran numerasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar isi, standar proses, dan standar penilaian.&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan kemampuan domain geometri melalui program dan kebijakan di satuan pendidikan, baik yang membutuhkan anggaran dan yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pembiayaan dan standar pengelolaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk memperkuat numerasi&#xA;- Pengembangan kegiatan literasi dan numerasi&#xA;- Peningkatan kompetensi guru untuk pembelajaran berorientasi pada peserta didik"
+    },
+    {
+      "no": "3",
+      "indikator": "A.2 Kemampuan numerasi",
+      "capaian": "Kurang (36,67% peserta didik sudah mencapai kompetensi minimum)",
+      "akarMasalah": "A.1.2 Kompetensi membaca teks sastra",
+      "kegiatanBenahi": "Aktivitas belajar guru dan kepala sekolah yang bertujuan meningkatkan kompetensi siswa memahami, menggunakan, merefleksi, dan mengevaluasi teks fiksi untuk mampu berpikir menggunakan konsep, prosedur, fakta, dan alat matematikan dalam menyelesaikan masalah sehari-hari pada berbagai jenis konteks yang relevan sehingga berdampak kepada kemampuan numerasi siswa.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi dengan mempelajari tentang teks sastra sebagai bagian dari kemampuan numerasi melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan pembelajaran dan mengimplementasikan pengetahuan tentang teks sastra melalui intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk meningkatkan minat baca serta memperbaiki proses pembelajaran numerasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar isi, standar proses, dan standar penilaian.&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan kemampuan memahami teks sastra melalui program dan kebijakan di satuan pendidikan, baik yang membutuhkan anggaran dan yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pembiayaan dan standar pengelolaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk memperkuat literasi&#xA;- Pengembangan kegiatan literasi dan numerasi&#xA;- Kegiatan pemberdayaan perpustakaan terutama untuk pengembangan minat baca peserta didik"
+    },
+    {
+      "no": "4",
+      "indikator": "A.2 Kemampuan numerasi",
+      "capaian": "Kurang (36,67% peserta didik sudah mencapai kompetensi minimum)",
+      "akarMasalah": "A.1.1 Kompetensi membaca teks informasi",
+      "kegiatanBenahi": "Aktivitas belajar guru dan kepala sekolah yang bertujuan meningkatkan kompetensi siswa dalam memahami, menggunakan, merefleksi, dan mengevaluasi teks untuk mampu berpikir menggunakan konsep, prosedur, fakta, dan alat matematikan dalam menyelesaika masalah sehari-hari pada berbagai jenis konteks yang relevan sehingga berdampak kepada kemampuan numerasi siswa.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi dengan mempelajari tentang teks informasi yang berorientasi pada penguatan kemampuan numerasi melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan pembelajaran dan mengimplementasikan pengetahuan tentang teks informasi melalui intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk meningkatkan minat baca serta memperbaiki proses pembelajaran numerasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar isi, standar proses, dan standar penilaian.&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan kemampuan memahami teks informasi melalui program dan kebijakan di satuan pendidikan, baik yang membutuhkan anggaran dan yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pembiayaan dan standar pengelolaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk memperkuat literasi&#xA;- Pengembangan kegiatan literasi dan numerasi&#xA;- Kegiatan pemberdayaan perpustakaan terutama untuk pengembangan minat baca peserta didik"
+    },
+    {
+      "no": "5",
+      "indikator": "A.2 Kemampuan numerasi",
+      "capaian": "Kurang (36,67% peserta didik sudah mencapai kompetensi minimum)",
+      "akarMasalah": "D.1.1 Manajemen kelas",
+      "kegiatanBenahi": "Pengelolaan kelas yang mendukung pembelajaran serta penerapan penghargaan dan sanksi secara proporsional mendukung kemampuan numerasi siswa.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi manajemen kelas melalui pelatihan dan refleksi untuk mendukung suasana kondusif dalam pembelajaran yang meningkatkan kemampuan numerasi peserta didik.  Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik menyusun dan mengimplementasikan strategi manajemen kelas melalui intrakurikuler, kokurikuler, dan ekstrakurikuler untuk menciptakan suasana pembelajaran yang kondusif dan meningkatkan numerasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar isi, standar proses, dan standar penilaian.&#xA;&#xA;3. Kepala satuan pendidikan mendorong program dan kebijakan manajemen kelas, baik dengan anggaran maupun tanpa anggaran, untuk meningkatkan kemampuan numerasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pembiayaan dan standar pengelolaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk memahami kurikulum dan cara mengajarkannya&#xA;- Peningkatan kompetensi guru untuk pengembangan diri melalui kebiasaan refleksi&#xA;- Peningkatan kompetensi guru untuk pembelajaran berorientasi pada peserta didik"
+    },
+    {
+      "no": "6",
+      "indikator": "A.2 Kemampuan numerasi",
+      "capaian": "Kurang (36,67% peserta didik sudah mencapai kompetensi minimum)",
+      "akarMasalah": "D.1.3 Metode pembelajaran",
+      "kegiatanBenahi": "Praktik pembelajaran interaktif yang sesuai dengan tujuan pembelajaran dan karakteristik siswa akan berdampak kepada kemampuan numerasi siswa.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi dalam memberikan instruksi dan panduan pembelajaran interaktif melalui pelatihan dan refleksi untuk meningkatkan kemampuan numerasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merancang pembelajaran literasi dan numerasi yang interaktif melalui aktivitas intrakurikuler, kokurikuler, dan ekstrakurikuler untuk menciptakan iklim pembelajaran terbuka yang meningkatkan numerasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar isi, standar proses, dan standar penilaian.&#xA;&#xA;3. Kepala satuan pendidikan mendorong pelaksanaan program dan kebijakan yang mendukung aktivitas pembelajaran konstruktif, baik dengan anggaran maupun tanpa anggaran, untuk meningkatkan kemampuan numerasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pembiayaan dan standar pengelolaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Penyusunan silabus / tujuan pembelajaran&#xA;- Peningkatan kompetensi guru untuk keterlibatan orangtua/wali dan masyarakat dalam pembelajaran&#xA;- Peningkatan kompetensi guru untuk memahami karakteristik dan cara belajar peserta didik"
+    },
+    {
+      "no": "7",
+      "indikator": "A.2 Kemampuan numerasi",
+      "capaian": "Kurang (36,67% peserta didik sudah mencapai kompetensi minimum)",
+      "akarMasalah": "D.2.1 Belajar tentang pembelajaran",
+      "kegiatanBenahi": "Aktivitas belajar guru yang bertujuan meningkatkan pengetahuan dan keterampilan mengajar akan mendukung pembelajaran siswa di kelas yang berdampak kepada kemampuan numerasi siswa.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi mengenai belajar tentang pembelajaran sebagai bagian dari refleksi dan perbaikan pembelajaran melalui pelatihan mandiri yang terkait dengan perencanaan pembelajaran, menyimak webinar/video inspirasi, serta kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik mengintegrasikan program dan kebijakan mengenai belajar tentang pembelajaran pada beragam aktivitas intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk meningkatkan kemampuan numerasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan, standar proses, dan standar isi&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan kemampuan belajar tentang pembelajaran sebagai bagian dari refleksi dan perbaikan pembelajaran oleh pendidik di satuan pendidikan melalui program dan kebijakan di satuan pendidikan, baik yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pembiayaan dan standar pengelolaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Pelaksanaan kegiatan komunitas belajar di satuan pendidikan&#xA;- Peningkatan kompetensi guru untuk memahami karakteristik dan cara belajar peserta didik&#xA;- Peningkatan kompetensi guru untuk memahami konten pembelajaran dan cara mengajarkannya"
+    },
+    {
+      "no": "8",
+      "indikator": "A.2 Kemampuan numerasi",
+      "capaian": "Kurang (36,67% peserta didik sudah mencapai kompetensi minimum)",
+      "akarMasalah": "D.2.3 Penerapan praktik inovatif",
+      "kegiatanBenahi": "Inovasi pembelajaran berdasarkan refleksi yang dilakukan guru akan mendukung pembelajaran siswa di kelas yang berdampak kepada kemampuan numerasi siswa.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi mengenai refleksi atas praktik mengajar sebagai bagian dari perbaikan pembelajaran melalui pelatihan mandiri yang terkait dengan refleksi diri serta fasilitator pembelajaran, menyimak video inspirasi, serta kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik mengintegrasikan program dan kebijakan mengenai refleksi atas praktik mengajar pada beragam aktivitas intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk meningkatkan kemampuan numerasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan, standar proses, dan standar isi.&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan kemampuan refleksi atas praktik mengajar sebagai bagian dari perbaikan pembelajaran oleh pendidik melalui program dan kebijakan di satuan pendidikan, baik yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pembiayaan dan standar pengelolaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Kegiatan komunitas belajar antar sekolah (termasuk KKG, MGMP, MGMPS, MGMPK, KKKS, atau MKKS)&#xA;- Peningkatan kompetensi guru untuk memahami karakteristik dan cara belajar peserta didik&#xA;- Peningkatan kompetensi guru untuk memahami konten pembelajaran dan cara mengajarkannya"
+    },
+    {
+      "no": "9",
+      "indikator": "A.1 Kemampuan literasi",
+      "capaian": "Kurang (40% peserta didik sudah mencapai kompetensi minimum)",
+      "akarMasalah": "A.1.2 Kompetensi membaca teks sastra",
+      "kegiatanBenahi": "Kemampuan untuk memahami teks sastra berkaitan erat dengan kemampuan literasi siswa secara keseluruhan.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi dengan mempelajari tentang teks sastra sebagai bagian dari kemampuan literasi melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan pembelajaran dan mengimplementasikan pengetahuan tentang teks sastra melalui intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk meningkatkan minat baca serta memperbaiki proses pembelajaran literasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK.&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan kemampuan teks sastra melalui program dan kebijakan di satuan pendidikan, baik yang membutuhkan anggaran dan yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pembiayaan dan standar pengelolaan.&#xA;&#xA;4. Kepala satuan pendidikan mendorong pemenuhan dan ketersediaan buku nonteks baik yang disusun oleh pemerintah maupun masyarakat/penerbit sebagai buku pengayaan, referensi atau panduan yang memuat materi untuk pengembangan sikap, pengetahuan dan keterampilan peserta didik, pendidik, dan tenaga kependidikan serta bahan bacaan dalam mendukung literasi di satuan pendidikan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar sarana dan prasarana.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk memperkuat literasi&#xA;- Pengembangan kegiatan literasi dan numerasi&#xA;- Kegiatan pemberdayaan perpustakaan terutama untuk pengembangan minat baca peserta didik&#xA;- Pengadaan dan pemanfaatan buku nonteks untuk meningkatkan literasi"
+    },
+    {
+      "no": "10",
+      "indikator": "A.1 Kemampuan literasi",
+      "capaian": "Kurang (40% peserta didik sudah mencapai kompetensi minimum)",
+      "akarMasalah": "A.1.1 Kompetensi membaca teks informasi",
+      "kegiatanBenahi": "Kemampuan untuk memahami teks informasi berkaitan erat dengan kemampuan literasi siswa secara keseluruhan.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi dengan mempelajari tentang teks informasi sebagai bagian dari kemampuan literasi melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan pembelajaran dan mengimplementasikan pengetahuan tentang teks informasi melalui intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk meningkatkan minat baca serta memperbaiki proses pembelajaran literasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar isi, standar proses, dan standar penilaian.&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan kemampuan teks informasi melalui program dan kebijakan di satuan pendidikan, baik yang membutuhkan anggaran dan yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pembiayaan dan standar pengelolaan.&#xA;&#xA;4. Kepala satuan pendidikan mendorong pemenuhan dan ketersediaan buku teks utama yang disusun oleh pemerintah (Kemendikdasmen) dan buku teks pendamping yang disusun masyarakat/penerbit dan telah mendapatkan SK kelayakan dari pemerintah (Kemendikdasmen) sebagai buku pelajaran yang wajib digunakan pada satuan pendidikan untuk meningkatkan kualitas pembelajaran berdasarkan kurikulum yang berlaku, serta buku nonteks baik yang disusun oleh pemerintah maupun masyarakat/penerbit sebagai bahan bacaan dalam mendukung literasi di satuan pendidikan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar sarana dan prasarana.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk memperkuat literasi&#xA;- Pengembangan kegiatan literasi dan numerasi&#xA;- Kegiatan pemberdayaan perpustakaan terutama untuk pengembangan minat baca peserta didik&#xA;- Pengadaan dan pemanfaatan buku teks utama, buku teks pendamping, serta buku nonteks"
+    },
+    {
+      "no": "11",
+      "indikator": "A.1 Kemampuan literasi",
+      "capaian": "Kurang (40% peserta didik sudah mencapai kompetensi minimum)",
+      "akarMasalah": "D.1.1 Manajemen kelas",
+      "kegiatanBenahi": "Pengelolaan kelas yang mendukung pembelajaran serta penerapan penghargaan dan sanksi secara proporsional mendukung kemampuan literasi siswa",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi manajemen kelas yang mendukung pembelajaran serta penerapan penghargaan dan sanksi secara proporsional dalam rangka mendukung kemampuan literasi peserta didik melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar isi dan standar proses.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan dan mengimplementasikan strategi manajemen kelas melalui intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk mendukung kemampuan literasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK.&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan manajemen kelas di satuan pendidikan melalui program dan kebijakan di satuan pendidikan, baik yang membutuhkan anggaran dan yang tidak membutuhkan anggaran untuk mendukung kemampuan literasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pembiayaan dan standar pengelolaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk memahami kurikulum dan cara mengajarkannya&#xA;- Peningkatan kompetensi guru untuk pengembangan diri melalui kebiasaan refleksi&#xA;- Peningkatan kompetensi guru untuk pembelajaran berorientasi pada peserta didik"
+    },
+    {
+      "no": "12",
+      "indikator": "A.1 Kemampuan literasi",
+      "capaian": "Kurang (40% peserta didik sudah mencapai kompetensi minimum)",
+      "akarMasalah": "D.1.3 Metode pembelajaran",
+      "kegiatanBenahi": "Praktik pembelajaran interaktif yang sesuai dengan tujuan pembelajaran dan karakteristik siswa akan berdampak kepada kemampuan literasi siswa",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi dalam melakukan praktik pembelajaran interaktif dalam rangka mendukung kemampuan literasi peserta didik melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan dan mengimplementasikan praktik pembelajaran interaktif melalui intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk mendukung kemampuan literasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar isi, standar proses, dan standar penilaian.&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan metode pembelajaran melalui program dan kebijakan di satuan pendidikan, baik yang membutuhkan anggaran dan yang tidak membutuhkan anggaran untuk mendukung kemampuan literasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pembiayaan dan standar pengelolaan.&#xA;&#xA;4. Kepala satuan pendidikan mendorong pemenuhan dan ketersediaan buku teks utama yang disusun oleh pemerintah (Kemendikdasmen) dan buku teks pendamping yang disusun masyarakat/penerbit dan telah mendapatkan SK kelayakan dari pemerintah (Kemendikdasmen) sebagai buku pelajaran yang wajib digunakan pada satuan pendidikan untuk meningkatkan kualitas pembelajaran berdasarkan kurikulum yang berlaku, serta buku nonteks baik yang disusun oleh pemerintah maupun masyarakat/penerbit sebagai bahan bacaan dalam mendukung literasi di satuan pendidikan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar sarana dan prasarana.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Penyusunan perencanaan program satuan pendidikan (visi misi sekolah, RKJM, RKT, RKAS)&#xA;- Peningkatan kompetensi kepala sekolah&#xA;- Pengembangan dan pelaksanaan program kerja kepala sekolah&#xA;- Pengadaan dan pemanfaatan buku teks utama, buku teks pendamping, serta buku nonteks"
+    },
+    {
+      "no": "13",
+      "indikator": "A.1 Kemampuan literasi",
+      "capaian": "Kurang (40% peserta didik sudah mencapai kompetensi minimum)",
+      "akarMasalah": "D.2.1 Belajar tentang pembelajaran",
+      "kegiatanBenahi": "Aktivitas belajar guru dan kepala sekolah yang bertujuan meningkatkan pengetahuan dan keterampilan mengajar akan mendukung pembelajaran siswa di kelas yang berdampak kepada kemampuan literasi siswa.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi mengenai belajar tentang pembelajaran sebagai bagian dari refleksi serta perbaikan pembelajaran oleh pendidik melalui pelatihan mandiri perencanaan pembelajaran, menyimak webinar/video inspirasi, serta kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik mengintegrasikan program dan kebijakan mengenai belajar tentang pembelajaran pada beragam aktivitas intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk meningkatkan kemampuan literasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan, standar proses, dan standar isi.&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan kemampuan belajar tentang pembelajaran sebagai bagian dari refleksi dan perbaikan pembelajaran oleh pendidik di satuan pendidikan melalui program dan kebijakan, baik itu yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pembiayaan dan standar pengelolaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Pelaksanaan kegiatan komunitas belajar di satuan pendidikan&#xA;- Peningkatan kompetensi guru untuk memahami karakteristik dan cara belajar peserta didik&#xA;- Peningkatan kompetensi guru untuk memahami konten pembelajaran dan cara mengajarkannya"
+    },
+    {
+      "no": "14",
+      "indikator": "A.1 Kemampuan literasi",
+      "capaian": "Kurang (40% peserta didik sudah mencapai kompetensi minimum)",
+      "akarMasalah": "D.2.3 Penerapan praktik inovatif",
+      "kegiatanBenahi": "Inovasi pembelajaran berdasarkan refleksi yang dilakukan guru dan kepala sekolah akan mendukung pembelajaran siswa di kelas yang berdampak kepada kemampuan literasi siswa.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi mengenai penerapan praktik inovatif sebagai bagian dari refleksi dan perbaikan pembelajaran melalui pelatihan mandiri yang terkait dengan perencanaan pembelajaran, serta kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik mengintegrasikan program dan kebijakan mengenai penerapan praktik inovatif pada beragam aktivitas intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk meningkatkan kemampuan literasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan, standar proses, dan standar isi&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan kemampuan penerapan praktik inovatif sebagai bagian dari refleksi dan perbaikan pembelajaran oleh pendidik di satuan pendidikan melalui program dan kebijakan di satuan pendidikan, baik yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pembiayaan dan standar pengelolaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Kegiatan komunitas belajar antar sekolah (termasuk KKG, MGMP, MGMPS, MGMPK, KKKS, atau MKKS)&#xA;- Peningkatan kompetensi guru untuk memahami karakteristik dan cara belajar peserta didik&#xA;- Peningkatan kompetensi guru untuk memahami konten pembelajaran dan cara mengajarkannya"
+    },
+    {
+      "no": "15",
+      "indikator": "A.1 Kemampuan literasi",
+      "capaian": "Kurang (40% peserta didik sudah mencapai kompetensi minimum)",
+      "akarMasalah": "D.3.1 Visi-misi satuan pendidikan",
+      "kegiatanBenahi": "Perumusan, penyampaian dan penerapan visi-misi sekolah untuk meningkatkan kualitas pembelajaran akan berdampak kepada kemampuan literasi siswa.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik mengadakan workshop untuk menyelaraskan visi-misi satuan pendidikan melalui dokumen perencanaan dan penganggaran satuan pendidikan untuk mendukung kemampuan literasi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan&#xA;&#xA;2. Kepala satuan pendidikan mengembangkan panduan praktis kepada pendidik untuk menerjemahkan visi-misi satuan pendidikan ke dalam proses pembelajaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar proses&#xA; &#xA;Inspirasi 3: Kepala satuan pendidikan mendorong terlaksannya refleksi dengan seluruh warga satuan pendidikan untuk mengevaluasi visi-misi yang sudah diimplementasikan dalam program kerja dan proses pembelajaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan, standar proses, dan standat penilaian.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Penyusunan perencanaan program satuan pendidikan (visi misi sekolah, RKJM, RKT, RKAS)&#xA;- Peningkatan kompetensi kepala sekolah&#xA;- Pengembangan dan pelaksanaan program kerja kepala sekolah"
+    },
+    {
+      "no": "16",
+      "indikator": "A.1 Kemampuan literasi",
+      "capaian": "Kurang (40% peserta didik sudah mencapai kompetensi minimum)",
+      "akarMasalah": "D.3.2 Pengelolaan kurikulum satuan pendidikan",
+      "kegiatanBenahi": "Kemampuan kepala sekolah dalam mengembangkan dan mengelola kurikulum yang bertujuan untuk meningkatkan kualitas proses dan hasil belajar siswa akan berdampak kepada kemampuan literasi siswa.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi supervisi pembelajaran melalui pelatihan dan refleksi berkala untuk memastikan implementasi kurikulum berjalan optimal dan meningkatkan kemampuan literasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar penilaian dan  standar proses.&#xA;&#xA;2. Kepala satuan pendidikan menyusun dan melaksanakan rencana supervisi berkala yang melibatkan observasi dan diskusi dengan pendidik untuk memastikan efektivitas pembelajaran literasi, sehingga kemampuan literasi peserta didik meningkat. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar penilaian.&#xA;&#xA;3. Kepala satuan pendidikan menetapkan kebijakan supervisi pengelolaan kurikulum melalui program yang terstruktur, baik dengan anggaran maupun tanpa anggaran, untuk mendukung peningkatan kemampuan literasi peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pembiayaan dan standar pengelolaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Penyusunan kurikulum&#xA;- Penyusunan silabus/tujuan pembelajaran&#xA;- Peningkatan kompetensi guru untuk memahami kurikulum dan cara mengajarkannya"
+    },
+    {
+      "no": "17",
+      "indikator": "A.3 Karakter",
+      "capaian": "Sedang",
+      "akarMasalah": "A.3.3 Kreativitas",
+      "kegiatanBenahi": "Kesenangan dan pengalaman menghasilkan hal yang baru oleh siswa mendukung kemampuan siswa dalam aspek karakter.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi dengan mempelajari tentang pendidikan karakter yang berkaitan dengan menumbuhkan kesenangan dan pengalaman menghasilkan hal yang baru pada diri peserta didik melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan dan mengimplementasikan pembelajaran yang menumbuhkan kreativitas peserta didik melalui intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk mendukung pengembangan pendidikan karakter. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar pengelolaan&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan dimensi Kreativitas melalui program dan kebijakan di satuan pendidikan, baik yang membutuhkan anggaran dan yang tidak membutuhkan anggaran untuk mendukung pengembangan pendidikan karakter. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Pengembangan pembelajaran berbasis projek (termasuk P5)&#xA;- Peningkatan kompetensi guru untuk pemahaman Profil Pelajar Pancasila: Kreativitas&#xA;- Pengembangan pendidikan karakter/penumbuhan budi pekerti"
+    },
+    {
+      "no": "18",
+      "indikator": "A.3 Karakter",
+      "capaian": "Sedang",
+      "akarMasalah": "A.3.4 Nalar Kritis",
+      "kegiatanBenahi": "Kemauan dan kebiasaan mengambil siswa dalam keputusan secara logis berdasarkan berbagai bukti dan sudut pandang yang beragam mendukung kemampuan siswa dalam aspek karakter.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi dengan mempelajari tentang pendidikan karakter yang berkaitan dengan menumbuhkan kemauan dan kebiasaan mengambil keputusan secara logis berdasarkan berbagai bukti dan sudut pandang yang beragam pada diri peserta didik melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar PTK&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan dan mengimplementasikan pembelajaran yang menumbuhkan sikap pengambilan keputusan secara logis melalui intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk mendukung pengembangan pendidikan karakter. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar pengelolaan&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan dimensi Nalar Kritis melalui program dan kebijakan di satuan pendidikan, baik yang membutuhkan anggaran dan yang tidak membutuhkan anggaran untuk mendukung pengembangan pendidikan karakter. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Pengembangan pembelajaran berbasis projek (termasuk P5)&#xA;- Peningkatan kompetensi guru untuk keterlibatan orang tua/wali dan masyarakat dalam pembelajaran&#xA;- Peningkatan kompetensi guru untuk pemahaman Profil Pelajar Pancasila: Nalar Kritis"
+    },
+    {
+      "no": "19",
+      "indikator": "A.3 Karakter",
+      "capaian": "Sedang",
+      "akarMasalah": "D.1.1 Manajemen kelas",
+      "kegiatanBenahi": "Pengelolaan kelas yang mendukung pembelajaran serta penerapan penghargaan dan sanksi secara proporsional mendukung kemampuan siswa dalam aspek karakter.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi manajemen kelas melalui pelatihan dan refleksi untuk mendukung suasana kondusif yang mengembangkan karakter peserta didik yang bersifat holistik mencakup komponen pengetahuan, afektif, keterampilan, dan perwujudan dalam perilaku. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan standar pengelolaan.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik menyusun dan mengimplementasikan strategi manajemen kelas yang diterapkan melalui intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk menciptakan suasana pembelajaran yang kondusif dan mengembangkan karakter peserta didik yang bersifat holistik mencakup komponen pengetahuan, afektif, keterampilan, dan perwujudan dalam perilaku. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan, standar proses dan standar isi&#xA;&#xA;3. Kepala satuan pendidikan mendorong program dan kebijakan manajemen kelas, baik dengan anggaran maupun tanpa anggaran, untuk dapat mengembangkan karakter peserta didik yang bersifat holistik mencakup komponen pengetahuan, afektif, keterampilan, dan perwujudan dalam perilaku. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk memahami kurikulum dan cara mengajarkannya&#xA;- Peningkatan kompetensi guru untuk pengembangan diri melalui kebiasaan refleksi&#xA;- Peningkatan kompetensi guru untuk pembelajaran berorientasi pada peserta didik"
+    },
+    {
+      "no": "20",
+      "indikator": "A.3 Karakter",
+      "capaian": "Sedang",
+      "akarMasalah": "D.1.3 Metode pembelajaran",
+      "kegiatanBenahi": "Praktik pembelajaran interaktif yang sesuai dengan tujuan pembelajaran dan karakteristik siswa oleh Guru dapat mendukung kemampuan siswa dalam aspek karakter.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi dalam memberikan instruksi dan panduan pembelajaran interaktif melalui pelatihan dan refleksi untuk mengembangkan karakter peserta didik yang bersifat holistik mencakup komponen pengetahuan, afektif, keterampilan, dan perwujudan dalam perilaku. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK, standar proses dan standar isi&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merancang dan mengimplementasikan metode pembelajaran yang interaktif melalui aktivitas intrakurikuler, kokurikuler, dan ekstrakurikuler untuk mengembangkan karakter peserta didik yang bersifat holistik mencakup komponen pengetahuan, afektif, keterampilan, dan perwujudan dalam perilaku.Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan, standar proses dan standar isi&#xA;&#xA;3. Kepala satuan pendidikan mendorong pelaksanaan program dan kebijakan yang mendukung praktik pembelajaran interaktif yang sesuai dengan tujuan pembelajaran dan karakteristik peserta didik baik dengan anggaran maupun tanpa anggara dalam rangka mengembangkan karakter peserta didik yang bersifat holistik mencakup komponen pengetahuan, afektif, keterampilan, dan perwujudan dalam perilaku. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Penyusunan silabus / tujuan pembelajaran&#xA;- Peningkatan kompetensi guru untuk keterlibatan orangtua/wali dan masyarakat dalam pembelajaran&#xA;- Peningkatan kompetensi guru untuk memahami karakteristik dan cara belajar peserta didik"
+    },
+    {
+      "no": "21",
+      "indikator": "A.3 Karakter",
+      "capaian": "Sedang",
+      "akarMasalah": "D.2.1 Belajar tentang pembelajaran",
+      "kegiatanBenahi": "Aktivitas belajar kepala sekolah dan guru yang bertujuan meningkatkan pengetahuan dan keterampilan mengajar dapat mendukung kemampuan siswa dalam aspek karakter.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik mempelajari tentang pengetahuan dan keterampilan mengajar sebagai bagian dari mendukung penguatan karakter peserta didik melalui pelaksanaan supervisi pembelajaran pada semua mata pelajaran atau pendidik di satuan pendidikan, diskusi di komunitas belajar, dan kegiatan lain yang menunjang penguatan karakter peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK, standar, pengelolaan, standar proses dan standar isi&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan pembelajaran dan mengimplementasikan pengetahuan serta keterampilan mengajar pada beragam aktivitas intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk mendukung penguatan karakter melalui peningkatan kompetensi pendidik serta memahami karakteristik dan cara belajar peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan, standar proses dan standar isi&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan proses pembelajaran pendidik terkait pengetahuan dan keterampilan mengajar di satuan pendidikan melalui program dan kebijakan di satuan pendidikan, baik yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran untuk mendukung penguatan karakter peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Pelaksanaan kegiatan komunitas belajar di satuan pendidikan&#xA;- Peningkatan kompetensi guru untuk memahami karakteristik dan cara belajar peserta didik&#xA;- Peningkatan kompetensi guru untuk memahami konten pembelajaran dan cara mengajarkannya"
+    },
+    {
+      "no": "22",
+      "indikator": "A.3 Karakter",
+      "capaian": "Sedang",
+      "akarMasalah": "D.2.3 Penerapan praktik inovatif",
+      "kegiatanBenahi": "Inovasi pembelajaran berdasarkan refleksi yang dilakukan kepala sekolah dan guru mendukung kemampuan siswa dalam aspek karakter.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik mempelajari tentang penerapan praktik inovatif berorientasi pada penguatan karakter peserta didik, salah satunya melalui diskusi dan refleksi bersama warga satuan pendidikan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan standar pengelolaan&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik mengimplementasikan pengetahuan tentang penerapan praktik inovatif pada beragam aktivitas intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk mendorong penguatan karakter peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan, standar proses dan standar isi&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan penerapan praktik inovatif melalui implementasi kegiatan, program, maupun pembuatan kebijakan, baik yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran untuk mendorong penguatan karakter peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Kegiatan komunitas belajar antar sekolah (termasuk KKG, MGMP, MGMPS, MGMPK, KKKS, atau MKKS)&#xA;- Peningkatan kompetensi guru untuk memahami karakteristik dan cara belajar peserta didik&#xA;- Peningkatan kompetensi guru untuk memahami konten pembelajaran dan cara mengajarkannya"
+    },
+    {
+      "no": "23",
+      "indikator": "A.3 Karakter",
+      "capaian": "Sedang",
+      "akarMasalah": "D.3.1 Visi-misi satuan pendidikan",
+      "kegiatanBenahi": "Perumusan, penyampaian dan penerapan visi-misi sekolah oleh kepala sekolah dan guru untuk meningkatkan kualitas pembelajaran mendukung kemampuan siswa dalam aspek karakter.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kemampuan dalam merumuskan, menyampaikan dan menerapkan visi-misi sekolah yang berorientasi pada pendidikan karakter melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri dengan memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan standar pengelolaan&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik mengintegrasikan pengetahuan tentang perumusan, penyampaian dan penerapan visi-misi sekolah dan mengimplementasikannya dalam berbagai aktivitas untuk mendukung pendidikan karakter. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan, standar proses dan standar isi.&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan perumusan visi-misi sekolah yang berorientasi pada pendidikan karakter melalui implementasi kegiatan, program, maupun pembuatan kebijakan, baik yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Penyusunan perencanaan program satuan pendidikan (visi misi sekolah, RKJM, RKT, RKAS)&#xA;- Peningkatan kompetensi kepala sekolah&#xA;- Pengembangan dan pelaksanaan program kerja kepala sekolah"
+    },
+    {
+      "no": "24",
+      "indikator": "A.3 Karakter",
+      "capaian": "Sedang",
+      "akarMasalah": "D.3.2 Pengelolaan kurikulum satuan pendidikan",
+      "kegiatanBenahi": "Kemampuan kepala sekolah dalam mengembangkan dan mengelola kurikulum yang bertujuan untuk meningkatkan kualitas proses dan hasil belajar siswa dapat mendukung kemampuan siswa dalam aspek karakter.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kemampuan dalam mengembangkan dan mengelola kurikulum untuk mendukung pendidikan karakter melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri dengan memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar PTK&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik mengintegrasikan pengetahuan tentang pengelolaan kurikulum satuan pendidikan dan mengimplementasikannya dalam berbagai aktivitas untuk mendukung pendidikan karakter. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan, standar proses dan standar isi&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan pengembangan dan pengelolaan kurikulum satuan pendidikan melalui implementasi kegiatan, program, maupun pembuatan kebijakan, baik yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Penyusunan kurikulum&#xA;- Penyusunan silabus/tujuan pembelajaran&#xA;- Peningkatan kompetensi guru untuk memahami kurikulum dan cara mengajarkannya"
+    },
+    {
+      "no": "25",
+      "indikator": "D.4 Iklim keamanan satuan pendidikan",
+      "capaian": "Sedang",
+      "akarMasalah": "D.4.8 Pengalaman kekerasan seksual peserta didik",
+      "kegiatanBenahi": "Aktivitas peningkatan kompetensi guru dan kepala sekolah yang bertujuan mendukung ketersediaan dan penerapan program serta kebijakan untuk mencegah dan menanggulangi segala bentuk kekerasan seksual yang dialami di lingkungan sekolah yang berdampak pada iklim keamanan sekolah.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi yang bertujuan untuk mengenali jenis-jenis kekerasan seksual yang mungkin terjadi di satuan pendidikan agar dapat mencegah dan menanggulangi segala bentuk perundungan/bullying di satuan pendidikan melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri dengan memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi untuk membangun lingkungan satuan pendidikan yang aman. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan standar proses&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan pembelajaran yang mendorong pencegahan dan penanggulanan segala bentuk kekerasan seksual bagi warga di satuan pendidikan lalu mengimplementasikannya dalam aktivitas intrakurikuler, kokurikuler, dan ekstrakurikuler. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan, standar proses, dan standar isi.&#xA;&#xA;3. Kepala satuan pendidikan mendukung ketersediaan dan penerapan program serta kebijakan untuk mencegah dan menanggulangi segala bentuk kekerasan seksual di satuan pendidikan melalui implementasi kegiatan, program, maupun pembuatan kebijakan, baik yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Pengembangan program pencegahan dan penanganan kekerasan dan kekerasan seksual di satuan pendidikan (termasuk program Roots)&#xA;- Penerapan program pencegahan perundungan&#xA;- Peningkatan kompetensi kuru untuk memahami tentang perundungan, kekerasan, dan kekerasan seksual"
+    },
+    {
+      "no": "26",
+      "indikator": "D.4 Iklim keamanan satuan pendidikan",
+      "capaian": "Sedang",
+      "akarMasalah": "D.4.4 Pengalaman perundungan peserta didik",
+      "kegiatanBenahi": "Aktivitas peningkatan kompetensi guru dan kepala sekolah yang bertujuan mendukung ketersediaan dan penerapan program serta kebijakan untuk mencegah dan menanggulangi segala bentuk perundungan/bullying dari guru atau sesama siswa di sekolah yang berdampak pada iklim keamanan sekolah.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi yang bertujuan untuk mengenali jenis-jenis perundungan yang mungkin dilakukan oleh pendidik atau sesama peserta didik agar dapat mencegah dan menanggulangi segala bentuk perundungan/bullying di satuan pendidikan melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri dengan memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi untuk membangun lingkungan satuan pendidikan yang aman. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan standar proses.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan pembelajaran yang mendorong pencegahan dan penanggulanan segala bentuk perundungan/bullying dari pendidik atau sesama siswa di sekolah lalu mengimplementasikannya dalam aktivitas intrakurikuler, kokurikuler, dan ekstrakurikuler. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan, standar proses, dan standar isi.&#xA;&#xA;3. Kepala satuan pendidikan mendukung ketersediaan dan penerapan program serta kebijakan untuk mencegah dan menanggulangi segala bentuk perundungan/bullying dari pendidik atau sesama siswa di sekolah melalui implementasi kegiatan, program, maupun pembuatan kebijakan, baik yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Pelaksanaan kegiatan orientasi siswa baru yang bersifat akademik dan pengenalan lingkungan tanpa kekerasan&#xA;- Penerapan program pencegahan perundungan&#xA;- Peningkatan kompetensi guru untuk memahami tentang perundungan, kekerasan, dan kekerasan seksual"
+    },
+    {
+      "no": "27",
+      "indikator": "D.4 Iklim keamanan satuan pendidikan",
+      "capaian": "Sedang",
+      "akarMasalah": "D.8.3 Toleransi dan kesetaraan peserta didik",
+      "kegiatanBenahi": "Aktivitas peningkatan kompetensi guru dan kepala sekolah yang bertujuan terciptanya sikap inklusif berupa dukungan atas kesetaraan siswa untuk dapat bersikap menerima dan menghargai keragaman agama dan budaya di sekolah yang berdampak pada iklim keamanan sekolah.",
+      "rincian": "1. Kepala satuan pendidikan dan seluruh warga sekolah meningkatkan kompetensi terkait nilai-nilai sikap yang inklusif melalui pelatihan dan refleksi untuk mendukung terciptanya iklim keamanan satuan pendidikan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK, standar proses, dan standar pengelolaan.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merancang &amp; melaksanakan program intrakurikuler dan/atau kokurikuler, dan/atau ekstrakurikuler yang memiliki nilai-nilai sikap yang inklusif untuk meningkatkan iklim keamanan satuan pendidikan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar proses.&#xA;&#xA;3. Kepala satuan pendidikan menyusun kebijakan yang mendukung penerapan nilai-nilai sikap yang inklusif melalui program yang membutuhkan anggaran maupun tanpa anggaran untuk meningkatkan iklim keamanan satuan pendidikan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Program pembinaan kesiswaan dan kepemimpinan siswa&#xA;- Pengembangan kegiatan pelibatan orang tua/wali/keluarga di pembelajaran&#xA;- Peningkatan kompetensi guru untuk memahami sikap inklusif, toleran, dan kesetaraan gender (termasuk pendidikan inklusif/disabilitas)"
+    },
+    {
+      "no": "28",
+      "indikator": "D.4 Iklim keamanan satuan pendidikan",
+      "capaian": "Sedang",
+      "akarMasalah": "D.8.1 Toleransi agama dan budaya",
+      "kegiatanBenahi": "Sikap dan perilaku yang menunjukkan penerimaan dan penghargaan terhadap keragaman agama dan budaya di sekolah berpengaruh terhadap tingkat keamanan sekolah, bagaimana agar warga sekolah tetap mendapatkan rasa aman di sekolah walaupun memiliki latar agama dan budaya yang berbeda.",
+      "rincian": "1. Kepala satuan pendidikan dan seluruh warga sekolah meningkatkan kompetensi terkait toleransi antar agama dan budaya melalui pelatihan dan refleksi untuk mendukung terciptanya iklim keamanan satuan pendidikan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK, standar pengelolaan, standar proses&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merancang dan melaksanakan program intrakurikuler dan/atau kokurikuler, dan/atau ekstrakurikuler yang memilki nilai-nilai toleransi antar agama dan budaya untuk meningkatkan iklim keamanan satuan pendidikan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan, standar isi, dan standar proses&#xA;&#xA;3. Kepala satuan pendidikan menyusun kebijakan yang mendukung penerapan nilai-nilai toleransi antar agama dan budaya melalui program yang membutuhkan anggaran maupun tanpa anggaran untuk meningkatkan iklim keamanan satuan pendidikan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Pengembangan pembelajaran berbasis proyek (termasuk P5)&#xA;- Pengembangan kegiatan pelibatan orang tua/wali/keluarga di pembelajaran&#xA;- Peningkatan kompetensi guru untuk memahami toleransi/kesetaraan/moderasi beragama dan budaya"
+    },
+    {
+      "no": "29",
+      "indikator": "D.4 Iklim keamanan satuan pendidikan",
+      "capaian": "Sedang",
+      "akarMasalah": "D.10.3 Sikap terhadap disabilitas",
+      "kegiatanBenahi": "Penerimaan dan penghargaan terhadap siswa dengan disabilitas mendorong menciptakan iklim sekolah yang aman untuk semua",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi yang bertujuan untuk memahami bentuk penerimaan, dukungan, dan penghargaan terhadap peserta didik disabilitas dalam rangka memperbaiki iklim keamanan satuan pendidikan melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri dengan memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan standar proses&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik mengintegrasikan pengetahuan tentang bentuk penerimaan, dukungan, dan penghargaan terhadap peserta didik disabilitas di satuan pendidikan dan mengimplementasikannya dalam aktivitas intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk meningkatkan iklim keamanan satuan pendidikan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar standar proses dan standar pengelolaan.&#xA;&#xA;3. Kepala satuan pendidikan mendukung perbaikan sikap terhadap peserta didik disabilitas melalui implementasi kegiatan, program, maupun pembuatan kebijakan, baik yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk pengelolaan lingkungan pembelajaran yang aman dan nyaman&#xA;- Peningkatan kompetensi guru untuk memahami sikap inklusif, toleran, dan kesertaan gender (termasuk pendidikan inklusif/disabilitas)&#xA;- Pengembangan sekolah sehat, sekolah aman, sekolah ramah anak, sekolah inklusi, sekolah adiwiyata, dan sejenisnya"
+    },
+    {
+      "no": "30",
+      "indikator": "D.4 Iklim keamanan satuan pendidikan",
+      "capaian": "Sedang",
+      "akarMasalah": "D.10.2 Layanan satuan pendidikan untuk peserta didik cerdas dan bakat istimewa",
+      "kegiatanBenahi": "Pemberian layanan yang sesuai untuk anak cerdas dan berbakat istimewa di sekolah mendorong menciptakan iklim sekolah yang aman untuk semua",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi yang bertujuan untuk memahami bentuk pemberian layanan yang dibutuhkan oleh peserta didik cerdas dan berbakat istimewa dalam rangka memperbaiki iklim keamanan satuan pendidikan melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri dengan memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan standar proses.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik mengintegrasikan pengetahuan tentang bentuk pemberian layanan yang dibutuhkan oleh peserta didik cerdas dan berbakat istimewa di satuan pendidikan dan mengimplementasikannya dalam aktivitas intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk meningkatkan iklim keamanan satuan pendidikan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar pengelolaan.&#xA;&#xA;3. Kepala satuan pendidikan mendukung perbaikan layanan satuan pendidikan untuk peserta didik cerdas dan berbakat istimewa melalui implementasi kegiatan, program, maupun pembuatan kebijakan, baik yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk pengelolaan lingkungan pembelajaran yang aman dan nyaman&#xA;- Peningkatan kompetensi guru untuk memahami karakteristik dan cara belajar peserta didik&#xA;- Peningkatan kompetensi guru untuk memahami konten pembelajaran dan cara mengajarkannya"
+    },
+    {
+      "no": "31",
+      "indikator": "D.4 Iklim keamanan satuan pendidikan",
+      "capaian": "Sedang",
+      "akarMasalah": "E.5.3 Program dan kebijakan satuan pendidikan tentang kekerasan seksual",
+      "kegiatanBenahi": "Aktivitas peningkatan kompetensi guru dan kepala sekolah yang bertujuan mendukung terlaksananya program dan kebijakan sekolah terkait kekerasan seksual yang dapat menanggulangi perbuatan yang merendahkan, menghina, melecehkan, menyerang bagian tubuh atau organ reproduksi seseorang yang berdampak pada iklim keamanan sekolah.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik mempelajari tentang program dan kebijakan mengenai pencegahan dan penanganan kekerasan seksual di satuan pendidikan untuk mendukung peningkatan kualitas iklim keamanan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan standar proses.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik mengintegrasikan pengetahuan tentang program dan kebijakan mengenai pencegahan dan penanganan kekerasan seksual pada beragam aktivitas intrakurikuler, kokurikuler, dan/atau ekstrakurikuler di satuan pendidikan untuk memperbaiki proses pembelajaran peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses, standar isi, dan standar pengelolaan&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan program, kebijakan, dan penganggaran mengenai pencegahan dan penanganan kekerasan seksual baik yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran di satuan pendidikan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Pengembangan program pencegahan dan penanganan kekerasan dan kekerasan seksual di satuan pendidikan (termasuk Program Roots)&#xA;- Peningkatan kompetensi guru untuk memahami tentang perundungan, kekerasan, dan kekerasan seksual&#xA;- Penyelenggaraan sosialisasi dan pelaporan program, kegiatan hasil-hasil, dan pengelolaan keuangan sekolah"
+    },
+    {
+      "no": "32",
+      "indikator": "D.4 Iklim keamanan satuan pendidikan",
+      "capaian": "Sedang",
+      "akarMasalah": "E.5.5 Program dan Kebijakan mengenai kesetaraan gender",
+      "kegiatanBenahi": "Aktivitas peningkatan kompetensi guru dan kepala sekolah yang bertujuan mendukung terlaksananya program dan kebijakan sekolah yang mendukung kesetaraan antara laki-laki dan perempuan, misalnya dalam hal kemampuan, kesempatan, pemenuhan hak, dan kewajiban yang berdampak pada iklim keamanan sekolah.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik mempelajari tentang program dan kebijakan mengenai kesetaraan gender untuk mendukung peningkatan kualitas iklim keamanan di satuan pendidikan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan standar proses.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik mengintegrasikan pengetahuan tentang program dan kebijakan mengenai kesetaraan gender pada beragam aktivitas intrakurikuler, kokurikuler, dan/atau ekstrakurikuler di satuan pendidikan untuk memperbaiki proses pembelajaran peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses, standar isi, dan standar pengelolaan&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan program, kebijakan mengenai kesetaraan gender di satuan pendidikan, baik itu yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk memahami sikap inklusif, toleran, dan kesertaan gender (termasuk pendidikan inklusif/disabilitas)&#xA;- Pengembangan sekolah sehat, sekolah aman, sekolah ramah anak, sekolah inklusi, sekolah adiwiyata, dan sejenisnya"
+    },
+    {
+      "no": "33",
+      "indikator": "D.1 Kualitas pembelajaran",
+      "capaian": "Sedang",
+      "akarMasalah": "D.1.1 Manajemen kelas",
+      "kegiatanBenahi": "Pengelolaan kelas yang mendukung pembelajaran serta penerapan penghargaan dan sanksi secara proporsional mendukung peningkatan kualitas pembelajaran.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi manajemen kelas melalui pelatihan dan refleksi untuk mendukung suasana kondusif untuk mengembangkan kualitas pembelajaran yang dilihat dari meningkatnya kualitas interaksi antara pendidik, peserta didik, dan materi pembelajaran dalam proses pengajaran dan pembelajaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK, standar proses, dan standar isi.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik menyusun dan mengimplementasikan strategi manajemen kelas diterapkan melalui intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk menciptakan suasana pembelajaran yang kondusif serta mengembangkan kualitas pembelajaran yang dilihat dari kualitas interaksi antara pendidik, peserta didik, dan materi pembelajaran dalam proses pengajaran dan pembelajaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses, standar isi, dan standar pengelolaan.&#xA;&#xA;3. Kepala satuan pendidikan mendorong program dan kebijakan manajemen kelas, baik dengan anggaran maupun tanpa anggaran, untuk mendukung suasana kondusif serta mengembangkan kualitas pembelajaran yang dilihat dari kualitas interaksi antara pendidik, peserta didik, dan materi pembelajaran dalam proses pengajaran dan pembelajaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk memahami kurikulum dan cara mengajarkannya&#xA;- Peningkatan kompetensi guru untuk pengembangan diri melalui kebiasaan refleksi&#xA;- Peningkatan kompetensi guru untuk pembelajaran berorientasi pada peserta didik"
+    },
+    {
+      "no": "34",
+      "indikator": "D.1 Kualitas pembelajaran",
+      "capaian": "Sedang",
+      "akarMasalah": "D.1.3 Metode pembelajaran",
+      "kegiatanBenahi": "Praktik pembelajaran interaktif yang sesuai dengan tujuan pembelajaran dan karakteristik siswa dapat mendukung peningkatan kualitas pembelajaran.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kualitas pembelajaran dan kompetensi dalam memberikan instruksi dan panduan pembelajaran interaktif melalui pelatihan dan refleksi untuk mengembangkan karakter peserta didik yang bersifat holistik mencakup komponen pengetahuan, afektif, keterampilan, dan perwujudan dalam perilaku. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan standar proses.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merancang serta mengimplementasikan strategi peningkatan kualitas metode pembelajaran yang interaktif melalui aktivitas intrakurikuler, kokurikuler, dan/atau ekstrakurikuler. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses, standar isi, dan standar pengelolaan.&#xA;&#xA;3. Kepala satuan pendidikan mendorong pelaksanaan program dan kebijakan yang mendukung aktivitas pembelajaran konstruktif, baik dengan anggaran maupun tanpa anggaran, untuk dapat mengembangkan kualitas pembelajaran yang terlihat dari meningkatnya kualitas interaksi antara pendidik, peserta didik, dan materi pembelajaran dalam proses pengajaran dan pembelajaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Penyusunan silabus / tujuan pembelajaran&#xA;- Peningkatan kompetensi guru untuk keterlibatan orangtua/wali dan masyarakat dalam pembelajaran&#xA;- Peningkatan kompetensi guru untuk memahami karakteristik dan cara belajar peserta didik"
+    },
+    {
+      "no": "35",
+      "indikator": "D.1 Kualitas pembelajaran",
+      "capaian": "Sedang",
+      "akarMasalah": "D.2.1 Belajar tentang pembelajaran",
+      "kegiatanBenahi": "Aktivitas belajar Guru yang bertujuan meningkatkan pengetahuan dan keterampilan mengajar merupakan salah satu faktor yang mempengaruhi kulitas pembelajaran.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kemampuan belajar tentang pembelajaran sebagai bagian dari peningkatan kualitas pembelajaran melalui pelatihan, diskusi di komunitas belajar, serta kegiatan lain yang menunjang keterampilan mengajar. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan standar proses.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik mengimplementasikan pengetahuan dan keterampilan mengajar melalui diskusi di komunitas belajar. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses dan standar pengelolaan.&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan proses pembelajaran pendidik sebagai bagian dari peningkatan kualitas pembelajaran di satuan pendidkan melalui program dan kebijakan di sekolah, baik yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Pelaksanaan kegiatan komunitas belajar di satuan pendidikan&#xA;- Peningkatan kompetensi guru untuk memahami karakteristik dan cara belajar peserta didik&#xA;- Peningkatan kompetensi guru untuk memahami konten pembelajaran dan cara mengajarkannya"
+    },
+    {
+      "no": "36",
+      "indikator": "D.1 Kualitas pembelajaran",
+      "capaian": "Sedang",
+      "akarMasalah": "D.2.3 Penerapan praktik inovatif",
+      "kegiatanBenahi": "Praktik inovasi pembelajaran berdasarkan refleksi yang dilakukan guru merupakan bagian dalam upaya meingkatkan kualitas pembelajaran.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi dalam penerapan praktik inovatif melalui pelatihan dan diskusi untuk mendukung peningkatan kualitas pembelajaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan standar proses.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merancang dan melaksanakan proses pembelajaran yang mengintegrasikan praktik inovatif untuk meningkatkan kualitas pembelajaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses, standar isi, dan standar pengelolaan&#xA;&#xA;3. Kepala satuan pendidikan menyusun kebijakan yang mendorong penerapan praktik inovatif melalui program yang membutuhkan anggaran maupun tanpa anggaran untuk mendukung peningkatan kualitas pembelajaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui standar pengelolaan dan standar pembiayaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Kegiatan komunitas belajar antar sekolah (termasuk KKG, MGMP, MGMPS, MGMPK, KKKS, atau MKKS)&#xA;- Peningkatan kompetensi guru untuk memahami karakteristik dan cara belajar peserta didik&#xA;- Peningkatan kompetensi guru untuk memahami konten pembelajaran dan cara mengajarkannya"
+    },
+    {
+      "no": "37",
+      "indikator": "D.1 Kualitas pembelajaran",
+      "capaian": "Sedang",
+      "akarMasalah": "D.3.1 Visi-misi satuan pendidikan",
+      "kegiatanBenahi": "Perumusan, penyampaian dan penerapan visi-misi sekolah untuk meningkatkan kualitas pembelajaran merupakan upaya sekolah dalam meningkatkan kualitas pembelajaran.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi dalam mengintegrasikan visi-misi sekolah ke dalam proses pembelajaran melalui pelatihan dan refleksi untuk mendukung peningkatan kualitas pembelajaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan  standar proses.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merancang dan melaksanakan proses pembelajaran yang selaras dengan visi-misi sekolah untuk memastikan peningkatan kualitas pembelajaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses, standar isi, dan standar pengelolaan&#xA;&#xA;3. Kepala satuan pendidikan menyusun kebijakan yang mendukung penerapan visi-misi sekolah dalam proses pembelajaran melalui program yang membutuhkan anggaran maupun tanpa anggaran untuk meningkatkan kualitas pembelajaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar  standar pengelolaan dan standar pembiayaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Penyusunan perencanaan program satuan pendidikan (visi misi sekolah, RKJM, RKT, RKAS)&#xA;- Peningkatan kompetensi kepala sekolah&#xA;- Pengembangan dan pelaksanaan program kerja kepala sekolah"
+    },
+    {
+      "no": "38",
+      "indikator": "D.1 Kualitas pembelajaran",
+      "capaian": "Sedang",
+      "akarMasalah": "D.3.2 Pengelolaan kurikulum satuan pendidikan",
+      "kegiatanBenahi": "Kemampuan kepala sekolah dalam mengembangkan dan mengelola kurikulum yang bertujuan untuk meningkatkan kualitas proses dan hasil belajar siswa dapat mendukung peningkatan kualitas pembelajaran.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi dalam implementasi pengelolaan kurikulum melalui pelatihan dan refleksi untuk mendukung peningkatan kualitas pembelajaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK, standar proses, standar isi, dan standar pengelolaan.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merancang dan melaksanakan proses pembelajaran yang sesuai dengan pengelolaan kurikulum satuan pendidikan untuk meningkatkan kualitas pembelajaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses, standar isi, dan standar pengelolaan.&#xA;&#xA;3. Kepala satuan pendidikan menyusun kebijakan yang mendukung implementasi pengelolaan kurikulum melalui program yang membutuhkan anggaran maupun tanpa anggaran untuk mendukung peningkatan kualitas pembelajaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Penyusunan kurikulum&#xA;- Penyusunan silabus/tujuan pembelajaran&#xA;- Peningkatan kompetensi guru untuk memahami kurikulum dan cara mengajarkannya"
+    },
+    {
+      "no": "39",
+      "indikator": "D.8 Iklim Kebinekaan",
+      "capaian": "Baik",
+      "akarMasalah": "D.8.3 Toleransi dan kesetaraan peserta didik",
+      "kegiatanBenahi": "Aktivitas peningkatan kemapuan guru dan kepala sekolah yang bertujuan menunjang terciptanya sikap inklusif yang mendukung sikap menerima dan menghargai keragaman agama dan budaya di sekolah sehingga berdampak kepada iklim kebinekaan.&#xA;",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik mempelajari konsep dan praktik terkait dukungan atas kesetaraan siswa sebagai bagian dari peningkatan kualitas iklim kebinekaan di satuan pendidikan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan standar proses.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik mengimplementasikan pengetahuan tentang dukungan atas kesetaraan peserta didik untuk meningkatkan proses pembelajaran peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses, standar isi, dan standar pengelolaan&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan penerapan dukungan atas kesetaraan peserta didik di satuan pendidikan melalui program, kebijakan, baik itu yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Program pembinaan kesiswaan dan kepemimpinan siswa&#xA;- Pengembangan kegiatan pelibatan orang tua/wali/keluarga di pembelajaran&#xA;- Peningkatan kompetensi guru untuk memahami sikap inklusif, toleran, dan kesetaraan gender (termasuk pendidikan inklusif/disabilitas)"
+    },
+    {
+      "no": "40",
+      "indikator": "D.8 Iklim Kebinekaan",
+      "capaian": "Baik",
+      "akarMasalah": "D.8.1 Toleransi agama dan budaya",
+      "kegiatanBenahi": "Kondisi sekolah yang menunjukkan adanya sikap dan perilaku kepala sekolah dan guru dalam menerapkan toleransi agama dan budaya serta komitmen kebangsaan memengaruhi keseluruhan iklim kebinekaan di sekolah",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik mempelajari konsep dan praktik terkait toleransi agama dan budaya sebagai bagian dari salah satu upaya peningkatan iklim kebinekaan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan standar proses.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik mengimplementasikan pengetahuan tentang toleransi agama dan budaya pada beragam aktivitas intrakurikuler, kokurikuler, dan/atau ekstrakurikuler di satuan pendidikan untuk memperbaiki proses pembelajaran peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses, standar isi, dan standar pengelolaan.&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan penerapan toleransi agama dan budaya di satuan pendidikan melalui program, kebijakan baik itu yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Pengembangan pembelajaran berbasis proyek (termasuk P5)&#xA;- Pengembangan kegiatan pelibatan orang tua/wali/keluarga di pembelajaran&#xA;- Peningkatan kompetensi guru untuk memahami toleransi/kesetaraan/moderasi beragama dan budaya"
+    },
+    {
+      "no": "41",
+      "indikator": "D.8 Iklim Kebinekaan",
+      "capaian": "Baik",
+      "akarMasalah": "D.4.8 Pengalaman kekerasan seksual peserta didik",
+      "kegiatanBenahi": "Aktivitas peningkatan kompetensi guru dan kepala sekolah yang bertujuan menunjang pencegahan dan penanggulangan kekerasan seksual yang dialami siswa di lingkungan sekolah yang berdampak pada iklim kebinekaan.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi yang bertujuan untuk mengenali jenis-jenis kekerasan seksual yang mungkin terjadi di satuan pendidikan agar dapat mencegah dan menanggulangi segala bentuk perundungan/bullying di satuan pendidikan melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri dengan memanfaatkan berbagai sumber belajar, dan kegiatan lain yang menunjang peningkatan kompetensi untuk membangun lingkungan satuan pendidikan yang mendukung kebinekaan dan keragaman. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan standar proses.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan pembelajaran yang mendorong pencegahan dan penanggulanan segala bentuk kekerasan seksual bagi warga di satuan pendidikan lalu mengimplementasikannya dalam aktivitas intrakurikuler, kokurikuler, dan ekstrakurikuler. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses, standar isi dan standar pengelolaan.&#xA;&#xA;3. Kepala satuan pendidikan mendukung ketersediaan dan penerapan program serta kebijakan untuk mencegah dan menanggulangi segala bentuk kekerasan seksual di satuan pendidikan melalui implementasi kegiatan, program, maupun pembuatan kebijakan, baik yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Pengembangan program pencegahan dan penanganan kekerasan dan kekerasan seksual di satuan pendidikan (termasuk program Roots)&#xA;- Penerapan program pencegahan perundungan&#xA;- Peningkatan kompetensi kuru untuk memahami tentang perundungan, kekerasan, dan kekerasan seksual"
+    },
+    {
+      "no": "42",
+      "indikator": "D.8 Iklim Kebinekaan",
+      "capaian": "Baik",
+      "akarMasalah": "D.4.4 Pengalaman perundungan peserta didik",
+      "kegiatanBenahi": "Aktivitas peningkatan kemapuan guru dan kepala sekolah yang bertujuan pencegahan dan penanggulangan perundungan dari guru atau sesama siswa di sekolah sehingga berdampak kepada iklim kebinekaan.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik meningkatkan kompetensi yang bertujuan untuk mengenali jenis-jenis perundungan yang mungkin dilakukan oleh pendidik atau sesama peserta didik agar dapat mencegah dan menanggulangi segala bentuk perundungan/bullying di satuan pendidikan, terutama yang disebabkan oleh alasan suku, agama, dan latar belakang budaya, melalui pelatihan, diskusi pada komunitas belajar, belajar mandiri dengan memanfaatkan berbagai sumber belajar, dan kegiatan lain untuk membangun iklim satuan pendidikan yang menjunjung kebinekaan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK, standar proses, dan standar pengelolaan.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik merencanakan pembelajaran yang mendorong pencegahan dan penanggulanan segala bentuk perundungan/bullying dari pendidik atau sesama siswa di sekolah lalu mengimplementasikannya dalam aktivitas intrakurikuler, kokurikuler, dan ekstrakurikuler. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses, standar isi, dan standar pengelolaan.&#xA;&#xA;3. Kepala satuan pendidikan mendukung ketersediaan dan penerapan program serta kebijakan untuk mencegah dan menanggulangi segala bentuk perundungan/bullying dari pendidik atau sesama siswa di sekolah melalui implementasi kegiatan, program, maupun pembuatan kebijakan, baik yang membutuhkan anggaran maupun yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Pelaksanaan kegiatan orientasi siswa baru yang bersifat akademik dan pengenalan lingkungan tanpa kekerasan&#xA;- Penerapan program pencegahan perundungan&#xA;- Peningkatan kompetensi guru untuk memahami tentang perundungan, kekerasan, dan kekerasan seksual"
+    },
+    {
+      "no": "43",
+      "indikator": "D.8 Iklim Kebinekaan",
+      "capaian": "Baik",
+      "akarMasalah": "D.6.1 Pemahaman dan sikap warga satuan pendidikan terhadap kesetaraan gender",
+      "kegiatanBenahi": "Kondisi sekolah yang menunjukkan adanya pemahaman, dukungan dan tindakan warga sekolah terhadap kesetaraan kemampuan, hak, dan kewajiban antara laki-laki dan perempuan merupakan salah satu faktor yang mempengaruhi peningkatkan iklim kebinekaan sekolah.",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik mempelajari tentang konsep, pemahaman, dan sikap warga sekolah terkait kesetaraan gender untuk mendorong iklim kebinekaan di satuan pendidikan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK dan standar proses.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik mengintegrasikan pengetahuan tentang pemahaman dan sikap warga sekolah terkait kesetaraan gender untuk memperbaiki proses pembelajaran peserta didik. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses, standar isi, dan standar pengelolaan.&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan pemahaman dan sikap warga sekolah terkait kesetaraan gender di satuan pendidikan melalui program, kebijakan, dan penganggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk pembelajaran berorientasi pada peserta didik&#xA;- Penyediaan atau pembuatan media pembelajaran&#xA;- Peningkatan kompetensi guru untuk memahami sikap inklusif, toleran, dan kesetaraan gender (termasuk pendidikan inklusif/disabilitas)"
+    },
+    {
+      "no": "44",
+      "indikator": "D.8 Iklim Kebinekaan",
+      "capaian": "Baik",
+      "akarMasalah": "D.6.2 Perilaku warga satuan pendidikan terhadap kesetaraan gender",
+      "kegiatanBenahi": "Aktivitas peningkatan kompetensi guru dan kepala sekolah yang bertujuan menunjang terciptanya iklim kesetaraan gender yang mendukunga tindakan kesetaraan kemampuan, pemenuhan hak dan kewajiban antara laki-laki dan perempuan yang berdampak pada iklim kebinekaan.&#xA;",
+      "rincian": "1. Kepala satuan pendidikan dan pendidik mempelajari bentuk perilaku warga satuan pendidikan terhadap kesetaraan gender untuk mendukung iklim kebinekaan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK, standar proses, dan standar pengelolaan.&#xA;&#xA;2. Kepala satuan pendidikan dan pendidik dan mengimplementasikan yang sudah dipelajari tentang perilaku warga satuan pendidikan terhadap kesetaraan gender melalui intrakurikuler, kokurikuler, dan/atau ekstrakurikuler untuk meningkatkan iklim kebinekaan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan  standar proses, standar isi, dan standar pengelolaan.&#xA;&#xA;3. Kepala satuan pendidikan mendorong perbaikan perilaku warga satuan pendidikan terhadap kesetaraan gender melalui program dan kebijakan di satuan pendidikan, baik yang membutuhkan anggaran dan yang tidak membutuhkan anggaran. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk pembelajaran berorientasi pada peserta didik&#xA;- Penyediaan atau pembuatan media pembelajaran&#xA;- Peningkatan kompetensi guru untuk memahami sikap inklusif, toleran, dan kesetaraan gender (termasuk pendidikan inklusif/disabilitas)"
+    },
+    {
+      "no": "45",
+      "indikator": "D.8 Iklim Kebinekaan",
+      "capaian": "Baik",
+      "akarMasalah": "E.5.3 Program dan kebijakan satuan pendidikan tentang kekerasan seksual",
+      "kegiatanBenahi": "Aktivitas peningkatan kompetensi guru dan kepala sekolah yang bertujuan mendukung ketersediaan dan penerapan program serta kebijakan yang mencegah dan menanggulangi perbuatan yang merendahkan, menghina, melecehkan, menyerang bagian tubuh seseorang yang berdampak pada iklim kebinekaan.",
+      "rincian": "1. Kepala satuan pendidikan, pendidik, dan peserta didik meningkatkan kompetensi dalam pencegahan kekerasan seksual melalui pelatihan dan refleksi untuk mendukung peningkatan iklim kebinekaan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK, standar proses, dan standar pengelolaan.&#xA;&#xA;2. Kepala satuan pendidikan, pendidik, dan peserta didik merancang dan melaksanakan program intrakurikuler dan/atau kokurikuler, dan/atau ekstrakurikuler yang memiliki nilai-nilai praktik positif lingkungan satuan pendidikan tanpa kekerasan seksual untuk menciptakan iklim kebinekaan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses, standar isi, dan standar pengelolaan.&#xA;&#xA;3. Kepala satuan pendidikan menyusun kebijakan yang mendukung pencegahan kekerasan seksual melalui program yang membutuhkan anggaran maupun tanpa anggaran untuk meningkatkan iklim kebinekaan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Pengembangan program pencegahan dan penanganan kekerasan dan kekerasan seksual di satuan pendidikan (termasuk Program Roots)&#xA;- Peningkatan kompetensi guru untuk memahami tentang perundungan, kekerasan, dan kekerasan seksual&#xA;- Penyelenggaraan sosialisasi dan pelaporan program, kegiatan hasil-hasil, dan pengelolaan keuangan sekolah"
+    },
+    {
+      "no": "46",
+      "indikator": "D.8 Iklim Kebinekaan",
+      "capaian": "Baik",
+      "akarMasalah": "E.5.5 Program dan Kebijakan mengenai kesetaraan gender",
+      "kegiatanBenahi": "Aktivitas peningkatan kompetensi guru dan kepala sekolah yang bertujuan mendukung ketersediaan dan penerapan program serta kebijakan yang mendukung kesetaraan antara laki-laki dan perempuan, misalnya dalam hal kemampuan, kesempatan, pemenuhan hak, dan kewajiban di lingkungan sekolah yang berdampak pada iklim kebinekaan.",
+      "rincian": "1. Kepala satuan pendidikan, pendidik, dan peserta didik meningkatkan kompetensi dalam mendukung kesetaraan gender melalui pelatihan dan refleksi untuk mendukung peningkatan iklim kebinekaan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar PTK, standar proses, dan standar pengelolaan.&#xA;&#xA;2. Kepala satuan pendidikan, pendidik, dan peserta didik merancang dan melaksanakan program intrakurikuler dan/atau kokurikuler, dan/atau ekstrakurikuler yang memiliki nilai-nilai dukungan terhadap kesetaraan gender di lingkungan satuan pendidikan  untuk menciptakan iklim kebinekaan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar proses, standar isi, dan standar pengelolaan.&#xA;&#xA;3. Kepala satuan pendidikan menyusun kebijakan yang mendukung kesetaraan gender melalui program yang membutuhkan anggaran maupun tanpa anggaran untuk meningkatkan iklim kebinekaan. Inspirasi benahi ini mendukung pencapaian standar kompetensi lulusan melalui peningkatan standar pengelolaan dan standar pembiayaan.",
+      "kegiatanArkas": "Kegiatan BOS Reguler&#xA;&#xA;- Peningkatan kompetensi guru untuk memahami sikap inklusif, toleran, dan kesertaan gender (termasuk pendidikan inklusif/disabilitas)&#xA;- Pengembangan sekolah sehat, sekolah aman, sekolah ramah anak, sekolah inklusi, sekolah adiwiyata, dan sejenisnya"
+    }
+  ],
+  "laporanRaporLengkap": [
+    {
+      "kode": "A.1",
+      "indikator": "Kemampuan literasi&#xA;Persentase peserta didik berdasarkan kemampuan dalam memahami, menggunakan, merefleksi, dan mengevaluasi beragam jenis teks (teks informasional dan teks fiksi).",
+      "capaian": "Kurang (40% peserta didik sudah mencapai kompetensi minimum)",
+      "skor": "40%",
+      "definisi": "Kurang dari 40% peserta didik telah mencapai kompetensi minimum untuk literasi membaca perlu upaya mendorong peserta didik dalam mencapai kompetensi minimum.",
+      "sumber": "Turun 50,00"
+    },
+    {
+      "kode": "A.1.skor",
+      "indikator": "Kemampuan literasi&#xA;Nilai rerata peserta didik berdasarkan kemampuan dalam memahami, menggunakan, merefleksi, dan mengevaluasi beragam jenis teks (teks informasional dan teks fiksi).",
+      "capaian": "",
+      "skor": "42,54",
+      "definisi": "",
+      "sumber": "Turun 30,84"
+    },
+    {
+      "kode": "A.1.1",
+      "indikator": "Kompetensi membaca teks informasi&#xA;Nilai rerata peserta didik dalam memahami, menggunakan, merefleksi, dan mengevaluasi teks informasional (non-fiksi).",
+      "capaian": "",
+      "skor": "44,16",
+      "definisi": "",
+      "sumber": "Turun 31,39"
+    },
+    {
+      "kode": "A.1.2",
+      "indikator": "Kompetensi membaca teks sastra&#xA;Nilai rerata peserta didik dalam memahami, menggunakan, merefleksi, dan mengevaluasi teks fiksi.",
+      "capaian": "",
+      "skor": "42,21",
+      "definisi": "",
+      "sumber": "Turun 27,64"
+    },
+    {
+      "kode": "A.1.3",
+      "indikator": "Kompetensi mengakses dan menemukan isi teks (L1)&#xA;Nilai rerata peserta didik pada kemampuan menemukan, mengidentifikasi, dan mendeskripsikan suatu ide atau informasi eksplisit dalam teks informasional (non-fiksi) dan sastra.",
+      "capaian": "",
+      "skor": "42,52",
+      "definisi": "",
+      "sumber": "Turun 26,50"
+    },
+    {
+      "kode": "A.1.4",
+      "indikator": "Kompetensi menginterpretasi dan memahami isi teks (L2)&#xA;Nilai rerata peserta didik pada kemampuan membandingkan dan mengontraskan ide atau informasi dalam atau antarteks, membuat kesimpulan, mengelompokkan, serta mengombinasikan ide dan informasi dalam teks atau antarteks informasional (non-fiksi) dan sastra.",
+      "capaian": "",
+      "skor": "41,83",
+      "definisi": "",
+      "sumber": "Turun 34,99"
+    },
+    {
+      "kode": "A.1.5",
+      "indikator": "Kompetensi mengevaluasi dan merefleksikan isi teks (L3)&#xA;Nilai rerata peserta didik pada kemampuan menganalisis, memprediksi, dan menilai konten, bahasa, dan unsur-unsur dalam teks informasional (non-fiksi) dan sastra.",
+      "capaian": "",
+      "skor": "51,95",
+      "definisi": "",
+      "sumber": "Turun 18,98"
+    },
+    {
+      "kode": "A.2",
+      "indikator": "Kemampuan numerasi&#xA;Persentase peserta didik berdasarkan kemampuan dalam berpikir menggunakan konsep, prosedur, fakta, dan alat matematika untuk menyelesaikan masalah sehari-hari pada berbagai jenis konteks yang relevan.",
+      "capaian": "Kurang (36,67% peserta didik sudah mencapai kompetensi minimum)",
+      "skor": "36,67%",
+      "definisi": "Kurang dari 40% peserta didik telah mencapai kompetensi minimum untuk numerasi perlu upaya mendorong peserta didik dalam mencapai kompetensi minimum.",
+      "sumber": "Turun 60,00"
+    },
+    {
+      "kode": "A.2.skor",
+      "indikator": "Kemampuan numerasi&#xA;Nilai rerata peserta didik berdasarkan kemampuan dalam berpikir menggunakan konsep, prosedur, fakta, dan alat matematika untuk menyelesaikan masalah sehari-hari pada berbagai jenis konteks yang relevan.",
+      "capaian": "",
+      "skor": "39,57",
+      "definisi": "",
+      "sumber": "Turun 24,99"
+    },
+    {
+      "kode": "A.2.1",
+      "indikator": "Kompetensi pada domain Bilangan&#xA;Nilai rerata peserta didik dalam berpikir menggunakan konsep, prosedur, fakta, dan alat matematika pada konten bilangan untuk menyelesaikan masalah sehari-hari.",
+      "capaian": "",
+      "skor": "40,52",
+      "definisi": "",
+      "sumber": "Turun 23,03"
+    },
+    {
+      "kode": "A.2.2",
+      "indikator": "Kompetensi pada domain Aljabar&#xA;Nilai rerata peserta didik dalam berpikir menggunakan konsep, prosedur, fakta, dan alat matematika pada konten aljabar untuk menyelesaikan masalah sehari-hari.",
+      "capaian": "",
+      "skor": "40,92",
+      "definisi": "",
+      "sumber": "Turun 19,81"
+    },
+    {
+      "kode": "A.2.3",
+      "indikator": "Kompetensi pada domain Geometri&#xA;Nilai rerata peserta didik dalam berpikir menggunakan konsep, prosedur, fakta, dan alat matematika pada konten geometri untuk menyelesaikan masalah sehari-hari.",
+      "capaian": "",
+      "skor": "38,06",
+      "definisi": "",
+      "sumber": "Turun 27,57"
+    },
+    {
+      "kode": "A.2.4",
+      "indikator": "Kompetensi pada domain Data dan Ketidakpastian&#xA;Nilai rerata peserta didik dalam berpikir menggunakan konsep, prosedur, fakta, dan alat matematika pada konten data dan ketidakpastian untuk menyelesaikan masalah sehari-hari.",
+      "capaian": "",
+      "skor": "35,62",
+      "definisi": "",
+      "sumber": "Turun 29,76"
+    },
+    {
+      "kode": "A.2.5",
+      "indikator": "Kompetensi mengetahui (L1)&#xA;Nilai rerata peserta didik pada kemampuan memahami fakta, proses, konsep, dan prosedur.",
+      "capaian": "",
+      "skor": "38,59",
+      "definisi": "",
+      "sumber": "Turun 27,39"
+    },
+    {
+      "kode": "A.2.6",
+      "indikator": "Kompetensi menerapkan (L2)&#xA;Nilai rerata peserta didik pada kemampuan menerapkan pengetahuan dan pemahaman tentang fakta-fakta, relasi, proses, konsep, prosedur, dan metode pada konten bilangan dengan konteks situasi nyata untuk menyelesaikan masalah atau menjawab pertanyaan.",
+      "capaian": "",
+      "skor": "40,02",
+      "definisi": "",
+      "sumber": "Turun 24,09"
+    },
+    {
+      "kode": "A.2.7",
+      "indikator": "Kompetensi menalar (L3)&#xA;Nilai rerata peserta didik pada kemampuan menganalisis data dan informasi, membuat kesimpulan, dan memperluas pemahaman dalam situasi baru, meliputi situasi yang tidak diketahui sebelumnya atau konteks yang lebih kompleks.",
+      "capaian": "",
+      "skor": "42,94",
+      "definisi": "",
+      "sumber": "Turun 18,31"
+    },
+    {
+      "kode": "A.3",
+      "indikator": "Karakter&#xA;Nilai rerata karakter peserta didik berdasarkan nilai akhlak pada manusia, akhlak pada alam, akhlak bernegara, gotong royong, kreativitias, nalar kritis, kebinekaan global dan kemandirian pada survei karakter.",
+      "capaian": "Sedang",
+      "skor": "52,17",
+      "definisi": "Peserta didik telah menyadari pentingnya nilai-nilai karakter pelajar pancasila yang berakhlak mulia, bergotong royong, mandiri, kreatif dan bernalar kritis serta berkebinekaan global, namun masih perlu dukungan untuk menerapkannya dalam kehidupan sehari-hari.",
+      "sumber": "Turun 24,83"
+    },
+    {
+      "kode": "A.3.1",
+      "indikator": "Beriman, Bertakwa kepada Tuhan yang Maha Esa, dan Berakhlak Mulia&#xA;Komposit nilai karakter peserta didik yang berkaitan akhlak kepada manusia, akhlak kepada alam, dan akhlak bernegara di survei karakter.",
+      "capaian": "Sedang",
+      "skor": "54,5",
+      "definisi": "Peserta didik memiliki kesadaran akan pentingnya berakhlak baik pada sesama manusia, alam, dan negara, serta sudah menerapkannya dengan baik dalam kehidupan sehari-hari.",
+      "sumber": "Turun 19,57"
+    },
+    {
+      "kode": "A.3.2",
+      "indikator": "Gotong Royong&#xA;Komposit nilai karakter peserta didik berdasarkan kesediaan dan pengalaman berkontribusi dalam kegiatan yang bertujuan memperbaiki kondisi lingkungan fisik dan lingkungan sosial.",
+      "capaian": "Sedang",
+      "skor": "56,26",
+      "definisi": "Peserta didik memiliki kesediaan dan kemauan berkontribusi dalam kegiatan yang bertujuan memperbaiki kondisi lingkungan fisik dan sosial, serta sudah diimplementasikan dengan baik dalam kehidupan sehari-hari.",
+      "sumber": "Turun 24,87"
+    },
+    {
+      "kode": "A.3.3",
+      "indikator": "Kreativitas&#xA;Komposit nilai karakter peserta didik berdasarkan nilai senang berpikir berbeda, menerapkan ide baru dalam memecahkan masalah, dan membuat karya-karya baru.",
+      "capaian": "Sedang",
+      "skor": "47,18",
+      "definisi": "Peserta didik memiliki kesenangan dan pengalaman untuk menghasilkan pemikiran, gagasan, serta karya yang baru dan berbeda, serta sudah diimplementasikan secara optimal.",
+      "sumber": "Turun 29,79"
+    },
+    {
+      "kode": "A.3.4",
+      "indikator": "Nalar Kritis&#xA;Komposit nilai karakter peserta didik berdasarkan nilai penelusuran informasi, analisis dan evaluasi informasi, serta refleksi etis dalam pengambilan keputusan.",
+      "capaian": "Baik",
+      "skor": "47,59",
+      "definisi": "Peserta didik secara rutin dan konsisten telah menelusuri, menganalisis, dan mengevaluasi informasi, serta bertanggung jawab terhadap keputusan yang dibuat.",
+      "sumber": "Turun 22,36"
+    },
+    {
+      "kode": "A.3.5",
+      "indikator": "Kebinekaan global&#xA;Komposit nilai karakter peserta didik berdasarkan sikap terhadap kesetaraan agama, budaya, dan gender; nilai minat terhadap budaya dari berbagai negara; dan kepedulian pada isu-isu global.",
+      "capaian": "Sedang",
+      "skor": "51,78",
+      "definisi": "Peserta didik memiliki ketertarikan terhadap keragaman di berbagai negara serta memiliki kepedulian terhadap isu-isu global, dan sudah diterapkan dalam kehidupan sehari-hari.",
+      "sumber": "Turun 20,58"
+    },
+    {
+      "kode": "A.3.6",
+      "indikator": "Kemandirian&#xA;Komposit nilai karakter peserta didik berdasarkan nilai melakukan perencanaan secara reflektif, dan pengelolaan emosi dan pengendalian diri.",
+      "capaian": "Sedang",
+      "skor": "51,11",
+      "definisi": "Peserta didik terbiasa mengelola pikiran, perasaan, dan tindakan untuk mencapai tujuan belajar dalam kehidupan sehari-hari.",
+      "sumber": "Turun 42,28"
+    },
+    {
+      "kode": "C.3",
+      "indikator": "Pengalaman Pelatihan PTK&#xA;Proporsi guru dan kepala sekolah yang pernah mengikuti pelatihan melalui Ruang GTK dan non-Ruang GTK pada pelatihan kurikulum dan/atau bidang pengetahuan bidang studi, pedagogi, manajerial, atau pelatihan lain dikali bobot masing-masing pelatihan",
+      "capaian": "Kurang",
+      "skor": "0",
+      "definisi": "Propinsi/Kabupaten/Kota/Satuan Pendidikan sedang merintis dalam keikutsertaan guru dalam pelatihan",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    },
+    {
+      "kode": "D.1",
+      "indikator": "Kualitas pembelajaran&#xA;Nilai rerata untuk kualitas pembelajaran meliputi manajemen kelas, dukungan psikologi, dan metode pembelajaran di survei lingkungan belajar.",
+      "capaian": "Sedang",
+      "skor": "55,41",
+      "definisi": "Pembelajaran mengarah pada peningkatan kualitas yang ditunjukkan dengan suasana kelas yang mulai kondusif dan adanya dukungan afektif serta aktivasi kognitif dari guru.",
+      "sumber": "Turun 11,59"
+    },
+    {
+      "kode": "D.1.1",
+      "indikator": "Manajemen kelas&#xA;Nilai rerata untuk keteraturan suasana kelas dan disiplin positif di survei lingkungan belajar.",
+      "capaian": "Kurang",
+      "skor": "47,24",
+      "definisi": "Suasana kelas belum kondusif untuk melangsungkan pembelajaran dan hanya sebagian kecil guru yang berupaya aktif untuk melibatkan peserta didik dalam pengelolaan kelas.",
+      "sumber": "Turun 21,52"
+    },
+    {
+      "kode": "D.1.2",
+      "indikator": "Dukungan psikologis&#xA;Nilai rerata untuk dukungan afektif, perhatian dan kepedulian guru, dan umpan balik konstruktif di survei lingkungan belajar.",
+      "capaian": "Baik",
+      "skor": "61,13",
+      "definisi": "Dukungan afektif berupa perhatian, kepedulian dan umpan balik untuk meningkatkan ekspektasi akademik secara konstruktif telah diberikan oleh guru.",
+      "sumber": "Turun 5,69"
+    },
+    {
+      "kode": "D.1.3",
+      "indikator": "Metode pembelajaran&#xA;Nilai rerata untuk instruksi yang adaptif, panduan guru, aktivitas interaktif, pembelajaran literasi, pembelajaran numerasi, skor iklim pembelajaran terbuka di survei lingkungan belajar",
+      "capaian": "Sedang",
+      "skor": "57,87",
+      "definisi": "Aktivasi kognitif dalam proses pembelajaran berupa menciptakan iklim pembelajaran terbuka dengan memberikan instruksi, panduan dan aktivitas yang interaktif pada pembelajaran literasi dan numerasi yang dipraktekkan oleh guru bersifat terbatas",
+      "sumber": "Turun 9,13"
+    },
+    {
+      "kode": "D.2",
+      "indikator": "Refleksi dan perbaikan pembelajaran oleh guru&#xA;Nilai rerata terkait tingkat aktivitas refleksi dan perbaikan pembelajaran oleh guru berdasarkan survei lingkungan belajar.",
+      "capaian": "Baik",
+      "skor": "69,74",
+      "definisi": "Guru aktif meningkatkan kualitas pembelajaran setelah melakukan refleksi pembelajaran yang telah lewat, mengeksplorasi referensi pengajaran baru, dan berinovasi menghadirkan pembelajaran yang memantik keterlibatan peserta didik.",
+      "sumber": "Naik 3,70"
+    },
+    {
+      "kode": "D.2.1",
+      "indikator": "Belajar tentang pembelajaran&#xA;Nilai komposit dari kepala satuan pendidikan dan pendidik terkait aktivitas belajar yang bertujuan meningkatkan pengetahuan dan keterampilan mengajar.",
+      "capaian": "Baik",
+      "skor": "65,86",
+      "definisi": "Guru sudah aktif mencari referensi pengajaran melalui buku, seminar, diskusi, praktik baik guru lain, dll untuk meningkatkan kualitas pengajaran.",
+      "sumber": "Naik 8,26"
+    },
+    {
+      "kode": "D.2.2",
+      "indikator": "Refleksi atas praktik mengajar&#xA;Nilai komposit kepala satuan pendidikan dan pendidik terkait tingkat refleksi dan perbaikan pembelajaran oleh guru atas praktik mengajar.",
+      "capaian": "Baik",
+      "skor": "74,08",
+      "definisi": "Proses refleksi telah secara rutin dan konsisten, ditindaklanjuti dengan pencarian sumber belajar baik dari buku, diskusi, praktek baik orang lain, maupun berbagai sumber belajar lainnya untuk peningkatan kualitas dan pengembangan inovasi.",
+      "sumber": "Naik 2,34"
+    },
+    {
+      "kode": "D.2.3",
+      "indikator": "Penerapan praktik inovatif&#xA;Nilai komposit kepala satuan pendidikan dan pendidik terkait praktik pengajaran guru yang inovatif untuk meningkatkan kualitas pengajaran.",
+      "capaian": "Baik",
+      "skor": "66,66",
+      "definisi": "Guru terbiasa mencari cara, sumber, dan strategi pengajaran baru dalam rangka melakukan inovasi pembelajaran untuk meningkatkan ketertarikan, keterlibatan, dan pemahaman peserta didik terhadap materi pembelajaran.",
+      "sumber": "Naik 3,28"
+    },
+    {
+      "kode": "D.3",
+      "indikator": "Kepemimpinan instruksional&#xA;Nilai rerata terkait tingkat kepemimpinan instruksional satuan pendidikan yang mendukung perbaikan kualitas pembelajaran berdasarkan survei lingkungan belajar.",
+      "capaian": "Baik",
+      "skor": "71,46",
+      "definisi": "Kepemimpinan instruksional yang visioner dengan mengacu pada visi-misi satuan pendidikan secara konsisten termasuk mengkomunikasikan visi-misi kepada warga satuan pendidikan sehingga perencanaan, praktik dan asesmen pembelajaran berorientasi peningkatan hasil belajar peserta didik melalui dukungan program, sistem insentif atau sumber daya yang memadai yang berdampak pada membudayanya guru melakukan refleksi dan perbaikan pembelajaran.",
+      "sumber": "Naik 13,14"
+    },
+    {
+      "kode": "D.3.1",
+      "indikator": "Visi-misi satuan pendidikan&#xA;Nilai komposit kepala satuan pendidikan dan pendidik terkait penyampaian dan penerapan visi-misi satuan pendidikan yang berpusat pada perbaikan pembelajaran.",
+      "capaian": "Baik",
+      "skor": "69,98",
+      "definisi": "Visi-misi satuan pendidikan menjadi acuan dalam perencanaan dan pelaksanaan program kerja satuan pendidikan serta dikomunikasikan kepada warga satuan pendidikan yang dipantau kemajuan realisasi mewujudkan visi-misi satuan pendidikan menggunakan data.",
+      "sumber": "Naik 9,03"
+    },
+    {
+      "kode": "D.3.2",
+      "indikator": "Pengelolaan kurikulum satuan pendidikan&#xA;Nilai komposit kepala satuan pendidikan dan pendidik terkait pengelolaan pengembangan kurikulum satuan pendidikan dengan berorientasi pada peningkatan hasil belajar peserta didik.",
+      "capaian": "Baik",
+      "skor": "72,14",
+      "definisi": "Perencanaan pembelajaran, praktik pembelajaran, dan praktik asesmen di satuan pendidikan sudah berorientasi pada peningkatan hasil belajar peserta didik.",
+      "sumber": "Naik 13,76"
+    },
+    {
+      "kode": "D.3.3",
+      "indikator": "Dukungan untuk refleksi guru&#xA;Nilai komposit kepala satuan pendidikan dan pendidik terkait program, sistem insentif, dan sumber daya yang mendukung refleksi guru dan perbaikan pembelajaran.",
+      "capaian": "Baik",
+      "skor": "72,27",
+      "definisi": "Satuan pendidikan sudah memiliki program, sistem insentif, dan sumber daya yang telah mendukung guru untuk melakukan refleksi dan perbaikan pembelajaran.",
+      "sumber": "Naik 16,64"
+    },
+    {
+      "kode": "D.4",
+      "indikator": "Iklim keamanan satuan pendidikan&#xA;Nilai komposit nilai indeks rasa aman, perundungan, hukuman fisik, kekerasan seksual, rokok, minuman keras, dan narkoba berdasarkan survei lingkungan belajar.",
+      "capaian": "Sedang",
+      "skor": "65,01",
+      "definisi": "Satuan pendidikan mulai mengembangkan iklim keamanan dalam aspek kesejahteraan psikologis, perundungan, hukuman fisik, kekerasan seksual, dan penyalahgunaan narkoba di lingkungan satuan pendidikan. Oleh karena itu, satuan pendidikan dapat melanjutkan intervensi dengan meningkatkan kemampuan mencegah dan menangani kasus di lingkungan satuan pendidikan.",
+      "sumber": "Turun 12,99"
+    },
+    {
+      "kode": "D.4.1",
+      "indikator": "Kesejahteraan psikologis (wellbeing) peserta didik&#xA;Nilai rerata terkait peserta didik terhadap kesejahteraan psikologis dan perasaan aman yang dirasakan di satuan pendidikan.",
+      "capaian": "Sedang",
+      "skor": "57,71",
+      "definisi": "Peserta didik merasa aman dan nyaman ketika berada di lingkungan satuan pendidikan pada situasi-situasi tertentu saja.",
+      "sumber": "Turun 27,17"
+    },
+    {
+      "kode": "D.4.2",
+      "indikator": "Kesejahteraan psikologis (wellbeing) guru&#xA;Nilai rerata terkait kesejahteraan psikologis guru yang melingkupi perasaan terhubung dan perasaan senang mengajar di satuan pendidikan.",
+      "capaian": "Baik",
+      "skor": "76",
+      "definisi": "Guru merasa menjadi bagian tak terpisahkan dari satuan pendidikan sehingga mereka sudah sepenuhnya antusias dalam menjalani peran sebagai seorang pendidik.",
+      "sumber": "Naik 6,00"
+    },
+    {
+      "kode": "D.4.3",
+      "indikator": "Pemahaman dan sikap terhadap perundungan&#xA;Nilai rerata terkait pemahaman dan sikap guru terhadap segala bentuk penindasan atau kekerasan yang dilakukan secara sengaja oleh satu/sekelompok orang yang lebih &#34;kuat&#34; di satuan pendidikan.",
+      "capaian": "Baik",
+      "skor": "77",
+      "definisi": "Kepala satuan pendidikan dan guru sudah yakin dengan pengetahuan dan pemahaman tentang penanganan perundungan, serta mungkin masih memerlukan dukungan untuk meningkatkan pengetahuan dan pemahaman.",
+      "sumber": "Naik 12,00"
+    },
+    {
+      "kode": "D.4.4",
+      "indikator": "Pengalaman perundungan peserta didik&#xA;Persentase peserta didik yang aman terhadap perundungan/bullying dari guru atau sesama peserta didik di satuan pendidikan.",
+      "capaian": "Sedang (33,33% peserta didik aman terhadap perundungan di lingkungan satuan pendidikan)",
+      "skor": "33,33%",
+      "definisi": "Frekuensi sedang tapi tetap perlu melakukan intervensi pencegahan dan penanganan perundungan di satuan pendidikan.",
+      "sumber": "Turun 46,67"
+    },
+    {
+      "kode": "D.4.5",
+      "indikator": "Pemahaman dan sikap terhadap hukuman fisik&#xA;Nilai komposit dari kepala satuan pendidikan, pendidik, dan peserta didik terkait pengetahuan dan sikap guru untuk menghindari hukuman fisik di satuan pendidikan.",
+      "capaian": "Baik",
+      "skor": "65,72",
+      "definisi": "Satuan pendidikan aman dari kasus hukuman fisik. Kepala satuan pendidikan dan guru telah memiliki konsepsi yang tepat dan yakin dengan pengetahuan dan kemampuannya terkait hukuman fisik.",
+      "sumber": "Naik 8,72"
+    },
+    {
+      "kode": "D.4.6",
+      "indikator": "Pengalaman hukuman fisik peserta didik&#xA;Persentase peserta didik yang aman terhadap kejadian hukuman fisik yang diterima oleh peserta didik di satuan pendidikan.",
+      "capaian": "Sedang (70% peserta didik aman terhadap kekerasan fisik di lingkungan satuan pendidikan)",
+      "skor": "70%",
+      "definisi": "Sebagian peserta didik melihat/mengetahui kekerasan fisik yang terjadi di satuan pendidikan.",
+      "sumber": "Turun 10,00"
+    },
+    {
+      "kode": "D.4.7",
+      "indikator": "Pemahaman dan sikap guru tentang kekerasan seksual&#xA;Nilai rerata terkait pengetahuan dan keyakinan guru untuk mengatasi kekerasan seksual di satuan pendidikan.",
+      "capaian": "Baik",
+      "skor": "60,69",
+      "definisi": "Satuan pendidikan aman dari kasus pelecehan seksual. Kepala satuan pendidikan dan guru sudah memahami dan meyakini konsep, definisi, bentuk, cara pencegahan dan kemampuan penanganan pelecehan seksual.",
+      "sumber": "Turun 9,31"
+    },
+    {
+      "kode": "D.4.8",
+      "indikator": "Pengalaman kekerasan seksual peserta didik&#xA;Persentase peserta didik yang aman terhadap kejadian kekerasan seksual yang dialami oleh diri sendiri ataupun orang lain di lingkungan satuan pendidikan.",
+      "capaian": "Kurang (30% peserta didik aman terhadap pelecehan seksual di lingkungan satuan pendidikan)",
+      "skor": "30%",
+      "definisi": "Sering terjadinya pelecehan seksual di satuan pendidikan.",
+      "sumber": "Turun 56,67"
+    },
+    {
+      "kode": "D.4.9",
+      "indikator": "Pemahaman dan sikap guru tentang rokok, minuman keras, dan narkoba&#xA;Nilai komposit dari kepala satuan pendidikan dan pendidik terkait pengetahuan dan sikap terhadap pencegahan dan penanggulangan penyalahgunaan narkoba, rokok, dan minuman keras di lingkungan satuan pendidikan.",
+      "capaian": "Baik",
+      "skor": "83",
+      "definisi": "Satuan pendidikan aman dari kasus penyalahgunaan rokok, minuman keras, dan narkoba. Kepala satuan pendidikan dan guru memahami pengertian dan contoh penyalahgunaan rokok, minuman keras, dan narkoba.",
+      "sumber": "Naik 24,00"
+    },
+    {
+      "kode": "D.4.10",
+      "indikator": "Pengalaman peserta didik terkait rokok, minuman keras, dan narkoba&#xA;Persentase peserta didik yang aman terhadap rokok, minuman keras, dan narkoba di satuan pendidikan, misalnya dibujuk untuk mencoba, menggunakan, membeli atau mengedarkan.",
+      "capaian": "Sedang (53,33% peserta didik aman terhadap aktivitas yang berkaitan dengan rokok. minuman keras. dan narkoba di lingkungan satuan pendidikan)",
+      "skor": "53,33%",
+      "definisi": "Frekuensi sedang tapi tetap perlu melakukan intervensi pencegahan dan penanganan aktivitas yang berkaitan dengan rokok, minuman keras, dan narkoba di satuan pendidikan.",
+      "sumber": "Turun 46,67"
+    },
+    {
+      "kode": "D.6",
+      "indikator": "Iklim Kesetaraan Gender&#xA;Nilai rerata iklim kesetaran gender yang mengukur dukungan atas kesetaraan gender guru dan pimpinan satuan pendidikan berdasarkan survei lingkungan belajar.",
+      "capaian": "Sedang",
+      "skor": "64,04",
+      "definisi": "Satuan pendidikan mendukung kesetaraan hak-hak sipil antar kelompok gender. Dukungan tersebut seringkali didasari oleh alasan pragmatis dan cenderung bersifat pasif.",
+      "sumber": "Turun 15,96"
+    },
+    {
+      "kode": "D.6.1",
+      "indikator": "Pemahaman dan sikap warga satuan pendidikan terhadap kesetaraan gender&#xA;Nilai rerata terkait pemahaman dan dukungan terhadap kesetaraan antara laki-laki dan perempuan, misalnya dalam hal kemampuan, kesempatan, pemenuhan hak, dan kewajiban.",
+      "capaian": "Sedang",
+      "skor": "60,83",
+      "definisi": "Satuan pendidikan belum konsisten dalam mewujudkan pemahaman dan dukungan terhadap kesetaraan gender.",
+      "sumber": "Turun 6,17"
+    },
+    {
+      "kode": "D.6.2",
+      "indikator": "Perilaku warga satuan pendidikan terhadap kesetaraan gender&#xA;Nilai rerata terkait tindakan yang mendukung kesetaraan kemampuan, pemenuhan hak dan kewajiban antara laki-laki dan perempuan.",
+      "capaian": "Sedang",
+      "skor": "65,77",
+      "definisi": "Satuan pendidikan belum konsisten menunjukkan perilaku yang mendukung kesetaraan gender.",
+      "sumber": "Turun 20,23"
+    },
+    {
+      "kode": "D.8",
+      "indikator": "Iklim Kebinekaan&#xA;Nilai rerata iklim kebhinekaan di satuan pendidikan berdasarkan survei lingkungan belajar",
+      "capaian": "Baik",
+      "skor": "66,58",
+      "definisi": "Satuan pendidikan sudah mampu menghadirkan suasana proses pembelajaran yang menjunjung tinggi toleransi agama/kepercayaan dan budaya; mendapatkan pengalaman belajar yang berkualitas; mendukung kesetaraan agama/kepercayaan, dan budaya; serta memperkuat nasionalisme.",
+      "sumber": "Turun 11,42"
+    },
+    {
+      "kode": "D.8.1",
+      "indikator": "Toleransi agama dan budaya&#xA;Nilai rerata terkait toleransi agama dan budaya di satuan pendidikan.",
+      "capaian": "Baik",
+      "skor": "66,27",
+      "definisi": "Satuan pendidikan mengakui, menghargai, menerima, mendukung dan merawat keragaman agama/kepercayaan dan budaya.",
+      "sumber": "Turun 2,73"
+    },
+    {
+      "kode": "D.8.2",
+      "indikator": "Komitmen kebangsaan&#xA;Nilai komposit dari kepala satuan pendidikan dan pendidik terkait komitmen kebangsaan pimpinan satuan pendidikan dan guru.",
+      "capaian": "Baik",
+      "skor": "75,85",
+      "definisi": "Satuan pendidikan mendukung dan mengakomodir semua peserta didik untuk mendapatkan pengalaman belajar yang berkualitas.",
+      "sumber": "Turun 19,15"
+    },
+    {
+      "kode": "D.8.3",
+      "indikator": "Toleransi dan kesetaraan peserta didik&#xA;Nilai rerata terkait sikap menerima dan menghargai keragaman agama dan budaya di satuan pendidikan.",
+      "capaian": "Baik",
+      "skor": "57,62",
+      "definisi": "Peserta didik secara konsisten menunjukkan perilaku penghargaan atas keragaman agama.",
+      "sumber": "Turun 11,96"
+    },
+    {
+      "kode": "D.10",
+      "indikator": "Iklim Inklusivitas&#xA;Nilai rerata terkait layanan disabilitas, CBI, sikap terhadap disabilitas, dan fasilitas satuan pendidikan disabilitas di satuan pendidikan berdasarkan survei lingkungan belajar.",
+      "capaian": "Baik",
+      "skor": "55,38",
+      "definisi": "Satuan pendidikan sudah mampu menghadirkan suasana proses pembelajaran yang menyediakan layanan yang ramah bagi peserta didik dengan disabilitas dan cerdas berbakat istimewa.",
+      "sumber": "Turun 10,62"
+    },
+    {
+      "kode": "D.10.1",
+      "indikator": "Layanan disabilitas&#xA;Nilai rerata terkait layanan satuan pendidikan yang melingkupi pengetahuan dan sikap tentang peserta didik dengan disabilitas.",
+      "capaian": "Sedang",
+      "skor": "72,01",
+      "definisi": "Satuan pendidikan mulai memiliki pengetahuan, sikap yang tepat, dan  kemampuan untuk melaksanakan praktik pembelajaran khusus bagi peserta didik dengan disabilitas.",
+      "sumber": "Naik 12,01"
+    },
+    {
+      "kode": "D.10.2",
+      "indikator": "Layanan satuan pendidikan untuk peserta didik cerdas dan bakat istimewa&#xA;Nilai rerata terkait layanan satuan pendidikan yang melingkupi pengetahuan dan sikap tentang peserta didik cerdas dan berbakat istimewa.",
+      "capaian": "Sedang",
+      "skor": "59,14",
+      "definisi": "Satuan pendidikan mulai memiliki pengetahuan, sikap yang tepat, dan  kemampuan untuk melaksanakan praktik pembelajaran khusus bagi peserta didik dengan kecerdasan dan bakat istimewa.",
+      "sumber": "Naik 6,14"
+    },
+    {
+      "kode": "D.10.3",
+      "indikator": "Sikap terhadap disabilitas&#xA;Nilai rerata terkait sikap guru terhadap disabilitas berdasarkan aspek afektif, kognitif, dan perilaku.",
+      "capaian": "Baik",
+      "skor": "54,24",
+      "definisi": "Peserta didik sudah menerima keberadaan Peserta didik disabilitas, sehingga merasa nyaman dan bisa berteman akrab.",
+      "sumber": "Turun 13,32"
+    },
+    {
+      "kode": "D.18",
+      "indikator": "Kesiapsiagaan Bencana dan Perubahan Iklim&#xA;Nilai Komposit Kepala Sekolah, Guru, dan Murid terkait tingkat Kesiapsiagaan Bencana, Mitigasi bencana, Adaptasi dan Mitigasi perubahan Iklim di satuan Pendidikan",
+      "capaian": "Sedang",
+      "skor": "66,21",
+      "definisi": "Satuan pendidikan memiliki kebijakan dan program terkait kesiapsiagaan bencana, mitigasi bencana, serta adaptasi dan mitigasi perubahan iklim, namun dukungan sarana prasarana, pemahaman serta sikap maupun penerapannya belum sepenuhnya optimal.",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    },
+    {
+      "kode": "D.18.1",
+      "indikator": "Pemahaman dan Sikap terhadap Risiko Bencana&#xA;Nilai komposit Kepala Sekolah, Guru, dan Murid terkait tingkat pengetahuan, kesadaran, dan tindakan komunitas satuan pendidikan (kepala satuan pendidikan, guru, murid) terhadap potensi ancaman bencana, kerentanan, dan kapasitas yang dimiliki dalam menghadapi bencana, serta kecenderungan perilaku yang mendukung upaya keselamatan, mitigasi, dan kesiapsiagaan bencana",
+      "capaian": "Kurang",
+      "skor": "61,9",
+      "definisi": "Komunitas satuan pendidikan memiliki pengetahuan yang terbatas tentang ancaman bencana, kesadaran terhadap kerentanan rendah, belum memiliki perencanaan yang baik untuk mitigasi dan kesiapsiagaan bencana, serta menunjukkan perilaku yang abai dan berpotensi meningkatkan risiko.",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    },
+    {
+      "kode": "D.18.2",
+      "indikator": "Manajemen Penanggulangan Bencana di Satuan Pendidikan dan Kesinambungan Pendidikan&#xA;Nilai komposit Kepala Sekolah, Guru, dan Murid terkait kebijakan, mekanisme koordinasi, dan sumber daya yang dimiliki satuan pendidikan untuk mengelola risiko bencana secara terencana, terintegrasi, dan berkelanjutan, termasuk memastikan layanan pendidikan tetap berlangsung dengan aman sebelum, saat, dan sesudah bencana",
+      "capaian": "Baik",
+      "skor": "59,83",
+      "definisi": "Satuan pendidikan memiliki kebijakan yang terintegrasi, mekanisme koordinasi yang terencana dengan baik, dan sumber daya memadai untuk mengelola risiko bencana yang berkelanjutan sehingga layanan pendidikan tetap aman sebelum, saat, dan sesudah bencana.",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    },
+    {
+      "kode": "D.18.3",
+      "indikator": "Sarana dan Prasarana Keselamatan Bencana&#xA;Nilai komposit siswa, guru dan KS terkait ketersediaan prasarana dan sarana pendukung penyelamatan dan evakuasi saat keadaan darurat di satuan pendidikan sehingga mendukung keamanan dan keselamatan warga satuan pendidikan",
+      "capaian": "Baik",
+      "skor": "74,91",
+      "definisi": "Satuan pendidikan memiliki prasarana dan sarana pendukung penyelamatan dan evakuasi yang lengkap, terawat, dan berfungsi optimal sehingga mendukung keamanan dan keselamatan warga satuan pendidikan",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    },
+    {
+      "kode": "D.18.4",
+      "indikator": "Pemahaman dan Sikap Warga Satuan Pendidikan terhadap Perubahan Iklim&#xA;Nilai komposit Kepala Sekolah, Guru dan Murid terkait pemahaman dan sikap terhadap isu perubahan iklim yang dimiliki oleh warga satuan pendidikan",
+      "capaian": "Sedang",
+      "skor": "63,24",
+      "definisi": "Warga satuan pendidikan memiliki pengetahuan dasar mengenai fenomena perubahan iklim dan mulai menumbuhkan sikap positif.",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    },
+    {
+      "kode": "D.18.5",
+      "indikator": "Kebijakan Perubahan Iklim&#xA;Nilai komposit Kepala Sekolah, dan Guru terkait Kebijakan perubahan iklim yang mencerminkan komitmen satuan pendidikan dalam mengintegrasikan prinsip kelestarian lingkungan, mitigasi dan adaptasi perubahan iklim ke dalam tata kelola sekolah. ",
+      "capaian": "Baik",
+      "skor": "77,59",
+      "definisi": "Satuan Pendidikan memiliki kebijakan yang konsisten untuk mendukung kelestarian lingkungan hidup, mitigasi dan adaptasi perubahan iklim",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    },
+    {
+      "kode": "D.18.6",
+      "indikator": "Pembelajaran Perubahan Iklim&#xA;Nilai rerata Guru praktik pembelajaran yang bertujuan untuk membimbing dan mendukung Murid dalam membangun pengetahuan dan pemahaman tentang kelestarian lingkungan hidup dan perubahan iklim",
+      "capaian": "Sedang",
+      "skor": "67,1",
+      "definisi": "Satuan pendidikan mulai melakukan praktik pengajaran terkait pelestarian lingkungan dan perubahan iklim yang membantu peserta didik membangun pengetahuan dasar meskipun pelaksanaannya belum konsisten",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    },
+    {
+      "kode": "D.19",
+      "indikator": "Tujuh Kebiasaan Anak Indonesia Hebat&#xA;Nilai rerata kebiasaan karakter peserta didik berdasarkan nilai bangun pagi, beribadah, berolahraga, makan sehat bergizi, gemar belajar, bermasyarakat, dan tidur cepat.",
+      "capaian": "Capaian Tidak Tersedia",
+      "skor": "Tidak Tersedia (Satdik Anda tidak mengikuti Survei Implementasi Penguatan Karakter)",
+      "definisi": "Satdik Anda tidak mengikuti Survei Implementasi Penguatan Karakter",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    },
+    {
+      "kode": "D.19.1",
+      "indikator": "Bangun Pagi&#xA;Komposit nilai kebiasaan bangun pagi peserta didik berdasarkan tingkat kedisiplinan waktu dan konsistensi memulai hari, serta sikap dan pemahaman manfaat bangun pagi.",
+      "capaian": "Capaian Tidak Tersedia",
+      "skor": "Tidak Tersedia (Satdik Anda tidak mengikuti Survei Implementasi Penguatan Karakter)",
+      "definisi": "Satdik Anda tidak mengikuti Survei Implementasi Penguatan Karakter",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    },
+    {
+      "kode": "D.19.2",
+      "indikator": "Beribadah&#xA;Komposit nilai kebiasaan beribadah peserta didik berdasarkan tingkat konsistensi menjalankan ibadah sesuai agama/kepercayaan di rumah dan di satuan pendidikan, serta sikap dan pemahaman manfaat beribadah.",
+      "capaian": "Capaian Tidak Tersedia",
+      "skor": "Tidak Tersedia (Satdik Anda tidak mengikuti Survei Implementasi Penguatan Karakter)",
+      "definisi": "Satdik Anda tidak mengikuti Survei Implementasi Penguatan Karakter",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    },
+    {
+      "kode": "D.19.3",
+      "indikator": "Berolahraga&#xA;Komposit nilai kebiasaan berolahraga peserta didik berdasarkan tingkat keteraturan melakukan aktivitas fisik dan dorongan menjaga kebugaran, serta sikap dan pemahaman manfaat olahraga bagi kesehatan fisik dan mental.",
+      "capaian": "Capaian Tidak Tersedia",
+      "skor": "Tidak Tersedia (Satdik Anda tidak mengikuti Survei Implementasi Penguatan Karakter)",
+      "definisi": "Satdik Anda tidak mengikuti Survei Implementasi Penguatan Karakter",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    },
+    {
+      "kode": "D.19.4",
+      "indikator": "Makan Sehat dan Bergizi&#xA;Komposit nilai kebiasaan makan sehat dan bergizi peserta didik berdasarkan tingkat kebiasaan mengonsumsi makanan bergizi seimbang dan perilaku pendukung hidup sehat, serta sikap dan pemahaman manfaat pola makan sehat dan bergizi.",
+      "capaian": "Capaian Tidak Tersedia",
+      "skor": "Tidak Tersedia (Satdik Anda tidak mengikuti Survei Implementasi Penguatan Karakter)",
+      "definisi": "Satdik Anda tidak mengikuti Survei Implementasi Penguatan Karakter",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    },
+    {
+      "kode": "D.19.5",
+      "indikator": "Gemar Belajar&#xA;Komposit nilai kebiasaan gemar belajar peserta didik berdasarkan tingkat keteraturan meluangkan waktu belajar mandiri dan ketekunan belajar, serta sikap terhadap belajar (minat, motivasi, kesiapan, dan hambatan).",
+      "capaian": "Capaian Tidak Tersedia",
+      "skor": "Tidak Tersedia (Satdik Anda tidak mengikuti Survei Implementasi Penguatan Karakter)",
+      "definisi": "Satdik Anda tidak mengikuti Survei Implementasi Penguatan Karakter",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    },
+    {
+      "kode": "D.19.6",
+      "indikator": "Bermasyarakat&#xA;Komposit nilai kebiasaan bermasyarakat peserta didik berdasarkan tingkat keterlibatan dalam interaksi sosial yang sehat dan partisipasi kegiatan sosial, serta sikap toleransi, adaptif, dan kolaboratif.",
+      "capaian": "Capaian Tidak Tersedia",
+      "skor": "Tidak Tersedia (Satdik Anda tidak mengikuti Survei Implementasi Penguatan Karakter)",
+      "definisi": "Satdik Anda tidak mengikuti Survei Implementasi Penguatan Karakter",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    },
+    {
+      "kode": "D.19.7",
+      "indikator": "Tidur Cepat&#xA;Komposit nilai kebiasaan tidur cepat peserta didik berdasarkan tingkat keteraturan dan kecukupan waktu tidur serta kebiasaan yang mendukung kualitas istirahat, dan pemahaman manfaat tidur.",
+      "capaian": "Capaian Tidak Tersedia",
+      "skor": "Tidak Tersedia (Satdik Anda tidak mengikuti Survei Implementasi Penguatan Karakter)",
+      "definisi": "Satdik Anda tidak mengikuti Survei Implementasi Penguatan Karakter",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    },
+    {
+      "kode": "E.1",
+      "indikator": "Partisipasi warga satuan pendidikan&#xA;Nilai rerata terkait partisipasi orang tua dan partisipasi peserta didik dalam pengelolaan satuan pendidikan berdasarkan survei lingkungan belajar.",
+      "capaian": "Sedang",
+      "skor": "67,89",
+      "definisi": "Satuan pendidikan melibatkan orang tua dan peserta didik dalam beberapa kegiatan di satuan pendidikan khususnya berupa kegiatan akademik dan atau non-akademik.",
+      "sumber": "Turun 8,92"
+    },
+    {
+      "kode": "E.1.1",
+      "indikator": "Partisipasi orang tua&#xA;Nilai komposit dari kepala satuan pendidikan, pendidik, dan peserta didik terkait tingkat keterlibatan orang tua dalam proses perencanaan, pengembangan, dan pelaksanaan aktivitas di satuan pendidikan.",
+      "capaian": "Sedang",
+      "skor": "67,15",
+      "definisi": "Satuan pendidikan melibatkan orang tua dalam beberapa kegiatan di satuan pendidikan khususnya berupa kegiatan akademik dan atau non-akademik.",
+      "sumber": "Turun 5,28"
+    },
+    {
+      "kode": "E.1.2",
+      "indikator": "Partisipasi peserta didik&#xA;Nilai komposit dari kepala satuan pendidikan, pendidik, dan peserta didik terkait tingkat keterlibatan peserta didik dalam proses perencanaan, pengembangan, dan pelaksanaan aktivitas di satuan pendidikan.",
+      "capaian": "Sedang",
+      "skor": "68,64",
+      "definisi": "Satuan pendidikan melibatkan peserta didik dalam beberapa kegiatan di satuan pendidikan khususnya berupa kegiatan akademik dan atau non-akademik.",
+      "sumber": "Turun 12,54"
+    },
+    {
+      "kode": "E.2",
+      "indikator": "Proporsi pemanfaatan sumber daya sekolah untuk peningkatan mutu&#xA;Persentase dari pembelanjaan sekolah untuk peningkatan mutu pendidikan dan kualitas guru dan tenaga kependidikan dibagi total belanja sekolah dalam satu tahun anggaran BOS",
+      "capaian": "Sedang",
+      "skor": "32,75",
+      "definisi": "Satuan pendidikan memiliki proporsi pemanfaatan sumber daya sekolah untuk peningkatan mutu yang cukup",
+      "sumber": "Naik 10,55"
+    },
+    {
+      "kode": "E.2.1",
+      "indikator": "Proporsi pembelanjaan peningkatan mutu guru dan tenaga kependidikan&#xA;Persentase dari pembelanjaan sekolah untuk peningkatan kualitas guru dan tenaga kependidikan dibagi total belanja sekolah dalam satu tahun anggaran BOS",
+      "capaian": "Kurang",
+      "skor": "0",
+      "definisi": "Satuan pendidikan memiliki proporsi pembelanjaan peningkatan mutu guru dan tenaga kependidikan yang rendah",
+      "sumber": "Turun 0,43"
+    },
+    {
+      "kode": "E.2.2",
+      "indikator": "Proporsi pembelanjaan non personil mutu pembelajaran&#xA;Persentase dari pembelanjaan sekolah untuk peningkatan mutu pendidikan dibagi total belanja sekolah dalam satu tahun anggaran BOS",
+      "capaian": "Sedang",
+      "skor": "32,75",
+      "definisi": "Satuan pendidikan memiliki proporsi pembelanjaan non-personil mutu pembelajaran yang cukup",
+      "sumber": "Naik 10,98"
+    },
+    {
+      "kode": "E.3",
+      "indikator": "Pemanfaatan TIK untuk pengelolaan anggaran&#xA;Rata-rata dari proporsi pembelanjaan sekolah melalui platform SIPLah dan indeks ketepatan waktu dan kelengkapan pelaporan dana BOS pada setiap tahapan melalui platform SDS",
+      "capaian": "Baik",
+      "skor": "78,41",
+      "definisi": "Satuan pendidikan memiliki proporsi pembelanjaan dana BOS secara daring yang tinggi",
+      "sumber": "Turun 0,50"
+    },
+    {
+      "kode": "E.3.1",
+      "indikator": "Proporsi pembelanjaan dana BOS secara daring&#xA;Persentase dari pembelanjaan sekolah melalui platform SIPLah dibagi total belanja sekolah dalam satu tahun anggaran BOS",
+      "capaian": "Baik",
+      "skor": "56,81",
+      "definisi": "Satuan pendidikan memiliki proporsi pembelanjaan dana BOS secara daring yang tinggi",
+      "sumber": "Turun 1,01"
+    },
+    {
+      "kode": "E.3.2",
+      "indikator": "Indeks penggunaan platform SDS sumberdaya sekolah - ketepatan waktu dan kelengkapan pelaporan&#xA;Persentase dari ketepatan waktu dan kelengkapan pelaporan dana BOS pada setiap tahapan melalui platform SDS",
+      "capaian": "Baik",
+      "skor": "100",
+      "definisi": "Jumlah satuan pendidikan yang membuat laporan tepat waktu di platform SDS tinggi",
+      "sumber": "Tidak berubah"
+    },
+    {
+      "kode": "E.5",
+      "indikator": "Program dan kebijakan satuan pendidikan&#xA;Nilai rerata terkait seluruh program dan kebijakan satuan pendidikan untuk mencegah dan menanggulangi perundungan, hukuman fisik, kekerasan seksual, penyalahgunaan narkoba, kesetaraan gender, dan intoleransi berdasarkan survei lingkungan belajar.",
+      "capaian": "Baik",
+      "skor": "73,64",
+      "definisi": "Satuan pendidikan sudah memiliki program dan kebijakan yang dilaksanakan secara konsisten tentang pencegahan dan penanganan perundungan; hukuman fisik; kekerasan seksual; penyalahgunaan rokok, minuman keras, dan narkoba; kesetaraan gender; dan intoleransi.",
+      "sumber": "Naik 0,64"
+    },
+    {
+      "kode": "E.5.1",
+      "indikator": "Program dan kebijakan satuan pendidikan tentang perundungan&#xA;Nilai komposit dari kepala satuan pendidikan, pendidik, dan peserta didik terkait program dan kebijakan satuan pendidikan untuk mencegah dan menangani perundungan di satuan pendidikan.",
+      "capaian": "Baik",
+      "skor": "78,53",
+      "definisi": "Satuan pendidikan memiliki program dan kebijakan yang dilaksanakan secara konsisten tentang pencegahan dan penanganan perundungan.",
+      "sumber": "Naik 0,08"
+    },
+    {
+      "kode": "E.5.2",
+      "indikator": "Program dan kebijakan satuan pendidikan tentang hukuman fisik&#xA;Nilai komposit dari kepala satuan pendidikan, pendidik, dan peserta didik terkait program dan kebijakan satuan pendidikan untuk mencegah dan menangani hukuman fisik di satuan pendidikan.",
+      "capaian": "Baik",
+      "skor": "79,34",
+      "definisi": "Satuan pendidikan sudah cukup memiliki program dan kebijakan yang dilaksanakan secara konsisten untuk mencegah dan menangani hukuman fisik di satuan pendidikan.",
+      "sumber": "Naik 10,20"
+    },
+    {
+      "kode": "E.5.3",
+      "indikator": "Program dan kebijakan satuan pendidikan tentang kekerasan seksual&#xA;Nilai komposit dari kepala satuan pendidikan, pendidik, dan peserta didik terkait Program dan kebijakan satuan pendidikan untuk mencegah dan menangani kasus kekerasan seksual di satuan pendidikan.",
+      "capaian": "Baik",
+      "skor": "68,52",
+      "definisi": "Satuan pendidikan sudah memiliki program dan kebijakan yang dilaksanakan secara konsisten untuk mencegah dan menangani terjadinya pelecehan seksual di satuan pendidikan.",
+      "sumber": "Turun 6,76"
+    },
+    {
+      "kode": "E.5.4",
+      "indikator": "Program dan kebijakan satuan pendidikan tentang rokok, minuman keras, dan narkoba&#xA;Nilai komposit dari kepala satuan pendidikan, pendidik, dan peserta didik terkait program dan kebijakan satuan pendidikan untuk mencegah dan menangani aktivitas atau kasus rokok, minuman keras, dan narkoba di satuan pendidikan.",
+      "capaian": "Baik",
+      "skor": "72,31",
+      "definisi": "Satuan pendidikan sudah memiliki program dan kebijakan yang dilaksanakan secara konsisten untuk mencegah dan menangani aktivitas atau kasus penyalahgunaan rokok, minuman keras, dan narkoba di satuan pendidikan.",
+      "sumber": "Turun 6,82"
+    },
+    {
+      "kode": "E.5.5",
+      "indikator": "Program dan Kebijakan mengenai kesetaraan gender&#xA;Nilai rerata terkait program dan kebijakan satuan pendidikan yang mendukung kesetaraan antara laki-laki dan perempuan, misalnya dalam hal kemampuan, kesempatan, pemenuhan hak, dan kewajiban.",
+      "capaian": "Sedang",
+      "skor": "69,28",
+      "definisi": "Satuan pendidikan sudah memiliki program dan kebijakan satuan pendidikan yang mendukung kesetaraan antara laki-laki dan perempuan di satuan pendidikan, namun belum dilaksanakan secara konsisten.",
+      "sumber": "Naik 0,28"
+    },
+    {
+      "kode": "E.5.6",
+      "indikator": "Program dan kebijakan mengenai penanggulangan dan pencegahan intoleransi di satuan pendidikan&#xA;Nilai komposit dari kepala satuan pendidikan, pendidik, dan peserta didik terkait program dan kebijakan satuan pendidikan yang bertujuan mencegah dan menangani kasus-kasus intoleransi di satuan pendidikan.",
+      "capaian": "Baik",
+      "skor": "73,83",
+      "definisi": "Satuan pendidikan telah memiliki dan menjalankan program dan kebijakan tentang pencegahan dan penanganan kasus intoleransi di satuan pendidikan secara konsisten.",
+      "sumber": "Naik 7,11"
+    },
+    {
+      "kode": "E.6",
+      "indikator": "Ketersediaan Buku Pendidikan&#xA;Jumlah buku teks utama dan buku non teks dibandingkan dengan jumlah peserta didik di satuan pendidikan (Aggregat ketersediaan dari Buku Teks Utama dan Buku Nonteks)",
+      "capaian": "Capaian Tidak Tersedia",
+      "skor": "Tidak Tersedia (Satdik Anda tidak menjawab pertanyaan untuk indikator ini)",
+      "definisi": "Satdik Anda tidak menjawab pertanyaan untuk indikator ini",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    },
+    {
+      "kode": "E.6.1",
+      "indikator": "Ketersediaan Buku Teks Utama&#xA;Jumlah Buku Teks Utama dibagi jumlah peserta didik pada Satuan Pendidikan",
+      "capaian": "Capaian Tidak Tersedia",
+      "skor": "Tidak Tersedia (Satdik Anda tidak menjawab pertanyaan untuk indikator ini)",
+      "definisi": "Satdik Anda tidak menjawab pertanyaan untuk indikator ini",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    },
+    {
+      "kode": "E.6.2",
+      "indikator": "Ketersediaan Buku Non Teks&#xA;Jumlah judul Buku Nonteks yang tersedia di Satuan Pendidikan dibandingkan dengan rasio peserta didik",
+      "capaian": "Capaian Tidak Tersedia",
+      "skor": "Tidak Tersedia (Satdik Anda tidak menjawab pertanyaan untuk indikator ini)",
+      "definisi": "Satdik Anda tidak menjawab pertanyaan untuk indikator ini",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    },
+    {
+      "kode": "E.7",
+      "indikator": "Indeks Fasilitas Satuan Pendidikan&#xA;Nilai komposit dari indeks fasilitas ruang sekolah, sanitasi sekolah, bahan dan fasilitas belajar literasi, dan fasilitas TIK",
+      "capaian": "Sedang",
+      "skor": "66,5",
+      "definisi": "Satuan Pendidikan memiliki ketersediaan fasilitas sekolah yang sedang",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    },
+    {
+      "kode": "E.7.1",
+      "indikator": "Indeks Fasilitas Ruang Satuan Pendidikan&#xA;Persentase ketersediaan dan kondisi fasilitas umum seperti ruang kelas, perpustakaan, dan laboratorium di sekolah",
+      "capaian": "Kurang",
+      "skor": "0",
+      "definisi": "Satuan pendidikan memiliki ketersediaan ruang kelas, perpustakaan, dan laboratorium yang rendah",
+      "sumber": "Tidak Tersedia (Satdik tidak menjawab pertanyaan untuk indikator ini tahun lalu)"
+    },
+    {
+      "kode": "E.7.2",
+      "indikator": "Indeks Sanitasi Satuan Pendidikan&#xA;Persentase ketersediaan dan kondisiair layak, tempat cuci tangan, dan toilet di sekolah",
+      "capaian": "Baik",
+      "skor": "70",
+      "definisi": "Satuan pendidikan memiliki ketersediaan air kayak, tempat cuci tangan dengan sabun, dan toilet yang tinggi",
+      "sumber": "Tidak Tersedia (Satdik tidak menjawab pertanyaan untuk indikator ini tahun lalu)"
+    },
+    {
+      "kode": "E.7.4",
+      "indikator": "Indeks Fasilitas TIK&#xA;Persentase ketersediaan dan kondisi fasilitas TIK, internet, dan listrik di sekolah",
+      "capaian": "Baik",
+      "skor": "100",
+      "definisi": "Satuan pendidikan memiliki ketersediaan fasilitas TIK yang tinggi",
+      "sumber": "Tidak Tersedia (Satdik tidak menjawab pertanyaan untuk indikator ini tahun lalu)"
+    },
+    {
+      "kode": "E.7.5",
+      "indikator": "Indeks Kelengkapan Ruang Satuan Pendidikan&#xA;Persentase ketersediaan fasilitas ruang satuan pendidikan sesuai dengan standar minimal prasarana",
+      "capaian": "Baik",
+      "skor": "100",
+      "definisi": "Satuan pendidikan memiliki ketersediaan fasilitas ruang satuan pendidikan  yang tinggi",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    },
+    {
+      "kode": "E.7.6",
+      "indikator": "Indeks Kelayakan Ruang Satuan Pendidikan&#xA;Persentase kelayakan fasilitas ruang satuan pendidikan sesuai dengan standar minimal prasarana",
+      "capaian": "Sedang",
+      "skor": "62,5",
+      "definisi": "Satuan pendidikan memiliki kelayakan fasilitas ruang satuan pendidikan yang sedang",
+      "sumber": "Tidak Tersedia (instrumen penilaian tahun ini dan tahun lalu berbeda)"
+    }
+  ]
+};
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = window.PBD_OFFICIAL_DATA;
+}

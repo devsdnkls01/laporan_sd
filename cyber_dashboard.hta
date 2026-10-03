@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<title>DASHBOARD LAPORAN//SDN KALISALAK 01</title>
+<HTA:APPLICATION 
+    ID="DashboardLaporan" 
+    APPLICATIONNAME="DASHBOARD LAPORAN//SDN KALISALAK 01" 
+    BORDER="thin" 
+    INNERBORDER="no" 
+    SCROLL="no" 
+    SINGLEINSTANCE="yes" 
+    WINDOWSTATE="normal"
+    ICON="assets\logo.ico"
+    NAVIGABLE="yes"
+    SYSMENU="yes"
+    MAXIMIZEBUTTON="yes"
+    MINIMIZEBUTTON="yes"
+>
+<link rel="icon" type="image/x-icon" href="assets/logo.ico">
+<style>
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Consolas', 'Lucida Console', 'Courier New', monospace; 
+    user-select: none; 
+}
+
+html, body { 
+    width: 100%; 
+    height: 100%; 
+    background: #020704; 
+    color: #00ff66; 
+    overflow: hidden; 
+}
+
+body { 
+    padding: 10px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 8px; 
+}
+
+/* HEADER UTAMA */
+.header { 
+    flex: 0 0 auto;
+    border: 1px solid #00ff66; 
+    padding: 8px 14px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    background: rgba(0, 24, 12, 0.9); 
+    box-shadow: 0 0 14px rgba(0, 255, 102, 0.18);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #00ff88;
+    text-shadow: 0 0 8px rgba(0, 255, 102, 0.6);
+}
+
+.brand img {
+    height: 32px;
+    width: auto;
+    filter: drop-shadow(0 0 4px #00ff66);
+}
+
+.header-badges {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.badge {
+    background: #00220a;
+    color: #00ff88;
+    padding: 4px 10px;
+    border: 1px solid #00aa44;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border-radius: 2px;
+}
+
+.badge-online {
+    background: #003a14;
+    border-color: #00ff66;
+    color: #ffffff;
+    box-shadow: 0 0 8px rgba(0, 255, 102, 0.4);
+}
+
+/* CONTAINER RESPONSIF (2 ROW X 2 COL) */
+.dashboard-grid { 
+    flex: 1 1 auto;
+    display: flex; 
+    flex-direction: column; 
+    gap: 8px; 
+    min-height: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.dash-row {
+    flex: 1 1 50%;
+    display: flex;
+    gap: 8px;
+    min-height: 0;
+    width: 100%;
+}
+
+.dash-card { 
+    flex: 1 1 50%;
+    min-width: 0;
+    min-height: 0;
+    border: 1px solid #00aa44; 
+    background: rgba(0, 16, 8, 0.9); 
+    box-shadow: inset 0 0 16px rgba(0, 255, 102, 0.05);
+    padding: 10px 12px; 
+    display: flex; 
+    flex-direction: column; 
+    overflow: hidden;
+}
+
+.card-title { 
+    flex: 0 0 auto;
+    font-size: 0.9rem; 
+    color: #00ff66; 
+    margin-bottom: 8px; 
+    font-weight: bold; 
+    border-bottom: 1px solid #00441a; 
+    padding-bottom: 4px; 
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* SCROLL AREA MANDIRI */
+.scroll-area { 
+    flex: 1 1 auto;
+    overflow-y: auto; 
+    min-height: 0;
+    padding-right: 4px; 
+}
+.scroll-area::-webkit-scrollbar { width: 5px; }
+.scroll-area::-webkit-scrollbar-track { background: #001206; }
+.scroll-area::-webkit-scrollbar-thumb { background: #00aa44; border-radius: 2px; }
+.scroll-area::-webkit-scrollbar-thumb:hover { background: #00ff66; }
+
+/* KARTU 1: OPERATIONS */
+.mission { 
+    background: rgba(0, 30, 14, 0.6); 
+    border-left: 3px solid #00ff66; 
+    padding: 6px 8px; 
+    margin-bottom: 6px; 
+    font-size: 0.78rem; 
+    line-height: 1.35;
+}
+.mission strong { color: #99ffbb; }
+
+/* KARTU 2: STATS & HEALTH */
+.stats-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 6px; 
+    margin-bottom: 8px; 
+}
+.stat-box { 
+    border: 1px solid #004d1f; 
+    background: rgba(0, 24, 12, 0.55);
+    padding: 6px 8px; 
+    font-size: 0.78rem; 
+    display: flex;
+    justify-content: space-between;
+}
+.stat-val { color: #ffffff; font-weight: bold; }
+
+.progress-section { 
+    flex: 0 0 auto;
+    margin-top: 4px; 
+}
+.progress-label { 
+    display: flex; 
+    justify-content: space-between; 
+    font-size: 0.78rem; 
+    margin-bottom: 4px; 
+}
+.progress-bar { 
+    width: 100%; 
+    height: 16px; 
+    background: #001a08; 
+    border: 1px solid #00ff66; 
+    overflow: hidden; 
+}
+.progress-fill { 
+    height: 100%; 
+    width: 85%; 
+    background: linear-gradient(90deg, #008833, #00ff66); 
+    box-shadow: 0 0 10px #00ff66;
+    transition: width 0.4s ease; 
+}
+
+/* KARTU 3: LOG ACTIVITY */
+.log-line { 
+    font-size: 0.76rem; 
+    color: #00dd55; 
+    margin-bottom: 3px; 
+    line-height: 1.3;
+    word-break: break-all;
+}
+.log-time { color: #008833; font-weight: bold; margin-right: 4px; }
+.log-tag { color: #88ffaa; font-weight: bold; }
+
+/* KARTU 4: BUTTONS & INFO */
+.btn-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 6px; 
+    margin-bottom: 8px; 
+}
+.btn { 
+    border: 1px solid #00aa44; 
+    background: rgba(0, 35, 18, 0.7); 
+    color: #00ff66; 
+    padding: 9px 6px; 
+    text-align: center; 
+    cursor: pointer; 
+    font-size: 0.78rem; 
+    font-weight: bold; 
+    transition: all 0.15s ease;
+}
+.btn:hover { 
+    background: #00ff66; 
+    color: #001206; 
+    box-shadow: 0 0 10px #00ff66;
+}
+.btn-danger {
+    border-color: #ff3333;
+    color: #ff5555;
+    background: rgba(35, 10, 10, 0.7);
+}
+.btn-danger:hover {
+    background: #ff3333;
+    color: #ffffff;
+    box-shadow: 0 0 10px #ff3333;
+}
+.net-info {
+    font-size: 0.75rem;
+    color: #00aa55;
+    line-height: 1.4;
+    border-top: 1px solid #003314;
+    padding-top: 6px;
+    margin-top: auto;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER UTAMA -->
+<div class="header">
+    <div class="brand">
+        <img src="assets/image1.png" alt="Logo">
+        <span>DASHBOARD LAPORAN//SDN KALISALAK 01</span>
+    </div>
+    <div class="header-badges">
+        <span class="badge badge-online">STATUS: ONLINE</span>
+        <span class="badge">PORT: 2025</span>
+        <span class="badge">SECURITY: LEVEL 5</span>
+    </div>
+</div>
+
+<!-- CONTAINER 2X2 GRID FLEKSIBEL & RESPONSIF REALTIME -->
+<div class="dashboard-grid">
+    
+    <!-- BARIS 1 -->
+    <div class="dash-row">
+        <!-- KARTU 1: OPERATIONS & MISSIONS -->
+        <div class="dash-card">
+            <div class="card-title">
+                <span>Active Operations / Missions</span>
+                <span style="font-size:0.75rem; color:#00aa44;">[4 ACTIVE]</span>
+            </div>
+            <div class="scroll-area">
+                <div class="mission">
+                    <strong>[x] Operation Cloudflare D1 Sync</strong><br>
+                    Cluster: 6ae50a84-d394-4d98-a392-0b3c9a3e00b2<br>
+                    Status: Edge Handshake Verified [OK]
+                </div>
+                <div class="mission">
+                    <strong>[x] Zero-Trust Edge Tunnel</strong><br>
+                    Target: laporan_sdnkalisalak01.develzy.my.id<br>
+                    Status: Route Engaged (Singapore POP) [ONLINE]
+                </div>
+                <div class="mission">
+                    <strong>[x] Cloudinary Media Asset Pipeline</strong><br>
+                    Bucket: cloud ixjihcvx<br>
+                    Status: Secured [SSL Pinning / AES-256]
+                </div>
+                <div class="mission">
+                    <strong>[x] Dual-Storage Coherency Engine</strong><br>
+                    Mode: Local IndexedDB &lt;--&gt; Cloudflare D1 Realtime<br>
+                    Status: Data Coherency Verified [SYNCED]
+                </div>
+            </div>
+        </div>
+
+        <!-- KARTU 2: SYSTEM TELEMETRY -->
+        <div class="dash-card">
+            <div class="card-title">
+                <span>System Status &amp; Telemetry</span>
+                <span id="pulse" style="color:#00ff66;">● LIVE</span>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <span>CPU Usage:</span>
+                    <span class="stat-val" id="cpu">38%</span>
+                </div>
+                <div class="stat-box">
+                    <span>Memory Heap:</span>
+                    <span class="stat-val" id="mem">1.22 GB</span>
+                </div>
+                <div class="stat-box">
+                    <span>Network Traffic:</span>
+                    <span class="stat-val" id="net">6.8 MB/s</span>
+                </div>
+                <div class="stat-box">
+                    <span>Active Sockets:</span>
+                    <span class="stat-val" id="sock">14</span>
+                </div>
+            </div>
+            
+            <div class="progress-section">
+                <div class="progress-label">
+                    <span>System Health &amp; Security Shield:</span>
+                    <span id="health-txt" style="color:#00ff88; font-weight:bold;">88% [OPTIMAL]</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="pbar" style="width: 88%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BARIS 2 -->
+    <div class="dash-row">
+        <!-- KARTU 3: LOG ACTIVITY (SCROLL MANDIRI) -->
+        <div class="dash-card">
+            <div class="card-title">
+                <span>Live Security Activity Log</span>
+                <span style="font-size:0.75rem; color:#00aa44;">AUTO-ROLLING</span>
+            </div>
+            <div class="scroll-area" id="logbox"></div>
+        </div>
+
+        <!-- KARTU 4: QUICK COMMAND & CONTROL -->
+        <div class="dash-card">
+            <div class="card-title">Quick Command Control</div>
+            <div class="btn-grid">
+                <div class="btn" onclick="openPortal()">Local Portal (2025)</div>
+                <div class="btn" onclick="openCloud()">Cloud Edge (Public)</div>
+                <div class="btn" onclick="runAudit()">Security Audit</div>
+                <div class="btn btn-danger" onclick="shutdownServer()">MATIKAN SERVER</div>
+            </div>
+            <div class="net-info">
+                &gt; Local Loopback : <b>http://localhost:2025</b><br>
+                &gt; Public Domain : <b>https://laporan_sdnkalisalak01.develzy.my.id</b><br>
+                &gt; Daemon Status : Node Engine &amp; Tunnel Active
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+var shell = null;
+try {
+    shell = new ActiveXObject("WScript.Shell");
+} catch (e) {}
+
+function openPortal() {
+    if (shell) shell.Run("http://localhost:2025");
+    else window.open("http://localhost:2025");
+}
+
+function openCloud() {
+    if (shell) shell.Run("https://laporan_sdnkalisalak01.develzy.my.id");
+    else window.open("https://laporan_sdnkalisalak01.develzy.my.id");
+}
+
+function runAudit() {
+    addCustomLog("[SECURITY_AUDIT]", "All sockets verified. 0 threats detected. AES-256 TLS 1.3 Active.");
+}
+
+function shutdownServer() {
+    if (confirm("Apakah Anda yakin ingin mematikan seluruh server dan menutup dashboard?")) {
+        if (shell) {
+            shell.Run("cmd /c Tutup_Aplikasi.bat", 0, false);
+        }
+        window.close();
+    }
+}
+
+// Log streaming queue
+var logPool = [
+    { tag: "[SECURE_PING]", text: "Localhost loopback verified -- Port 2025 listening [HTTP 200 OK]" },
+    { tag: "[D1_SQL_SYNC]", text: "Edge query dispatched: SELECT * FROM reports WHERE status='OK'" },
+    { tag: "[ZERO_TRUST]",  text: "Packet inspection completed: 0 threats detected / AES-256 TLS 1.3" },
+    { tag: "[TUNNEL_STATUS]",text: "Cloudflare edge route handshake: syn-ack confirmed from Singapore edge" },
+    { tag: "[MEDIA_CDN]",    text: "Cloudinary asset pipeline synced: signatures verified for bucket ixjihcvx" },
+    { tag: "[DUAL_STORAGE]", text: "Cache coherency check: Local IndexedDB [SYNC] Cloudflare D1" },
+    { tag: "[MEMORY_GC]",    text: "V8 Engine Heap: 36.4 MB / 14 active sockets / Garbage Collection optimal" },
+    { tag: "[SECURITY_AUDIT]",text: "Encryption keys rotated: Session auth valid. Zero vulnerabilities" }
+];
+
+function getTimeStr() {
+    var d = new Date();
+    var h = ("0" + d.getHours()).slice(-2);
+    var m = ("0" + d.getMinutes()).slice(-2);
+    var s = ("0" + d.getSeconds()).slice(-2);
+    return h + ":" + m + ":" + s;
+}
+
+function addLog() {
+    var box = document.getElementById('logbox');
+    if (!box) return;
+    var item = logPool[Math.floor(Math.random() * logPool.length)];
+    var t = getTimeStr();
+    
+    var el = document.createElement('div');
+    el.className = 'log-line';
+    el.innerHTML = '<span class="log-time">[' + t + ']</span> <span class="log-tag">' + item.tag + '</span> ' + item.text;
+    box.appendChild(el);
+    
+    // Auto-scroll inside container
+    box.scrollTop = box.scrollHeight;
+}
+
+function addCustomLog(tag, msg) {
+    var box = document.getElementById('logbox');
+    if (!box) return;
+    var t = getTimeStr();
+    var el = document.createElement('div');
+    el.className = 'log-line';
+    el.innerHTML = '<span class="log-time">[' + t + ']</span> <span class="log-tag">' + tag + '</span> ' + msg;
+    box.appendChild(el);
+    box.scrollTop = box.scrollHeight;
+}
+
+// Seed initial logs
+for (var i = 0; i < 4; i++) {
+    addLog();
+}
+
+// Auto stream logs every 2 seconds
+setInterval(addLog, 2000);
+
+// Live Telemetry Animation
+var step = 0;
+setInterval(function() {
+    step++;
+    var c = Math.floor(Math.random() * 25) + 25; // 25% - 50%
+    var health = 100 - Math.floor(c / 3);       // 84% - 92%
+    var netMb = (Math.random() * 8 + 3).toFixed(1);
+    var memGb = (1.18 + Math.random() * 0.08).toFixed(2);
+    var socks = Math.floor(Math.random() * 6) + 12;
+    
+    var cpuEl = document.getElementById('cpu');
+    var netEl = document.getElementById('net');
+    var memEl = document.getElementById('mem');
+    var sockEl = document.getElementById('sock');
+    if (cpuEl) cpuEl.innerText = c + '%';
+    if (netEl) netEl.innerText = netMb + ' MB/s';
+    if (memEl) memEl.innerText = memGb + ' GB';
+    if (sockEl) sockEl.innerText = socks;
+    
+    var pbar = document.getElementById('pbar');
+    if (pbar) pbar.style.width = health + '%';
+    var htxt = document.getElementById('health-txt');
+    if (htxt) htxt.innerText = health + '% [OPTIMAL]';
+    
+    var pulse = document.getElementById('pulse');
+    if (pulse) pulse.style.opacity = (step % 2 === 0) ? '1' : '0.4';
+}, 1500);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "simlapor-sdn-kalisalak-01",
+  "version": "1.0.0",
+  "description": "Aplikasi SIM-Lapor & Portal Administrasi SD Negeri Kalisalak 01",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "school-management",
+    "education",
+    "sdn-kalisalak-01"
+  ],
+  "author": "SDN Kalisalak 01 Margasari",
+  "license": "ISC",
+  "dependencies": {
+    "html-to-docx": "^1.8.0",
+    "xlsx": "^0.18.5"
+  }
+}

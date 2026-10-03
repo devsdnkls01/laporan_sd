@@ -1,0 +1,1239 @@
+/* ==========================================================================
+   PORTAL MULTI-ADMINISTRASI SDN KALISALAK 01 - STYLESHEET
+   1. Dashboard Portal Utama (Grid Card Selector)
+   2. Modul RKT 2026 (Lembar Kerja RKT PBD)
+   3. Modul ARKAS 2026 (Rancangan Anggaran BOS)
+   4. Modul Administrasi Sekolah 2026
+   5. Modul Pemetaan Mutu Pendidikan SPMI 2026
+   ========================================================================== */
+
+/* ==========================================================================
+   PORTAL TOP UTILITY BAR (BERSIH, ELEGAN & MEWAH)
+   ========================================================================== */
+.portal-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.35rem;
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.portal-top-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.portal-top-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.portal-top-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.portal-school-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  color: var(--primary);
+  line-height: 1.2;
+}
+
+.portal-school-sub {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.portal-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   YEAR TOGGLE PILL GROUP (RKT 2026 vs RKT 2027)
+   ========================================================================== */
+.year-toggle-pill-group {
+  display: inline-flex;
+  align-items: center;
+  background: #f1f5f9;
+  padding: 3px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  gap: 3px;
+}
+
+.year-pill-btn {
+  padding: 0.32rem 0.85rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  border-radius: 6px;
+  border: none;
+  background: transparent;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  white-space: nowrap;
+}
+
+.year-pill-btn:hover {
+  color: var(--primary);
+}
+
+.year-pill-btn.active {
+  background: #ffffff;
+  color: #1e3a8a;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   RKT SUB-TABS NAVIGATION (4 TABS)
+   ========================================================================== */
+.rkt-subtabs-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-bottom: 2px solid #e2e8f0;
+  margin-bottom: 1.35rem;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+.rkt-subtab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #64748b;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.rkt-subtab-btn:hover {
+  color: #1e3a8a;
+  background: #f8fafc;
+  border-radius: 6px 6px 0 0;
+}
+
+.rkt-subtab-btn.active {
+  color: #059669;
+  border-bottom-color: #059669;
+  font-weight: 800;
+}
+
+.rkt-subtab-pane {
+  display: block;
+}
+
+/* ==========================================================================
+   RKT BOOK VIEW (NASKAH RESMI BAB I - BAB V & PENETAPAN)
+   ========================================================================== */
+.rkt-book-toolbar {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.rkt-book-toolbar-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.rkt-book-toolbar-info strong {
+  font-size: 0.92rem;
+  color: #0f172a;
+}
+
+.rkt-book-toolbar-info span {
+  font-size: 0.74rem;
+  color: #64748b;
+}
+
+.rkt-book-toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rkt-book-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.rkt-book-paper {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  padding: 3rem 3.5rem;
+  color: #0f172a;
+  font-family: 'Times New Roman', 'Bookman Old Style', serif;
+  line-height: 1.65;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .rkt-book-paper {
+    padding: 1.5rem 1.25rem;
+    font-size: 0.95rem;
+  }
+}
+
+.rkt-cover-page {
+  text-align: center;
+  padding: 4rem 2rem;
+  border: 4px double #1e3a8a;
+  margin-bottom: 1.5rem;
+  background: #fbfcfe;
+}
+
+.rkt-cover-logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+}
+
+.rkt-cover-title-1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #1e3a8a;
+  margin-bottom: 0.35rem;
+  font-family: var(--font-sans);
+}
+
+.rkt-cover-title-2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: #0f172a;
+  margin-bottom: 1.2rem;
+  font-family: var(--font-sans);
+}
+
+.rkt-cover-school {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #059669;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-sans);
+}
+
+.rkt-cover-meta {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-bottom: 3.5rem;
+  font-family: var(--font-sans);
+}
+
+.rkt-cover-footer {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  line-height: 1.5;
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+}
+
+.rkt-doc-heading-1 {
+  font-family: var(--font-sans);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #1e3a8a;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.75rem;
+}
+
+.rkt-doc-heading-2 {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-top: 1.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.rkt-doc-p {
+  margin-bottom: 1rem;
+  text-align: justify;
+  text-indent: 2rem;
+}
+
+.rkt-doc-list {
+  margin: 0 0 1rem 2.5rem;
+}
+
+.rkt-doc-list li {
+  margin-bottom: 0.4rem;
+}
+
+.rkt-ttd-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+  page-break-inside: avoid;
+}
+
+@media (max-width: 640px) {
+  .rkt-ttd-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.rkt-ttd-col {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+}
+
+.rkt-ttd-col.center {
+  align-items: center;
+  text-align: center;
+}
+
+.rkt-ttd-role {
+  font-weight: 700;
+  color: #334155;
+  margin-bottom: 0.2rem;
+}
+
+.rkt-ttd-agency {
+  color: #64748b;
+  margin-bottom: 4.5rem;
+}
+
+.rkt-ttd-name {
+  font-weight: 800;
+  text-decoration: underline;
+  color: #0f172a;
+}
+
+.rkt-ttd-nip {
+  font-size: 0.8rem;
+  color: #475569;
+}
+
+/* ==========================================================================
+   PERMENDIKDASMEN GRID & CARDS
+   ========================================================================== */
+.permen-intro-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.35rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.permen-intro-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #1e3a8a;
+  margin-bottom: 0.45rem;
+}
+
+.permen-intro-text {
+  font-size: 0.84rem;
+  color: #475569;
+  line-height: 1.55;
+}
+
+.permendikdasmen-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 1.25rem;
+}
+
+.permendikdasmen-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 1.25rem 1.35rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.permendikdasmen-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: #93c5fd;
+}
+
+.permen-card-badge {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  background: #eff6ff;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+  border-radius: 5px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.permen-card-title {
+  font-size: 0.98rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.35;
+  margin-bottom: 0.65rem;
+}
+
+.permen-card-desc {
+  font-size: 0.8rem;
+  color: #475569;
+  line-height: 1.5;
+  margin-bottom: 0.85rem;
+}
+
+.permen-implikasi-box {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  padding: 0.65rem 0.85rem;
+  margin-top: auto;
+}
+
+.permen-implikasi-box strong {
+  display: block;
+  font-size: 0.72rem;
+  color: #166534;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 0.25rem;
+}
+
+.permen-implikasi-box p {
+  font-size: 0.76rem;
+  color: #14532d;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ==========================================================================
+   WORD (.DOCX) DOWNLOAD PANEL
+   ========================================================================== */
+.docx-download-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.docx-hero-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 2.25rem 2.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 768px) {
+  .docx-hero-card {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+}
+
+.docx-icon-wrapper {
+  background: #eff6ff;
+  border: 2px solid #bfdbfe;
+  border-radius: 16px;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.docx-info-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.docx-badge {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 0.2rem 0.6rem;
+  background: #eff6ff;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+  border-radius: 5px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.docx-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.65rem;
+}
+
+.docx-desc {
+  font-size: 0.86rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.docx-meta-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 0.75rem 1rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 0.78rem;
+  color: #64748b;
+}
+
+.docx-meta-strip strong {
+  color: #0f172a;
+}
+
+.docx-btn-row {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.docx-guideline-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.docx-guideline-card h4 {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+}
+
+.docx-guideline-card ol {
+  margin-left: 1.4rem;
+  font-size: 0.84rem;
+  color: #475569;
+  line-height: 1.65;
+}
+
+.docx-guideline-card li {
+  margin-bottom: 0.45rem;
+}
+
+/* ==========================================================================
+   DASHBOARD PORTAL UTAMA (GRID SELECTOR VIEW)
+   ========================================================================== */
+.portal-container {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem 6rem 1.5rem;
+  box-sizing: border-box;
+}
+
+.portal-hero {
+  background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+  border-radius: 16px;
+  padding: 2.25rem 2.5rem;
+  color: #ffffff;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.25);
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.portal-hero::after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.portal-hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.85rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #93c5fd;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 0.85rem;
+}
+
+.portal-hero-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1.25;
+  margin-bottom: 0.6rem;
+}
+
+.portal-hero-subtitle {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  max-width: 820px;
+  line-height: 1.55;
+  margin-bottom: 1.4rem;
+}
+
+.portal-hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.hero-badge-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.9rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: #e2e8f0;
+}
+
+.hero-badge-item strong {
+  color: #60a5fa;
+}
+
+/* Portal Quick Stats Bar */
+.portal-stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.15rem;
+  margin-bottom: 2rem;
+}
+
+.portal-stat-box {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 1.15rem 1.35rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.portal-stat-box:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.stat-box-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  flex-shrink: 0;
+}
+
+.stat-box-icon.icon-blue { background: #eff6ff; color: #2563eb; }
+.stat-box-icon.icon-green { background: #ecfdf5; color: #059669; }
+.stat-box-icon.icon-amber { background: #fffbeb; color: #d97706; }
+.stat-box-icon.icon-purple { background: #f5f3ff; color: #7c3aed; }
+.stat-box-icon.icon-teal { background: #ecfeff; color: #0891b2; }
+
+.stat-box-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-box-val {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.15;
+}
+
+.stat-box-lbl {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+/* Portal Main Cards Grid */
+.portal-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.15rem;
+}
+
+.portal-section-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.portal-grid-5 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 1.4rem;
+}
+
+.module-card {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  padding: 1.6rem 1.6rem 1.4rem 1.6rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.module-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 20px -5px rgba(0, 0, 0, 0.1), 0 6px 8px -4px rgba(0, 0, 0, 0.04);
+  border-color: #cbd5e1;
+}
+
+.module-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+}
+
+.card-simlapor::before { background: linear-gradient(90deg, #1e3a8a, #3b82f6); }
+.card-rkt::before { background: linear-gradient(90deg, #065f46, #10b981); }
+.card-arkas::before { background: linear-gradient(90deg, #b45309, #f59e0b); }
+.card-adm::before { background: linear-gradient(90deg, #6d28d9, #8b5cf6); }
+.card-spmi::before { background: linear-gradient(90deg, #0e7490, #06b6d4); }
+
+.module-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.15rem;
+}
+
+.module-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.65rem;
+  flex-shrink: 0;
+}
+
+.card-simlapor .module-card-icon { background: #eff6ff; color: #1e3a8a; }
+.card-rkt .module-card-icon { background: #ecfdf5; color: #065f46; }
+.card-arkas .module-card-icon { background: #fffbeb; color: #b45309; }
+.card-adm .module-card-icon { background: #f5f3ff; color: #6d28d9; }
+.card-spmi .module-card-icon { background: #ecfeff; color: #0e7490; }
+
+.module-card-meta {
+  flex: 1;
+}
+
+.module-badge-tag {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 0.35rem;
+}
+
+.tag-blue { background: #eff6ff; color: #1e40af; border: 1px solid #bfdbfe; }
+.tag-green { background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; }
+.tag-amber { background: #fffbeb; color: #92400e; border: 1px solid #fde68a; }
+.tag-purple { background: #f5f3ff; color: #5b21b6; border: 1px solid #ddd6fe; }
+.tag-teal { background: #ecfeff; color: #155e75; border: 1px solid #a5f3fc; }
+
+.module-card-title {
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.3;
+}
+
+.module-card-desc {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.module-card-features {
+  list-style: none;
+  margin-bottom: 1.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.module-card-features li {
+  font-size: 0.78rem;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.module-card-features li svg {
+  color: #10b981;
+  flex-shrink: 0;
+}
+
+.module-card-bottom {
+  border-top: 1px solid #f1f5f9;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.module-metric-pill {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-open-module {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.card-simlapor .btn-open-module { background: #1e3a8a; }
+.card-simlapor .btn-open-module:hover { background: #172554; }
+
+.card-rkt .btn-open-module { background: #059669; }
+.card-rkt .btn-open-module:hover { background: #047857; }
+
+.card-arkas .btn-open-module { background: #d97706; }
+.card-arkas .btn-open-module:hover { background: #b45309; }
+
+.card-adm .btn-open-module { background: #7c3aed; }
+.card-adm .btn-open-module:hover { background: #6d28d9; }
+
+.card-spmi .btn-open-module { background: #0891b2; }
+.card-spmi .btn-open-module:hover { background: #0e7490; }
+
+/* ==========================================================================
+   WORKSPACE COMMON STYLES (RKT, ARKAS, ADMINISTRASI, SPMI)
+   ========================================================================== */
+.admin-workspace {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem 6rem 1.5rem;
+  box-sizing: border-box;
+  display: none;
+}
+
+.admin-workspace.active {
+  display: block;
+}
+
+.workspace-header {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.workspace-title-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.workspace-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--primary);
+  margin-bottom: 2px;
+}
+
+.workspace-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.25;
+}
+
+.workspace-subtitle {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.workspace-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Filter Strip in Workspace */
+.workspace-filter-strip {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  padding: 0.75rem 1.15rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.filter-left-group {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.filter-search-input {
+  padding: 0.42rem 0.85rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-light);
+  font-size: 0.82rem;
+  min-width: 250px;
+  font-family: inherit;
+}
+
+.filter-select {
+  padding: 0.42rem 0.85rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-light);
+  font-size: 0.82rem;
+  background: #ffffff;
+  font-family: inherit;
+}
+
+/* Card Table Container */
+.workspace-table-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.workspace-table-card .table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+/* Budget Summary Cards for ARKAS */
+.arkas-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.arkas-sum-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.arkas-sum-lbl {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.arkas-sum-val {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-top: 4px;
+}
+
+.arkas-sum-val.color-amber { color: #d97706; }
+.arkas-sum-val.color-green { color: #059669; }
+.arkas-sum-val.color-blue { color: #2563eb; }
+
+/* Status Badges */
+.status-pill {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.status-pill.pill-lengkap, .status-pill.pill-ya {
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.status-pill.pill-proses, .status-pill.pill-tidak {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+}
+
+.status-pill.pill-belum {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+/* SPMI Scorecard Cards */
+.spmi-grid-8 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+.spmi-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 1.35rem 1.45rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.spmi-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.spmi-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.85rem;
+}
+
+.spmi-snp-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.3;
+}
+
+.spmi-score-badge {
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: 0.25rem 0.65rem;
+  border-radius: 8px;
+  background: #ecfeff;
+  color: #0891b2;
+  border: 1px solid #a5f3fc;
+}
+
+.spmi-progress-bar-bg {
+  width: 100%;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0.5rem 0 0.85rem 0;
+}
+
+.spmi-progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0891b2, #10b981);
+  border-radius: 4px;
+}
+
+.spmi-desc-box {
+  font-size: 0.78rem;
+  color: #475569;
+  line-height: 1.45;
+  background: #f8fafc;
+  padding: 0.75rem 0.85rem;
+  border-radius: 6px;
+  border: 1px solid #f1f5f9;
+  margin-bottom: 0.75rem;
+}
+
+.spmi-rekom-box {
+  font-size: 0.76rem;
+  color: #065f46;
+  background: #ecfdf5;
+  padding: 0.75rem 0.85rem;
+  border-radius: 6px;
+  border: 1px solid #d1fae5;
+  line-height: 1.45;
+}
+
+/* ==========================================================================
+   PRINT LAYOUT (@media print) FOR RKT, ARKAS, ADMINISTRASI, SPMI
+   ========================================================================== */
+@media print {
+  .global-portal-bar,
+  .workspace-actions,
+  .workspace-filter-strip,
+  .btn-table-action,
+  .btn-table-add,
+  .portal-hero,
+  .portal-stats-row,
+  .portal-section-header,
+  .portal-grid-5 {
+    display: none !important;
+  }
+
+  .admin-workspace {
+    display: block !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .workspace-header {
+    border: none !important;
+    padding: 0 0 10pt 0 !important;
+    box-shadow: none !important;
+    border-bottom: 2pt solid #000000 !important;
+    margin-bottom: 12pt !important;
+  }
+
+  .workspace-title {
+    font-size: 13pt !important;
+    color: #000000 !important;
+    text-align: center !important;
+  }
+
+  .workspace-subtitle {
+    font-size: 9pt !important;
+    color: #333333 !important;
+    text-align: center !important;
+  }
+
+  .workspace-table-card {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .grid-table {
+    border: 1pt solid #000000 !important;
+    font-size: 8.5pt !important;
+  }
+
+  .grid-table th {
+    background-color: #f1f5f9 !important;
+    color: #000000 !important;
+    border: 1pt solid #000000 !important;
+  }
+
+  .grid-table td {
+    border: 1pt solid #000000 !important;
+    color: #000000 !important;
+  }
+}
