@@ -199,6 +199,27 @@ html, body {
 .stat-box .stat-label { float: left; color: #00dd55; }
 .stat-box .stat-val { float: right; color: #ffffff; font-weight: bold; }
 
+/* TOMBOL UTAMA MASUK DASHBOARD */
+.btn-enter-dashboard {
+    display: block;
+    background: #00772e;
+    border: 2px solid #00ff66;
+    color: #ffffff;
+    font-size: 0.92rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: 9px 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 14px rgba(0, 255, 102, 0.4);
+    text-align: center;
+}
+.btn-enter-dashboard:hover {
+    background: #00ff66;
+    color: #001808;
+    box-shadow: 0 0 22px rgba(0, 255, 102, 0.8);
+}
+
 .progress-section { 
     position: absolute;
     bottom: 12px;
@@ -371,6 +392,11 @@ html, body {
                 </tr>
             </table>
             
+            <!-- TOMBOL UTAMA: MASUK DASHBOARD -->
+            <div class="btn-enter-dashboard" onclick="openCloud()">
+                &#128640; MASUK DASHBOARD
+            </div>
+            
             <div class="progress-section">
                 <div class="progress-label">
                     <span class="pl-left">System Health &amp; Security Shield:</span>
@@ -509,20 +535,19 @@ function bootstrapServices() {
         addCustomLog("[ERROR]", "Gagal memulai Cloudflare Tunnel: " + e.message);
     }
 
-    // 4. Buka browser otomatis ke domain publik setelah jeda 3 detik (handshake selesai)
-    setTimeout(function() {
-        openCloud();
-        addCustomLog("[BROWSER_DISPATCH]", "Browser diarahkan ke domain publik: https://" + publicDomain);
-    }, 3000);
+    // Siap dan menunggu pengguna mengklik tombol "MASUK DASHBOARD"
+    addCustomLog("[SYSTEM_READY]", "Layanan aktif! Silakan klik tombol 'MASUK DASHBOARD'.");
 }
 
 function openPortal() {
+    addCustomLog("[USER_ACTION]", "Membuka Portal Lokal (Port " + appPort + ")...");
     var url = "http://localhost:" + appPort + "/?auth_key=" + appAccessToken;
     if (shell) shell.Run(url);
     else window.open(url);
 }
 
 function openCloud() {
+    addCustomLog("[USER_ACTION]", "Membuka Dashboard Laporan: https://" + publicDomain);
     var url = "https://" + publicDomain + "/?auth_key=" + appAccessToken;
     if (shell) shell.Run(url);
     else window.open(url);
