@@ -13,7 +13,9 @@ namespace SdnKalisalak01.Guru {
         public ScriptBridge(GuruForm f) { form = f; }
 
         public void OpenUrl(string url) {
-            try { Process.Start(new ProcessStartInfo(url) { UseShellExecute = true }); } catch (Exception) {}
+            try { 
+                Process.Start(new ProcessStartInfo(url) { UseShellExecute = true }); 
+            } catch (Exception) {}
         }
 
         public void CloseApp() {
@@ -35,7 +37,18 @@ namespace SdnKalisalak01.Guru {
             SetBrowserEmulation();
 
             this.Text = "DASHBOARD LAPORAN GURU // SDN KALISALAK 01";
-            try { this.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath); } catch (Exception) {}
+            
+            string icoFile = Path.Combine(baseDir, "logo.ico");
+            if (File.Exists(icoFile)) {
+                try {
+                    this.Icon = new Icon(icoFile);
+                } catch (Exception) {
+                    try { this.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath); } catch (Exception) {}
+                }
+            } else {
+                try { this.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath); } catch (Exception) {}
+            }
+
             this.Size = new Size(1000, 720);
             this.StartPosition = FormStartPosition.CenterScreen;
             this.BackColor = Color.FromArgb(2, 7, 4);
@@ -48,9 +61,9 @@ namespace SdnKalisalak01.Guru {
             };
             this.Controls.Add(webBrowser);
 
-            string htaPath = Path.Combine(baseDir, "DASHBOARD_LAPORAN_GURU.hta");
-            if (File.Exists(htaPath)) {
-                webBrowser.Navigate(new Uri(htaPath));
+            string htmlPath = Path.Combine(baseDir, "dashboard_guru.html");
+            if (File.Exists(htmlPath)) {
+                webBrowser.Navigate(new Uri(htmlPath));
             } else {
                 string url = "https://laporan_sdnkalisalak01.develzy.my.id/?auth_key=kalisalak01_secure_key_9f82a17b3c";
                 try { Process.Start(new ProcessStartInfo(url) { UseShellExecute = true }); } catch (Exception) {}

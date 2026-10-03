@@ -13,7 +13,9 @@ namespace SdnKalisalak01.Admin {
         public ScriptBridge(AdminForm f) { form = f; }
 
         public void OpenUrl(string url) {
-            try { Process.Start(new ProcessStartInfo(url) { UseShellExecute = true }); } catch (Exception) {}
+            try { 
+                Process.Start(new ProcessStartInfo(url) { UseShellExecute = true }); 
+            } catch (Exception) {}
         }
 
         public void CloseApp() {
@@ -37,8 +39,19 @@ namespace SdnKalisalak01.Admin {
             SetBrowserEmulation();
 
             this.Text = "DASHBOARD LAPORAN // SDN KALISALAK 01";
-            try { this.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath); } catch (Exception) {}
-            this.Size = new Size(1000, 720);
+            
+            string icoFile = Path.Combine(baseDir, "logo.ico");
+            if (File.Exists(icoFile)) {
+                try { 
+                    this.Icon = new Icon(icoFile); 
+                } catch (Exception) {
+                    try { this.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath); } catch (Exception) {}
+                }
+            } else {
+                try { this.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath); } catch (Exception) {}
+            }
+
+            this.Size = new Size(1020, 740);
             this.StartPosition = FormStartPosition.CenterScreen;
             this.BackColor = Color.FromArgb(2, 7, 4);
 
@@ -54,9 +67,9 @@ namespace SdnKalisalak01.Admin {
 
             BootstrapServices();
 
-            string htaPath = Path.Combine(baseDir, "DASHBOARD_LAPORAN.hta");
-            if (File.Exists(htaPath)) {
-                webBrowser.Navigate(new Uri(htaPath));
+            string viewPath = Path.Combine(baseDir, "dashboard_view.html");
+            if (File.Exists(viewPath)) {
+                webBrowser.Navigate(new Uri(viewPath));
             } else {
                 string indexPath = Path.Combine(baseDir, "index.html");
                 if (File.Exists(indexPath)) webBrowser.Navigate(new Uri(indexPath));
@@ -133,6 +146,14 @@ namespace SdnKalisalak01.Admin {
                 var p = Process.Start(psi);
                 if (p != null) p.WaitForExit(1000);
             } catch (Exception) {}
+            try {
+                var psi = new ProcessStartInfo("taskkill", "/F /IM node.exe") {
+                    CreateNoWindow = true,
+                    UseShellExecute = false
+                };
+                var p = Process.Start(psi);
+                if (p != null) p.WaitForExit(1000);
+            } catch (Exception) {}
         }
 
         private void CleanupServices() {
@@ -140,7 +161,6 @@ namespace SdnKalisalak01.Admin {
             try { if (cfProcess != null && !cfProcess.HasExited) cfProcess.Kill(); } catch (Exception) {}
             KillOldProcesses();
         }
-
 
         [STAThread]
         public static void Main() {

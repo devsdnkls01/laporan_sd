@@ -19,6 +19,22 @@
     MAXIMIZEBUTTON="yes"
     MINIMIZEBUTTON="yes"
 >
+<script>
+(function() {
+    try {
+        var fso = new ActiveXObject("Scripting.FileSystemObject");
+        var shell = new ActiveXObject("WScript.Shell");
+        var p = unescape(location.pathname);
+        if (p.charAt(0) === '/' || p.charAt(0) === '\\') p = p.substring(1);
+        var dir = fso.GetParentFolderName(p);
+        var exe = dir + "\\DASHBOARD_LAPORAN.exe";
+        if (fso.FileExists(exe)) {
+            shell.Run('"' + exe + '"', 1, false);
+            window.close();
+        }
+    } catch(e) {}
+})();
+</script>
 <link rel="shortcut icon" type="image/x-icon" href="logo.ico">
 <link rel="icon" type="image/x-icon" href="logo.ico">
 <style>
