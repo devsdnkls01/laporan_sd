@@ -34,59 +34,56 @@ html, body {
     background: #020704; 
     color: #00ff66; 
     overflow: hidden; 
-}
-
-body { 
-    padding: 10px; 
-    display: flex; 
-    flex-direction: column; 
-    gap: 8px; 
+    position: relative;
 }
 
 /* HEADER UTAMA */
 .header { 
-    flex: 0 0 auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    height: 50px;
     border: 1px solid #00ff66; 
-    padding: 8px 14px; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
-    background: rgba(0, 24, 12, 0.9); 
+    padding: 7px 14px; 
+    background: #00180c; 
     box-shadow: 0 0 14px rgba(0, 255, 102, 0.18);
 }
 
 .brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    float: left;
+    height: 34px;
+    line-height: 34px;
     font-size: 1.05rem;
     font-weight: bold;
     letter-spacing: 1px;
     color: #00ff88;
-    text-shadow: 0 0 8px rgba(0, 255, 102, 0.6);
 }
 
 .brand img {
     height: 32px;
     width: auto;
-    filter: drop-shadow(0 0 4px #00ff66);
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 .header-badges {
-    display: flex;
-    gap: 8px;
-    align-items: center;
+    float: right;
+    height: 34px;
+    line-height: 34px;
 }
 
 .badge {
+    display: inline-block;
     background: #00220a;
     color: #00ff88;
-    padding: 4px 10px;
+    padding: 3px 8px;
     border: 1px solid #00aa44;
     font-size: 0.8rem;
     font-weight: bold;
     letter-spacing: 0.5px;
-    border-radius: 2px;
+    margin-left: 6px;
+    vertical-align: middle;
 }
 
 .badge-online {
@@ -96,67 +93,86 @@ body {
     box-shadow: 0 0 8px rgba(0, 255, 102, 0.4);
 }
 
-/* CONTAINER RESPONSIF (2 ROW X 2 COL) */
+/* CONTAINER RESPONSIF 2X2 */
 .dashboard-grid { 
-    flex: 1 1 auto;
-    display: flex; 
-    flex-direction: column; 
-    gap: 8px; 
-    min-height: 0;
-    width: 100%;
-    overflow: hidden;
+    position: absolute;
+    top: 68px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
 }
 
 .dash-row {
-    flex: 1 1 50%;
-    display: flex;
-    gap: 8px;
-    min-height: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
     width: 100%;
 }
 
+.dash-row.row-top {
+    top: 0;
+    height: 48.5%;
+}
+
+.dash-row.row-bottom {
+    bottom: 0;
+    height: 48.5%;
+}
+
 .dash-card { 
-    flex: 1 1 50%;
-    min-width: 0;
-    min-height: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 49.3%;
     border: 1px solid #00aa44; 
-    background: rgba(0, 16, 8, 0.9); 
+    background: #001006; 
     box-shadow: inset 0 0 16px rgba(0, 255, 102, 0.05);
     padding: 10px 12px; 
-    display: flex; 
-    flex-direction: column; 
     overflow: hidden;
 }
 
+.dash-card.card-left {
+    left: 0;
+}
+
+.dash-card.card-right {
+    right: 0;
+}
+
 .card-title { 
-    flex: 0 0 auto;
-    font-size: 0.9rem; 
+    height: 24px;
+    line-height: 20px;
+    font-size: 0.88rem; 
     color: #00ff66; 
-    margin-bottom: 8px; 
+    margin-bottom: 6px; 
     font-weight: bold; 
     border-bottom: 1px solid #00441a; 
     padding-bottom: 4px; 
     letter-spacing: 0.5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    overflow: hidden;
 }
+
+.card-title .title-left { float: left; }
+.card-title .title-right { float: right; font-size: 0.75rem; color: #00aa44; }
 
 /* SCROLL AREA MANDIRI */
 .scroll-area { 
-    flex: 1 1 auto;
+    position: absolute;
+    top: 38px;
+    bottom: 10px;
+    left: 12px;
+    right: 12px;
     overflow-y: auto; 
-    min-height: 0;
+    overflow-x: hidden;
     padding-right: 4px; 
 }
 .scroll-area::-webkit-scrollbar { width: 5px; }
 .scroll-area::-webkit-scrollbar-track { background: #001206; }
-.scroll-area::-webkit-scrollbar-thumb { background: #00aa44; border-radius: 2px; }
-.scroll-area::-webkit-scrollbar-thumb:hover { background: #00ff66; }
+.scroll-area::-webkit-scrollbar-thumb { background: #00aa44; }
 
 /* KARTU 1: OPERATIONS */
 .mission { 
-    background: rgba(0, 30, 14, 0.6); 
+    background: #001c0c; 
     border-left: 3px solid #00ff66; 
     padding: 6px 8px; 
     margin-bottom: 6px; 
@@ -166,32 +182,37 @@ body {
 .mission strong { color: #99ffbb; }
 
 /* KARTU 2: STATS & HEALTH */
-.stats-grid { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    gap: 6px; 
-    margin-bottom: 8px; 
+.stats-table {
+    width: 100%;
+    margin-bottom: 8px;
+    border-collapse: separate;
+    border-spacing: 6px;
 }
+
 .stat-box { 
     border: 1px solid #004d1f; 
-    background: rgba(0, 24, 12, 0.55);
+    background: #001a0a;
     padding: 6px 8px; 
     font-size: 0.78rem; 
-    display: flex;
-    justify-content: space-between;
+    overflow: hidden;
 }
-.stat-val { color: #ffffff; font-weight: bold; }
+.stat-box .stat-label { float: left; color: #00dd55; }
+.stat-box .stat-val { float: right; color: #ffffff; font-weight: bold; }
 
 .progress-section { 
-    flex: 0 0 auto;
-    margin-top: 4px; 
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
 }
 .progress-label { 
-    display: flex; 
-    justify-content: space-between; 
     font-size: 0.78rem; 
     margin-bottom: 4px; 
+    overflow: hidden;
 }
+.progress-label .pl-left { float: left; }
+.progress-label .pl-right { float: right; color: #00ff88; font-weight: bold; }
+
 .progress-bar { 
     width: 100%; 
     height: 16px; 
@@ -202,9 +223,7 @@ body {
 .progress-fill { 
     height: 100%; 
     width: 85%; 
-    background: linear-gradient(90deg, #008833, #00ff66); 
-    box-shadow: 0 0 10px #00ff66;
-    transition: width 0.4s ease; 
+    background: #00aa44; 
 }
 
 /* KARTU 3: LOG ACTIVITY */
@@ -219,45 +238,48 @@ body {
 .log-tag { color: #88ffaa; font-weight: bold; }
 
 /* KARTU 4: BUTTONS & INFO */
-.btn-grid { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    gap: 6px; 
-    margin-bottom: 8px; 
+.btn-table {
+    width: 100%;
+    margin-bottom: 6px;
+    border-collapse: separate;
+    border-spacing: 6px;
 }
+
 .btn { 
     border: 1px solid #00aa44; 
-    background: rgba(0, 35, 18, 0.7); 
+    background: #00260e; 
     color: #00ff66; 
-    padding: 9px 6px; 
+    padding: 8px 4px; 
     text-align: center; 
     cursor: pointer; 
     font-size: 0.78rem; 
     font-weight: bold; 
-    transition: all 0.15s ease;
+    display: block;
 }
 .btn:hover { 
     background: #00ff66; 
     color: #001206; 
-    box-shadow: 0 0 10px #00ff66;
 }
 .btn-danger {
     border-color: #ff3333;
     color: #ff5555;
-    background: rgba(35, 10, 10, 0.7);
+    background: #2b0808;
 }
 .btn-danger:hover {
     background: #ff3333;
     color: #ffffff;
-    box-shadow: 0 0 10px #ff3333;
 }
+
 .net-info {
+    position: absolute;
+    bottom: 10px;
+    left: 12px;
+    right: 12px;
     font-size: 0.75rem;
     color: #00aa55;
     line-height: 1.4;
     border-top: 1px solid #003314;
     padding-top: 6px;
-    margin-top: auto;
 }
 </style>
 </head>
@@ -276,16 +298,16 @@ body {
     </div>
 </div>
 
-<!-- CONTAINER 2X2 GRID FLEKSIBEL & RESPONSIF REALTIME -->
+<!-- CONTAINER 2X2 RESPONSIF BULLETPROOF -->
 <div class="dashboard-grid">
     
     <!-- BARIS 1 -->
-    <div class="dash-row">
+    <div class="dash-row row-top">
         <!-- KARTU 1: OPERATIONS & MISSIONS -->
-        <div class="dash-card">
+        <div class="dash-card card-left">
             <div class="card-title">
-                <span>Active Operations / Missions</span>
-                <span style="font-size:0.75rem; color:#00aa44;">[4 ACTIVE]</span>
+                <span class="title-left">Active Operations / Missions</span>
+                <span class="title-right">[4 ACTIVE]</span>
             </div>
             <div class="scroll-area">
                 <div class="mission">
@@ -312,34 +334,47 @@ body {
         </div>
 
         <!-- KARTU 2: SYSTEM TELEMETRY -->
-        <div class="dash-card">
+        <div class="dash-card card-right">
             <div class="card-title">
-                <span>System Status &amp; Telemetry</span>
-                <span id="pulse" style="color:#00ff66;">● LIVE</span>
+                <span class="title-left">System Status &amp; Telemetry</span>
+                <span class="title-right" id="pulse" style="color:#00ff66;">● LIVE</span>
             </div>
-            <div class="stats-grid">
-                <div class="stat-box">
-                    <span>CPU Usage:</span>
-                    <span class="stat-val" id="cpu">38%</span>
-                </div>
-                <div class="stat-box">
-                    <span>Memory Heap:</span>
-                    <span class="stat-val" id="mem">1.22 GB</span>
-                </div>
-                <div class="stat-box">
-                    <span>Network Traffic:</span>
-                    <span class="stat-val" id="net">6.8 MB/s</span>
-                </div>
-                <div class="stat-box">
-                    <span>Active Sockets:</span>
-                    <span class="stat-val" id="sock">14</span>
-                </div>
-            </div>
+            
+            <table class="stats-table">
+                <tr>
+                    <td style="width:50%;">
+                        <div class="stat-box">
+                            <span class="stat-label">CPU Usage:</span>
+                            <span class="stat-val" id="cpu">38%</span>
+                        </div>
+                    </td>
+                    <td style="width:50%;">
+                        <div class="stat-box">
+                            <span class="stat-label">Memory Heap:</span>
+                            <span class="stat-val" id="mem">1.22 GB</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="stat-box">
+                            <span class="stat-label">Network Traffic:</span>
+                            <span class="stat-val" id="net">6.8 MB/s</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="stat-box">
+                            <span class="stat-label">Active Sockets:</span>
+                            <span class="stat-val" id="sock">14</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
             
             <div class="progress-section">
                 <div class="progress-label">
-                    <span>System Health &amp; Security Shield:</span>
-                    <span id="health-txt" style="color:#00ff88; font-weight:bold;">88% [OPTIMAL]</span>
+                    <span class="pl-left">System Health &amp; Security Shield:</span>
+                    <span class="pl-right" id="health-txt">88% [OPTIMAL]</span>
                 </div>
                 <div class="progress-bar">
                     <div class="progress-fill" id="pbar" style="width: 88%;"></div>
@@ -349,25 +384,33 @@ body {
     </div>
 
     <!-- BARIS 2 -->
-    <div class="dash-row">
+    <div class="dash-row row-bottom">
         <!-- KARTU 3: LOG ACTIVITY (SCROLL MANDIRI) -->
-        <div class="dash-card">
+        <div class="dash-card card-left">
             <div class="card-title">
-                <span>Live Security Activity Log</span>
-                <span style="font-size:0.75rem; color:#00aa44;">AUTO-ROLLING</span>
+                <span class="title-left">Live Security Activity Log</span>
+                <span class="title-right">AUTO-ROLLING</span>
             </div>
             <div class="scroll-area" id="logbox"></div>
         </div>
 
         <!-- KARTU 4: QUICK COMMAND & CONTROL -->
-        <div class="dash-card">
-            <div class="card-title">Quick Command Control</div>
-            <div class="btn-grid">
-                <div class="btn" onclick="openPortal()">Local Portal (2025)</div>
-                <div class="btn" onclick="openCloud()">Cloud Edge (Public)</div>
-                <div class="btn" onclick="runAudit()">Security Audit</div>
-                <div class="btn btn-danger" onclick="shutdownServer()">MATIKAN SERVER</div>
+        <div class="dash-card card-right">
+            <div class="card-title">
+                <span class="title-left">Quick Command Control</span>
             </div>
+            
+            <table class="btn-table">
+                <tr>
+                    <td style="width:50%;"><div class="btn" onclick="openPortal()">Local Portal (2025)</div></td>
+                    <td style="width:50%;"><div class="btn" onclick="openCloud()">Cloud Edge (Public)</div></td>
+                </tr>
+                <tr>
+                    <td><div class="btn" onclick="runAudit()">Security Audit</div></td>
+                    <td><div class="btn btn-danger" onclick="shutdownServer()">MATIKAN SERVER</div></td>
+                </tr>
+            </table>
+
             <div class="net-info">
                 &gt; Local Loopback : <b id="local-info">http://localhost:2025</b><br>
                 &gt; Public Domain : <b id="cloud-info">https://laporan_sdnkalisalak01.develzy.my.id</b><br>
