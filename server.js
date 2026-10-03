@@ -191,6 +191,56 @@ function sendJsonResponse(res, statusCode, data) {
   res.end(JSON.stringify(data));
 }
 
+// =========================================================================
+// KEAMANAN AKSES (OPSI B: WAJIB LEWAT .HTA)
+// =========================================================================
+const ACCESS_TOKEN = process.env.APP_ACCESS_TOKEN || 'kalisalak01_secure_key_9f82a17b3c';
+
+function parseCookies(req) {
+  const list = {};
+  const rc = req.headers && req.headers.cookie;
+  if (rc) {
+    rc.split(';').forEach(cookie => {
+      const parts = cookie.split('=');
+      list[parts.shift().trim()] = decodeURI(parts.join('='));
+    });
+  }
+  return list;
+}
+
+function sendAccessDeniedHtml(res) {
+  const html = `<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>403 - AKSES DITOLAK // SDN KALISALAK 01</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Consolas', monospace; }
+    body { background: #030804; color: #00ff66; display: flex; align-items: center; justify-content: center; height: 100vh; padding: 20px; text-align: center; }
+    .box { border: 2px solid #ff3333; background: rgba(30, 5, 5, 0.95); padding: 35px 25px; max-width: 600px; box-shadow: 0 0 35px rgba(255, 51, 51, 0.35); border-radius: 6px; }
+    h1 { color: #ff3333; font-size: 1.8rem; margin-bottom: 16px; letter-spacing: 2px; }
+    p { color: #ccc; font-size: 0.95rem; line-height: 1.6; margin-bottom: 14px; }
+    .badge { display: inline-block; background: #3a0000; color: #ff5555; border: 1px solid #ff3333; padding: 8px 16px; font-weight: bold; margin-top: 10px; font-size: 0.85rem; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>403 // AKSES DITOLAK</h1>
+    <p>Situs ini dilindungi oleh Protokol Keamanan Zero-Trust <strong>SDN KALISALAK 01</strong>.</p>
+    <p>Akses langsung via tautan publik <strong>DILARANG</strong>.</p>
+    <div class="badge">WAJIB DIBUKA MELALUI: DASHBOARD_LAPORAN.hta</div>
+  </div>
+</body>
+</html>`;
+
+  res.writeHead(403, {
+    'Content-Type': 'text/html; charset=utf-8',
+    'Cache-Control': 'no-store, no-cache, must-revalidate'
+  });
+  res.end(html);
+}
+
 const server = http.createServer(async (req, res) => {
   // CORS Preflight
   if (req.method === 'OPTIONS') {
@@ -200,6 +250,30 @@ const server = http.createServer(async (req, res) => {
       'Access-Control-Allow-Headers': 'Content-Type'
     });
     res.end();
+    return;
+  }
+
+  // =========================================================================
+  // ZERO-TRUST AUTHORIZATION CHECK (OPSI B)
+  // =========================================================================
+  const urlObj = new URL(req.url, 'http://localhost');
+  const authKeyParam = urlObj.searchParams.get('auth_key');
+  const cookies = parseCookies(req);
+  const hasValidSession = cookies['sdn_auth_token'] === ACCESS_TOKEN;
+
+  // 1. Jika membawa auth_key yang sah dari .hta, pasang cookie sesi lalu redirect ke URL bersih
+  if (authKeyParam === ACCESS_TOKEN) {
+    res.writeHead(302, {
+      'Set-Cookie': `sdn_auth_token=${ACCESS_TOKEN}; Path=/; HttpOnly; SameSite=Lax; Max-Age=86400`,
+      'Location': '/'
+    });
+    res.end();
+    return;
+  }
+
+  // 2. Jika tidak ada sesi cookie yang sah dan tidak ada auth_key sah -> TOLAK TOTAL (403)
+  if (!hasValidSession) {
+    sendAccessDeniedHtml(res);
     return;
   }
 
@@ -901,10 +975,11 @@ function startServer(portToTry) {
     console.log('  Tekan Ctrl + C di jendela ini untuk menghentikan server.');
     console.log('================================================================');
 
-    // Auto open browser directly to public domain (or fallback to local)
-    const targetOpenUrl = (d1Cfg.publicDomain && d1Cfg.publicDomain.trim() !== '') 
+    // Auto open browser directly to public domain with auth_key
+    const targetBaseUrl = (d1Cfg.publicDomain && d1Cfg.publicDomain.trim() !== '') 
       ? 'https://' + d1Cfg.publicDomain.trim() 
       : url;
+    const targetOpenUrl = targetBaseUrl + '/?auth_key=' + ACCESS_TOKEN;
 
     if (process.env.AUTO_OPEN !== 'false') {
       exec('start ' + targetOpenUrl);
