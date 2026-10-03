@@ -214,23 +214,233 @@ function sendAccessDeniedHtml(res) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>403 - AKSES DITOLAK // SDN KALISALAK 01</title>
+  <title>CYBERSECURITY LOCKDOWN // SDN KALISALAK 01</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Consolas', monospace; }
-    body { background: #030804; color: #00ff66; display: flex; align-items: center; justify-content: center; height: 100vh; padding: 20px; text-align: center; }
-    .box { border: 2px solid #ff3333; background: rgba(30, 5, 5, 0.95); padding: 35px 25px; max-width: 600px; box-shadow: 0 0 35px rgba(255, 51, 51, 0.35); border-radius: 6px; }
-    h1 { color: #ff3333; font-size: 1.8rem; margin-bottom: 16px; letter-spacing: 2px; }
-    p { color: #ccc; font-size: 0.95rem; line-height: 1.6; margin-bottom: 14px; }
-    .badge { display: inline-block; background: #3a0000; color: #ff5555; border: 1px solid #ff3333; padding: 8px 16px; font-weight: bold; margin-top: 10px; font-size: 0.85rem; border-radius: 3px; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Consolas', 'Courier New', monospace; }
+    body {
+      background: #020704;
+      color: #00ff66;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    #matrix-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0.28;
+    }
+    .container {
+      position: relative;
+      z-index: 10;
+      width: 90%;
+      max-width: 640px;
+      border: 1px solid #00ff66;
+      background: rgba(0, 18, 9, 0.92);
+      box-shadow: 0 0 35px rgba(0, 255, 102, 0.25), inset 0 0 20px rgba(0, 255, 102, 0.08);
+      padding: 24px;
+      text-align: center;
+      border-radius: 4px;
+      animation: pulseBorder 3s infinite alternate;
+    }
+    @keyframes pulseBorder {
+      0% { box-shadow: 0 0 25px rgba(0, 255, 102, 0.2); }
+      100% { box-shadow: 0 0 45px rgba(0, 255, 102, 0.45); }
+    }
+    .logo-badge {
+      width: 76px;
+      height: auto;
+      margin-bottom: 12px;
+      filter: drop-shadow(0 0 10px #00ff66);
+    }
+    .header-tag {
+      display: inline-block;
+      border: 1px solid #ff3333;
+      background: rgba(60, 10, 10, 0.8);
+      color: #ff4444;
+      font-size: 0.8rem;
+      font-weight: bold;
+      padding: 4px 12px;
+      margin-bottom: 14px;
+      letter-spacing: 2px;
+      border-radius: 2px;
+      animation: blinkRed 1.2s infinite;
+    }
+    @keyframes blinkRed {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    h1 {
+      font-size: 1.45rem;
+      color: #00ff88;
+      letter-spacing: 1.5px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px rgba(0, 255, 102, 0.8);
+    }
+    .subhead {
+      font-size: 0.82rem;
+      color: #88ffaa;
+      margin-bottom: 18px;
+      letter-spacing: 1px;
+    }
+    .divider {
+      border: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #00ff66, transparent);
+      margin: 14px 0;
+    }
+    .info-box {
+      background: rgba(0, 28, 14, 0.6);
+      border-left: 3px solid #00ff66;
+      border-right: 3px solid #00ff66;
+      padding: 12px;
+      font-size: 0.82rem;
+      line-height: 1.5;
+      color: #cceecc;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+    .telemetry-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 14px;
+      font-size: 0.78rem;
+      text-align: left;
+    }
+    .telemetry-item {
+      background: rgba(0, 24, 12, 0.5);
+      border: 1px solid #005522;
+      padding: 6px 10px;
+    }
+    .telemetry-item span { color: #88ffbb; }
+    .live-log-box {
+      background: #001006;
+      border: 1px solid #00441a;
+      padding: 8px 10px;
+      height: 80px;
+      overflow: hidden;
+      font-size: 0.72rem;
+      color: #00cc55;
+      text-align: left;
+      line-height: 1.4;
+      margin-bottom: 16px;
+    }
+    .action-badge {
+      display: block;
+      background: linear-gradient(90deg, #003314, #005522);
+      border: 1px solid #00ff66;
+      color: #ffffff;
+      padding: 10px 14px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 0 14px rgba(0, 255, 102, 0.3);
+    }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h1>403 // AKSES DITOLAK</h1>
-    <p>Situs ini dilindungi oleh Protokol Keamanan Zero-Trust <strong>SDN KALISALAK 01</strong>.</p>
-    <p>Akses langsung via tautan publik <strong>DILARANG</strong>.</p>
-    <div class="badge">WAJIB DIBUKA MELALUI: DASHBOARD_LAPORAN.hta</div>
+  <canvas id="matrix-canvas"></canvas>
+
+  <div class="container">
+    <div class="header-tag">&#9888; ZERO-TRUST SECURITY SHIELD ENGAGED</div>
+    <br>
+    <img src="/assets/image1.png" alt="Logo SDN Kalisalak 01" class="logo-badge" onerror="this.style.display='none'">
+    <h1>SDN KALISALAK 01</h1>
+    <div class="subhead">SISTEM INFORMASI MANAJEMEN LAPORAN &amp; RKT</div>
+
+    <div class="divider"></div>
+
+    <div class="info-box">
+      <strong>STATUS SISTEM: LOCKDOWN / PROTEKSI AKTIF</strong><br>
+      Akses publik langsung melalui tautan browser umum telah dibatasi oleh protokol keamanan internal. Situs hanya dapat dibuka dan dikelola oleh perangkat yang telah diverifikasi melalui aplikasi desktop resmi.
+    </div>
+
+    <div class="telemetry-row">
+      <div class="telemetry-item">Protokol: <span>Zero-Trust Tunnel</span></div>
+      <div class="telemetry-item">Enkripsi: <span>AES-256 TLS 1.3</span></div>
+      <div class="telemetry-item">Firewall: <span>Cloudflare Edge</span></div>
+      <div class="telemetry-item">Host Cluster: <span>Singapore POP</span></div>
+    </div>
+
+    <div class="live-log-box" id="live-logs"></div>
+
+    <div class="action-badge">
+      &#128274; WAJIB DIBUKA MELALUI: DASHBOARD_LAPORAN.hta
+    </div>
   </div>
+
+  <script>
+    // Matrix Rain Animation
+    const canvas = document.getElementById('matrix-canvas');
+    const ctx = canvas.getContext('2d');
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
+
+    window.onresize = function() {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    };
+
+    const characters = '0123456789ABCDEFKALISALAK01SECURELOCKDOWN';
+    const fontSize = 14;
+    const columns = Math.floor(width / fontSize);
+    const drops = [];
+    for (let i = 0; i < columns; i++) {
+      drops[i] = Math.random() * -100;
+    }
+
+    function drawMatrix() {
+      ctx.fillStyle = 'rgba(2, 7, 4, 0.1)';
+      ctx.fillRect(0, 0, width, height);
+      ctx.fillStyle = '#00ff66';
+      ctx.font = fontSize + 'px monospace';
+
+      for (let i = 0; i < drops.length; i++) {
+        const text = characters.charAt(Math.floor(Math.random() * characters.length));
+        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+        if (drops[i] * fontSize > height && Math.random() > 0.975) {
+          drops[i] = 0;
+        }
+        drops[i]++;
+      }
+    }
+    setInterval(drawMatrix, 45);
+
+    // Live Security Stream
+    const logBox = document.getElementById('live-logs');
+    const msgs = [
+      "[FIREWALL] Unauthorized direct HTTP socket connection intercepted.",
+      "[ZERO_TRUST] Host signature verification required via DASHBOARD_LAPORAN.hta.",
+      "[AES_256] Cryptographic key mismatch: direct public traffic blocked.",
+      "[AUDIT] IP origin validated against Cloudflare Edge Singapore cluster.",
+      "[PROTECTION] Database tables isolated: dual-storage coherency active."
+    ];
+
+    function addLog() {
+      const now = new Date();
+      const t = now.toTimeString().split(' ')[0];
+      const m = msgs[Math.floor(Math.random() * msgs.length)];
+      const line = document.createElement('div');
+      line.innerHTML = '<span style=\"color:#008833;\">[' + t + ']</span> ' + m;
+      logBox.appendChild(line);
+      logBox.scrollTop = logBox.scrollHeight;
+      if (logBox.children.length > 8) {
+        logBox.removeChild(logBox.children[0]);
+      }
+    }
+    setInterval(addLog, 1600);
+    addLog();
+    addLog();
+  </script>
 </body>
 </html>`;
 
@@ -271,14 +481,25 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
-  // 2. Jika tidak ada sesi cookie yang sah dan tidak ada auth_key sah -> TOLAK TOTAL (403)
+  let rawUrl = req.url.split('?')[0];
+  let reqPath = decodeURI(rawUrl).replace(/\/+$/, '') || '/';
+
+  // Biarkan logo aset resmi dimuat untuk halaman lockdown
+  if (reqPath === '/assets/image1.png' || reqPath === '/assets/logo.ico') {
+    const assetPath = path.join(__dirname, reqPath);
+    if (fs.existsSync(assetPath)) {
+      const ext = path.extname(assetPath).toLowerCase();
+      res.writeHead(200, { 'Content-Type': MIME_TYPES[ext] || 'image/png' });
+      fs.createReadStream(assetPath).pipe(res);
+      return;
+    }
+  }
+
+  // 2. Jika tidak ada sesi cookie yang sah dan tidak ada auth_key sah -> TOLAK TOTAL (403 CYBERSHIELD)
   if (!hasValidSession) {
     sendAccessDeniedHtml(res);
     return;
   }
-
-  let rawUrl = req.url.split('?')[0];
-  let reqPath = decodeURI(rawUrl).replace(/\/+$/, '') || '/';
 
   // =========================================================================
   // API CLOUDFLARE D1 ENDPOINTS (DATABASE SERVERLESS SQLITE)
