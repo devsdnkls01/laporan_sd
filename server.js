@@ -12,9 +12,9 @@ let PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
 // Cloudinary Secure Configuration (Backend Only - NEVER sent to client)
 const CLOUDINARY_CONFIG = {
-  cloudName: process.env.CLOUDINARY_CLOUD_NAME || 'ixjihcvx',
-  apiKey: process.env.CLOUDINARY_API_KEY || '691765734874534',
-  apiSecret: process.env.CLOUDINARY_API_SECRET || 'bGDsN9ZSA1F837suY3vibpDpiqo',
+  cloudName: process.env.CLOUDINARY_CLOUD_NAME || '',
+  apiKey: process.env.CLOUDINARY_API_KEY || '',
+  apiSecret: process.env.CLOUDINARY_API_SECRET || '',
   defaultFolder: 'sdn_kalisalak_01/laporan'
 };
 
@@ -194,7 +194,9 @@ function sendJsonResponse(res, statusCode, data) {
 // =========================================================================
 // KEAMANAN AKSES (OPSI B: WAJIB LEWAT .HTA)
 // =========================================================================
-const ACCESS_TOKEN = process.env.APP_ACCESS_TOKEN || 'kalisalak01_secure_key_9f82a17b3c';
+const ACCESS_TOKEN = (process.env.APP_ACCESS_TOKEN && process.env.APP_ACCESS_TOKEN.trim())
+  ? process.env.APP_ACCESS_TOKEN.trim()
+  : crypto.randomBytes(24).toString('hex');
 
 function parseCookies(req) {
   const list = {};
@@ -1153,11 +1155,33 @@ const server = http.createServer(async (req, res) => {
   // Static File Serving
   if (reqPath === '/' || reqPath === '') reqPath = '/index.html';
 
+  // 1. CEGAH KEBOCORAN BERKAS RAHASIA & DIREKTORI INTERNAL (ZERO FILE LEAK)
+  const normalizedPath = reqPath.replace(/\\/g, '/').toLowerCase();
+  const baseFileName = path.basename(reqPath).toLowerCase();
+
+  const BLOCKED_EXTENSIONS = ['.env', '.sql', '.log', '.git', '.hta', '.lnk', '.bak', '.pem', '.key'];
+  const BLOCKED_FILES = ['server.js', 'package.json', 'package-lock.json', '.gitignore'];
+
+  const isHidden = baseFileName.startsWith('.') || normalizedPath.includes('/.');
+  const isBlockedExt = BLOCKED_EXTENSIONS.some(ext => baseFileName.endsWith(ext));
+  const isBlockedFile = BLOCKED_FILES.includes(baseFileName);
+
+  if (isHidden || isBlockedExt || isBlockedFile) {
+    res.writeHead(403, { 
+      'Content-Type': 'text/plain; charset=utf-8',
+      'X-Content-Type-Options': 'nosniff'
+    });
+    res.end('403 Forbidden: Akses berkas internal sistem diblokir demi keamanan.');
+    return;
+  }
+
   const filePath = path.join(__dirname, reqPath);
 
-  if (!filePath.startsWith(__dirname)) {
-    res.writeHead(403);
-    res.end('Akses Ditolak');
+  // Path traversal guard
+  const relative = path.relative(__dirname, filePath);
+  if (relative.startsWith('..') || path.isAbsolute(relative)) {
+    res.writeHead(403, { 'Content-Type': 'text/plain; charset=utf-8' });
+    res.end('403 Forbidden: Path traversal dilarang.');
     return;
   }
 
@@ -1173,7 +1197,10 @@ const server = http.createServer(async (req, res) => {
 
     res.writeHead(200, {
       'Content-Type': contentType,
-      'Cache-Control': 'no-cache'
+      'Cache-Control': 'no-cache',
+      'X-Content-Type-Options': 'nosniff',
+      'X-Frame-Options': 'SAMEORIGIN',
+      'Referrer-Policy': 'strict-origin-when-cross-origin'
     });
 
     const stream = fs.createReadStream(filePath);
@@ -1192,17 +1219,16 @@ function startServer(portToTry) {
     console.log('  Alamat Server Lokal    : ' + url);
     console.log('  Domain Publik Cloud    : ' + d1Cfg.publicDomain);
     console.log('  Database Cloudflare D1 : ' + d1StatusText);
-    console.log('  Penyimpanan Cloudinary : ' + CLOUDINARY_CONFIG.cloudName);
+    console.log('  Penyimpanan Cloudinary : ' + (CLOUDINARY_CONFIG.cloudName || 'TIDAK TERPASANG'));
     console.log('  Tekan Ctrl + C di jendela ini untuk menghentikan server.');
     console.log('================================================================');
 
-    // Auto open browser directly to public domain with auth_key
-    const targetBaseUrl = (d1Cfg.publicDomain && d1Cfg.publicDomain.trim() !== '') 
-      ? 'https://' + d1Cfg.publicDomain.trim() 
-      : url;
-    const targetOpenUrl = targetBaseUrl + '/?auth_key=' + ACCESS_TOKEN;
-
-    if (process.env.AUTO_OPEN !== 'false') {
+    // Auto open browser hanya jika dieksekusi manual dengan AUTO_OPEN=true
+    if (process.env.AUTO_OPEN === 'true') {
+      const targetBaseUrl = (d1Cfg.publicDomain && d1Cfg.publicDomain.trim() !== '') 
+        ? 'https://' + d1Cfg.publicDomain.trim() 
+        : url;
+      const targetOpenUrl = targetBaseUrl + '/?auth_key=' + ACCESS_TOKEN;
       exec('start ' + targetOpenUrl);
     }
   });
